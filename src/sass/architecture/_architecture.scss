@@ -70,7 +70,7 @@
 .architecture__gallery-nav-item {
     width: 130px !important;
     height: 80px;
-    margin: 0 10px;
+    margin: 0 auto;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -88,6 +88,20 @@
 .architecture__gallery-item_8, .architecture__gallery-nav-item_8 {background-image: url('../img/architecture/gallery/1.jpg');}
 
 .info-block__architeture {
-   top: 0px;
-   left: 80px;
+   top: 200px;
+   left: 10%;
+   .info-block__close {
+    z-index: 1;
+   }
+}
+
+.slick-current {
+    .architecture__gallery-nav-item {
+        border: 2px solid $beige1;
+    }
+}
+.slick-slide {
+    &+div {
+        text-align: center;
+    }
 }

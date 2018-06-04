@@ -71,6 +71,12 @@ var homePageSliders = (function() {
                 settings: {
                     slidesToShow: 3,
                 }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
             }
           ]
     })

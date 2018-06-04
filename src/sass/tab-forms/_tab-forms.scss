@@ -111,3 +111,19 @@
         }
     }
 }
+
+.contacts-form__callback-input {
+    position: relative;
+}
+.required-field-icon {
+    position: absolute;
+    top:0;
+    right: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 30px;
+    background-color: $beige1;
+    text-align: center;
+    font-size: 1.5rem;
+}

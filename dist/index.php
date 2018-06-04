@@ -57,12 +57,26 @@
     <section class="wrapper animate">
         <div class="hp-about">
             <div class="hp-about__border">
+                <div class="hp-about__mobile-item">
+                    <div class="hp-about__logo-text">
+                        <div class="W-logo W-logo_green W-logo_hp-about">
+                            <!-- SVG W Letter here -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318">
+                                <path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/>
+                                <path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/>
+                            </svg>
+                        </div>
+                        <div class="hp-about__heading">
+                            <h2>Про проект</h2>
+                        </div>
+                    </div>
+                </div>
                 <div class="hp-about__info-lists">
                     <div class="hp-about__info-list hp-about__info-list_left">
                         <ul>
                             <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>Концептуальний клубний будинок</li>
                             <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>22 поверхи</li>
-                            <li class="hp-about__info-list-item_main">
+                            <li class="hp-about__info-list-item_main hp-about__desktop-item">
                                 <div class="hp-about__logo-text">
                                     <div class="W-logo W-logo_green W-logo_hp-about">
                                         <!-- SVG W Letter here -->
@@ -78,12 +92,15 @@
                             </li>
                             <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>114 квартир</li>
                             <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>1 під'їзд</li>
+
+                            <li class="hp-about__info-list-item hp-about__info-list-item_left hp-about__mobile-item"><i class="hp-arrow hp-arrow_right"></i>Супер-сучасна архітектура</li>
+                            <li class="hp-about__info-list-item hp-about__info-list-item_left hp-about__mobile-item"><i class="hp-arrow hp-arrow_right"></i>Динамічний фасад</li>
                         </ul>
                     </div>
                     <div class="hp-about__info-list hp-about__info-list_right">
                         <ul>
-                            <li class="hp-about__info-list-item hp-about__info-list-item_right"><i class="hp-arrow hp-arrow_left"></i>Супер-сучасна архітектура</li>
-                            <li class="hp-about__info-list-item hp-about__info-list-item_right"><i class="hp-arrow hp-arrow_left"></i>Динамічний фасад</li>
+                            <li class="hp-about__info-list-item hp-about__info-list-item_right hp-about__desktop-item"><i class="hp-arrow hp-arrow_left"></i>Супер-сучасна архітектура</li>
+                            <li class="hp-about__info-list-item hp-about__info-list-item_right hp-about__desktop-item"><i class="hp-arrow hp-arrow_left"></i>Динамічний фасад</li>
                             <li class="hp-about__info-list-item hp-about__info-list-item_right"><i class="hp-arrow hp-arrow_left"></i>Wine cellar</li>
                             <li class="hp-about__info-list-item hp-about__info-list-item_right"><i class="hp-arrow hp-arrow_left"></i>Cigar lounge</li>
                             <li class="hp-about__info-list-item hp-about__info-list-item_right"><i class="hp-arrow hp-arrow_left"></i>Історичний центр Києва</li>
@@ -205,12 +222,14 @@
                                 <path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/>
                             </svg>
                         </div>
-                        <h3 class="hp-advantages__heading">Переваги</h3>
-                        <span class="hp-advantages_arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="5.6456027mm" width="16.378967mm">
-                                <g transform="translate(-118.21429,-145.23871)"><path class="hp-arrow_main-line" d="m 118.21429,155.04077 58.03571,0" /><path class="hp-arrow__line" d="m 175.89286,154.97381 -6.80865,-6.55879" /><path class="hp-arrow__line" d="m 169.33222,161.88374 6.55879,-6.80865" /></g>
-                            </svg>
-                        </span>
+                        <div>
+                            <h3 class="hp-advantages__heading">Переваги</h3>
+                            <span class="hp-advantages_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="5.6456027mm" width="16.378967mm">
+                                    <g transform="translate(-118.21429,-145.23871)"><path class="hp-arrow_main-line" d="m 118.21429,155.04077 58.03571,0" /><path class="hp-arrow__line" d="m 175.89286,154.97381 -6.80865,-6.55879" /><path class="hp-arrow__line" d="m 169.33222,161.88374 6.55879,-6.80865" /></g>
+                                </svg>
+                            </span>
+                        </div>
                     </div>
                 </a>
                 <div class="hp-advantages__gallery-text_bottom">

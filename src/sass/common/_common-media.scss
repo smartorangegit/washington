@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1200px) {
+    .page-top__wrapper {
+        max-width: 1024px;
+    }
+} // 1200 end
+@media only screen and (max-width: 1024px) {
+    .page-top__wrapper {
+        max-width: 768px;
+    }
+    .wrapper {
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .page-top__wrapper {
+        max-width: 90%;
+        
+    }
+    .page-top_heading {
+        h1 {
+            &::before,
+            &::after {
+                width: 10%;
+            }
+        }
+    }
+    .wrapper {
+        padding: 0;
+    }
+}

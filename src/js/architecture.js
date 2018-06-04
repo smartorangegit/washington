@@ -14,6 +14,30 @@ var architectureGallery = (function() {
         prevArrow: $('.gallery-arrow_architecture-nav-prev'),
         asNavFor: mainGal,
         slidesToShow: 7,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     });
 })();

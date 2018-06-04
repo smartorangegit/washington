@@ -145,6 +145,9 @@
     .hp-other-projects {
         margin-top: 0;
         margin-bottom: 30px;
+        img {
+            width: 70%;
+        }
     }
     .hp-other-projects-container {
         max-width: 635px;
@@ -152,7 +155,199 @@
 
 } // 1024 end
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    .hero-btn {
+        width: 90%;
+    }
+    .hero__gourment_left,
+    .hero__gourment_right {
+        display: none;
+    }
+    .hero__gourment_center {
+        border: 1px solid rgba($beige1, 0.5);
+    }
+    .hp-down-arrows {
+        display: none;
+    }
+    .hero__wrapper {
+        margin-top: -230px;
+    }
+    // about
+    .hp-about {
+        margin-top: 0;
+        background-image: url('../img/home/hp-about_bg_mobile.jpg');
+    }
+    .hp-other-projects-container {
+        max-width: 280px;
+    }
+    .hp-about__desktop-item {
+        display: none;
+    }
+    .hp-about__mobile-item {
+        display: flex;
+    }
+    .hp-about__logo-text {
+        position: static;
+        transform: none;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .hp-about__heading {
+        max-width: none;
+        font-size: 1.5rem;
+    }
+    .W-logo_hp-about {
+        width: 43px;
+    }
+    .hp-about__info-lists {
+        padding: 20px 10px;
+    }
+    //location
+    .hp-location {
+        margin-top: 0;
+    }
+    .hp-location__map {
+        margin-bottom: 0;
+    }
+    .hp-advantages {
+        margin-top: 0;
+    }
+    .hover-ef__bottom-text {
+        left: 5px;
+    }
+    // advantages 
+    .hp-advantages {
+        height: 615px;
+    }
+    .hp-advanages__gallery_item {
+        height: 615px;
+    }
+    .hp-advantages__gallery-text {
+        height: auto;
+        width: 100%;
+        top: auto;
+        bottom: 0;
+    }
+    .hp-advantages__gallery-text_top {
+        padding: 20px 0 20px 10px;
+        height: auto;
+        
+        position: relative;
+        display: flex;
+        
+    }
+    .gallery-status-bar-container_advantages {
+        position: absolute;
+        top: 25px;
+        left: 115px;
+    }
+    .hp-advantages__heading {
+        margin-top: 35px;
+        margin-left: 15px;
+    }
+    .W-logo_advantages {
+        margin: 0;
+        width: 86px;
+    }
+    .hp-advantages__gallery-text_bottom {
+        padding: 10px;
+    }
 
+    // value 
+    .hp-values {
+        height: 615px;
+        margin-top: 0;
+    }
+    .hp-values__gallery_item {
+        height: 615px;
+    }
+    .hp-values__gallery-text {
+        height: auto;
+        width: 100%;
+        top: auto;
+        bottom: 0;
+    }
+    .hp-values__gallery-text_top {
+        padding:0;
+        height: auto;
+        text-align: center;
+    }
+    .gallery-status-bar-container_values {
+        margin: 15px auto;
+    }
+    .hp-values__heading {
+        margin:0;
+        &::after {
+            margin: 10px auto;
+        }
+    }
+    .hp-values__paragraph {
+        margin: 0 auto;
+        max-width: 210px;
+    }
+    .W-logo_values {
+        display: none;
+    }
+    .hp-values__gallery-text_bottom {
+        padding: 10px;
+    }
+    .hp-3-items {
+        margin-top: 0;
+    }
+    .hp-apartments {
+        margin-bottom: 0;
+    }
+    .hp-commercial, 
+    .hp-infrastructure {
+        margin-bottom: 0;
+        height: 615px;
+    }
+    .hp-infrastructure{
+        background-image: url('../img/home/hp_infrastructure_bg_mobile.jpg');
+    }
+    .hp-commercial {
+        background-image: url('../img/home/hp_commercial_bg_mobile.jpg');
+    }
+    .hover-ef__arrow_2 {
+        left: 102%;
+        transform: scale(0.9);
+    }
+    .hp-construction {
+        margin-bottom: 0;
+    }
+    .hp-developer {
+        margin-bottom: 10px;
+    }
+    .hp-washington-sfera {
+        margin-bottom: 0;
+    }
+    .hp-washington-sfera__bottom-line {
+        height: 140px;
+    }
+    .hp-day-in-washington {
+        .hover-ef__bottom-text {
+            max-width: 200px;
+        }
+        .hover-ef__arrow_2 {
+            top: 40px;
+            left: 120%;
+        }
+    }
+    .hp-sfera {
+        .hover-ef__bottom-text {
+            max-width: 225px;
+        }
+        .hover-ef__arrow_2 {
+            top: 40px;
+            left: 70%;
+        }
+    }
 
-} // 768 end
+} // 767 end
+@media only screen and (max-width: 520px) {
+    .hp-about__info-list-item {
+        width: 140px;
+        font-size: 0.875rem;
+    }
+} // 520 end

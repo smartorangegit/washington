@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1024px) {
+    .construction-percent__item {
+        width: 95%;
+        margin: 0 auto 25px auto;
+    }
+    .construction__photos-container {
+        padding: 0 10px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .construction-percents__text {
+        width: 95%;
+        text-align: center;
+    }
+    .construction__center-bar {
+        display: none;
+    }
+    .construction__photo {
+        width: 95%;
+        margin: 10px auto;
+        max-width: 450px;
+        &:nth-child(even),
+        &:nth-child(odd) {
+            &::before,
+            &:after {
+                content: none;
+            }
+        }
+    }
+}

@@ -17,13 +17,14 @@
     width: 47%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 25px;
     color: #fff;
 }
 
 .construction-percents__text {
-    width: 135px;
+    width: 160px;
     margin-right: 20px;
     line-height: 24px;
 }

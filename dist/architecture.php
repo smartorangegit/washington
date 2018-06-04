@@ -29,7 +29,7 @@
                                 <span class="page-top__line"></span>
                             </li>
                             <li>
-                                <a href="#">Розташування</a>
+                                <a href="#">Архітектура</a>
                             </li>
                         </ul>
                     </div>
@@ -51,31 +51,6 @@
 
             <div class="architecture__main-content wrapper">
 
-
-                <div class="info-block js-info-block info-block__architeture">
-
-                    <div class="info-block__main-content">
-                        <div class="info-block__heading">
-                            <h3>Унікальний образ</h3>
-                        </div>
-                        <div class="info-block__text">
-                            <p class="info-block__paragraph">
-                                Цей будинок створений для справжніх гурманів. Для тих, хто цінує власний смак і віддає перевагу бездоганному стилю. 
-                                Продумана естетика не повинна обмежуватись лише квартирою – вона має охоплювати і холи будинку, і його лобі, і, безперечно, 
-                                відображатися у неповторному фасаді.
-                            </p>
-                            <p class="info-block__paragraph">
-                                WASHINGTON Concept House – один з перших в Україні будинків із динамічним фасадом. Його вигляд змінюється, коли ви проходите повз, милуючись 
-                                цією величною будівлею. Сонячне світло переломлюється у об’ємах, і будинок виблискує наче рідкісний діамант.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="info-block__close js-info-block__close">
-                        <i class="info-block__arrow"></i>
-                    </div>
-                    
-                </div>
-
                 <div class="gallery-arrow gallery-arrow_architecture gallery-arrow_architecture-prev"><i class="arrow arrow-prev"></i></div>
                 <div class="gallery-arrow gallery-arrow_architecture gallery-arrow_architecture-next"><i class="arrow arrow-next"></i></div>
                 <div class="gallery-arrow gallery-arrow_architecture-nav gallery-arrow_architecture-nav-next"><i class="arrow arrow-next"></i></div>
@@ -93,6 +68,30 @@
                     <div class="architecture__gallery-nav-item architecture__gallery-nav-item_8"></div>
                 </div>
             </div>
+
+            <div class="info-block js-info-block info-block__architeture">
+                <div class="info-block__main-content">
+                    <div class="info-block__heading">
+                        <h3>Унікальний образ</h3>
+                    </div>
+                    <div class="info-block__text">
+                        <p class="info-block__paragraph">
+                            Цей будинок створений для справжніх гурманів. Для тих, хто цінує власний смак і віддає перевагу бездоганному стилю. 
+                            Продумана естетика не повинна обмежуватись лише квартирою – вона має охоплювати і холи будинку, і його лобі, і, безперечно, 
+                            відображатися у неповторному фасаді.
+                        </p>
+                        <p class="info-block__paragraph">
+                            WASHINGTON Concept House – один з перших в Україні будинків із динамічним фасадом. Його вигляд змінюється, коли ви проходите повз, милуючись 
+                            цією величною будівлею. Сонячне світло переломлюється у об’ємах, і будинок виблискує наче рідкісний діамант.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-block__close js-info-block__close">
+                    <i class="info-block__arrow"></i>
+                </div>
+            </div>
+
+            
 
         </section>
     <?php include_once('includes/footer.php');?>

@@ -7,3 +7,4 @@ dist/video
 src/img
 dist/fonts
 src/garbage
+.vscode

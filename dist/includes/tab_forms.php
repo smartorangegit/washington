@@ -21,11 +21,13 @@
                     <div class="contacts-form__callback-input contacts-form__callback-input_name js-input-name-container">
                         <input class="js-input-name" type="text" name="name" placeholder="Ваше ім'я:" data-required="true">
                         <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+                        <span class="required-field-icon">*</span>
                     </div>
                     <div class="contacts-form__callback-input contacts-form__callback-input_phone js-input-phone-container">
                         <input class="js-input-phone js-input-phone__international" type="tel" name="phone" placeholder="Ваш телефон:" data-required="true">
                         <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
                         <div class="validation-error validation-error_phone-format" style="display: none">Невірний формат телефону</div>
+                        <span class="required-field-icon">*</span>
                     </div>
                     <div class="contacts-form__callback-input contacts-form__callback-input_message js-input-message-container">
                         <textarea class="js-input-message" name="message" placeholder="Ваше питання:"></textarea>

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1024px) {
+
+    .header-icon_phone {
+        display: none;
+    }
+    .callback-btn_desktop {
+        display: none;
+    }
+    .callback-btn_mobile {
+        display: block;
+    }
+
+} // end 1024px
+
+@media only screen and (max-width: 767px) {
+
+    .header__logo {
+        width: 130px;
+        img {
+            width: 100%;
+        }
+    }
+    .header__nav-container {
+        max-width: 235px;
+    }
+    .header__webcam {
+        display: none;
+    }
+    .header__language {
+        display: none;
+    }
+    .menu {
+        width: 50px;
+    }
+
+} // end 767px

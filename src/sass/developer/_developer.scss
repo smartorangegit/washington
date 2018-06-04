@@ -44,6 +44,7 @@
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .developer__location {
     width: 60%;
@@ -132,7 +133,7 @@
 }
 .developer__about-item-icon_3 {
     width: 44px;
-    height: 52px;
+    height: 37px;
     background-position: -184px -2px;
     margin-right: 36px;
 }

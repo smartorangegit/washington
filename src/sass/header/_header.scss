@@ -1,5 +1,5 @@
 .header {
-    background-color: rgba($green1, 0.8);
+    background-color: $green1;
     height: 75px;
     width: 100%;
     overflow: hidden;
@@ -9,8 +9,14 @@
     z-index: 5;
     font-size: 0.875rem;
     &.header__fixed {
-        // position: fixed;
-        // animation: headerSlideAimation 0.5s;
+        position: fixed;
+        animation: headerSlideAimation 0.5s;
+        & + section {
+            margin-top: 75px;
+        }
+        & + div {
+            margin-top: 75px;
+        }
     }
 }
 @keyframes headerSlideAimation {
@@ -51,6 +57,49 @@
 }
 // langugae dropdown
 .header__language {
+    &:hover {
+        cursor: pointer;
+    }
+    ul {
+        position: relative;
+        display: inline-block;
+    }
+    .header__language-item {
+        position: absolute;
+        transition-property: top, opacity;
+        transition-duration: 0.3s, 0.3s;
+        &:nth-child(2) {
+            top: 15px;
+        }
+        &:nth-child(3) {
+            top: 28px;
+            transition-delay: 0.3s, 0.3s;
+        }
+    }
+    .header__language-item_active {
+        position: static;
+    }
+}
+.header__language_closed {
+    .header__language-item {
+        &:nth-child(2),
+        &:nth-child(3) {
+            top: 0;
+            opacity: 0;
+        }
+    }
+    .header__language_arrow-down {
+        transform: rotate(180deg);
+    }
+}
+.header__language_arrow-down {
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $beige1;
+    transition: transform .3s;
 }
 
 // Callback button
@@ -59,6 +108,20 @@
     line-height: 48px;
     background-color: $beige1;
     color: $green1;
+}
+.callback-btn_mobile {
+    fill: #fff;
+    width: 7px;
+    width: 50px;
+    height: 48px;
+    text-align: center;
+    display: none;
+    span {
+        display: inline-block;
+        width: 9px;
+        height: 100%;
+        vertical-align: middle;
+    }
 }
 // Menu button
 .menu {

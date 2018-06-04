@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1024px) {
+    .developer__slider {
+        max-width: 620px;
+    }
+    .developer__location,
+    .developer__about {
+        width: 95%;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    .developer__about {
+        margin-top: 20px;
+        padding: 10px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .developer__about-item {
+        flex-direction: column;
+        text-align: center;
+
+        width: 30%;
+    }
+    .developer__about-item-icon {
+        margin: 20px 0 20px 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .developer__slider {
+        max-width: 280px;
+    }
+    .developer__location {
+        flex-direction: column;
+    }
+    .developer__saga-logo {
+        margin: 0 auto;
+    }
+    .developer__location-text {
+        font-size: 0.875rem;
+        max-width: none;
+    }
+}

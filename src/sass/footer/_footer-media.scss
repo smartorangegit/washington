@@ -24,3 +24,29 @@
     }
 
 } // 1024 end
+
+@media only screen and (max-width: 767px) {
+
+    .b-nav__part {
+        width: 50%;
+    }
+    .b-nav__part_construction {
+        order: 2;
+        margin-top: 0px;
+    }
+    .b-nav__part_sales-dep {
+        order: 3;
+    }
+    .b-nav__telephone {
+        margin: 0;
+    }
+
+} // 767 end
+@media only screen and (max-width: 520px) {
+
+    .b-nav__part {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+} // 520

@@ -497,7 +497,6 @@
 }
 // hero gourment start
 .hero__gourment {
-    height: 175px;
     background-color: rgba($green1, 0.9);
     padding: 5px;
     display: flex;
@@ -537,8 +536,9 @@
 }
 .hero-btn {
     line-height: 58px;
-    width: 386px;
+    width: 60%;
     margin-top: 20px;
+    margin-bottom: 20px;
     color: $green1;
     background-color: $beige1;
 }
@@ -677,6 +677,9 @@
 .hp-about__info-list-item_main {
     flex: 1;
     position: relative;
+}
+.hp-about__mobile-item {
+    display: none;
 }
 .hp-about__logo-text {
     position: absolute;

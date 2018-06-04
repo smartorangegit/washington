@@ -1,0 +1,11 @@
+@media only screen and (max-width: 767px) {
+    .diw__slider-msg-wrapper {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+    .diw__slider-msg_text {
+        padding: 10px;
+    }
+}

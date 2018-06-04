@@ -3,9 +3,16 @@
     width: 100%;
     z-index: 2;
 }
+.diw {
+    height: calc(100vh - 75px);
+}
+.diw__slider {
+    height: calc(100vh - 75px);
+
+}
 .diw__slider-item {
     width: 100%;
-    height: calc(100vh - 77px);
+    height: calc(100vh - 75px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +36,6 @@
     transform: translateX(-50%);
     bottom: 100px;
     z-index: 2;
-    color: red;
     max-width: 1060px;
     padding: 0 60px;
     margin: 0 auto;
@@ -102,7 +108,7 @@
 
 .diw__slider-msg-wrapper {
     position: absolute;
-    top: 50%;
+    bottom: 20%;
     right: 10%;
     z-index: 2;
 }
@@ -115,7 +121,8 @@
     font-weight: 500;
 }
 .diw__slider-msg_text {
-    max-width: 310px;
+    text-align: left;
+    max-width: 350px;
     padding: 35px;
     background-color: rgba($beige1, 0.9);
     font-size: 1.5rem;

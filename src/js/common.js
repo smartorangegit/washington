@@ -1,3 +1,26 @@
+//  =====================================================================================================================
+//  Open/Close langugae menu start
+
+var langMenu = (function() {
+
+    var langBtn = document.querySelector('.js-header__language');
+
+    langBtn.addEventListener('click', function() {
+
+        if(this.classList.contains('header__language_closed')) {
+            this.classList.remove('header__language_closed')
+        } else {
+            this.classList.add('header__language_closed')
+        }
+
+    });
+
+})();
+
+//  Open/Close langugae menu end
+//  =====================================================================================================================
+
+
 
 //  =====================================================================================================================
 // Animation on scroll
