@@ -85,6 +85,7 @@
     }
     .hp-infrastructure,
     .hp-commercial {
+        height: 100%;
         margin-bottom: 30px;
         &:hover {
             .hover-ef__bottom-text {
@@ -341,6 +342,29 @@
         .hover-ef__arrow_2 {
             top: 40px;
             left: 70%;
+        }
+    }
+    .hover-ef {
+        &:hover {
+            .hover-ef__bottom-text {
+                bottom: 71%;
+                left: 39px
+            }
+        }
+        &.hp-commercial {
+            .hover-ef__arrow_2 {
+                top: 0px;
+            }
+        }
+    }
+    .hp-washington-sfera__content {
+        &:hover {
+            .hover-ef__bottom-text {
+                bottom: 64%;
+            }
+            .hover-ef__arrow_2 {
+                top: 70px;
+            }
         }
     }
 

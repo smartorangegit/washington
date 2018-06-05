@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1200px) {
+    .news__list {
+        padding: 0px 10px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .news {
+        .hover-ef__bottom-text {
+            left: 10px;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .news__item {
+        width: 100%;
+        max-width: 550px;
+        margin: 60px auto 0;
+    }
+    .news__info {
+        padding: 0 15px;
+    }
+    .news__info-icon {
+        margin-right: 5px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .page-top_news {
+        .page-top__wrapper {
+            &::before,
+            &::after {
+                width: 20%;
+            }
+        }
+    }
+}

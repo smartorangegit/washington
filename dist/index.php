@@ -126,6 +126,7 @@
                         <div class="W-logo W-logo_white W-logo_hover">
                             <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                         </div>
+                        <h3 class="hover-ef__heading_2">Розташування</h3>
                         <p class="hover-ef__paragraph">
                             WASHINGTON Concept House розташований у історичному центрі Києва – за адресою вулиця Лабораторна, 12.
                         </p>
@@ -163,6 +164,7 @@
                         <div class="W-logo W-logo_white W-logo_hover">
                             <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                         </div>
+                        <h3 class="hover-ef__heading_2">Архітектура</h3>
                         <p class="hover-ef__paragraph">
                             Унікальний образ WASHINGTON Concept House виник завдяки поєднанню супер-сучасних 
                             архітектурних рішень та новітніх будівельних технологій.
@@ -290,6 +292,7 @@
                             <div class="W-logo W-logo_white W-logo_hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                             </div>
+                            <h3 class="hover-ef__heading_2">Квартири</h3>
                             <p class="hover-ef__paragraph">
                                 WASHINGTON Concept House розташований у історичному центрі Києва – за адресою вулиця Лабораторна, 12.
                             </p>
@@ -329,6 +332,7 @@
                             <div class="W-logo W-logo_white W-logo_hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                             </div>
+                            <h3 class="hover-ef__heading_2">Інфраструктура</h3>
                             <p class="hover-ef__paragraph">
                                 WASHINGTON Concept House розташований у історичному центрі Києва – за адресою вулиця Лабораторна, 12.
                             </p>
@@ -362,6 +366,7 @@
                             <div class="W-logo W-logo_white W-logo_hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                             </div>
+                            <h3 class="hover-ef__heading_2">Комерційна нерухомість</h3>
                             <p class="hover-ef__paragraph">
                                 WASHINGTON Concept House розташований у історичному центрі Києва – за адресою вулиця Лабораторна, 12.
                             </p>
@@ -400,6 +405,7 @@
                         <div class="W-logo W-logo_white W-logo_hover">
                             <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                         </div>
+                        <h3 class="hover-ef__heading_2">Будівництво</h3>
                         <p class="hover-ef__paragraph">
                             Дізнайтеся про хід будівництва та етапи виконання робіт
                         </p>
@@ -436,6 +442,7 @@
                         <div class="W-logo W-logo_white W-logo_hover">
                             <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                         </div>
+                        <h3 class="hover-ef__heading_2">Забудовник</h3>
                         <p class="hover-ef__paragraph">
                         Девелопер WASHINGTON Concept House – компанія SAGA Development, відома такими знаковими для Києва проектами:
                         </p>
@@ -517,6 +524,7 @@
                             <div class="W-logo W-logo_white W-logo_hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                             </div>
+                            <h3 class="hover-ef__heading_2">День у Washington</h3>
                             <p class="hover-ef__paragraph">
                             Девелопер WASHINGTON Concept House – компанія SAGA Development, відома такими знаковими для Києва проектами:
                             </p>
@@ -556,6 +564,7 @@
                             <div class="W-logo W-logo_white W-logo_hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                             </div>
+                            <h3 class="hover-ef__heading_2">Sfera Living System</h3>
                             <p class="hover-ef__paragraph">
                             Девелопер WASHINGTON Concept House – компанія SAGA Development, відома такими знаковими для Києва проектами:
                             </p>

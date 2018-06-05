@@ -8,7 +8,8 @@ var diw = (function() {
 
     $(sliderSelector).slick({
         arrows: false,
-        infinite: false
+        infinite: false,
+        autoplay: true
     });
 
     fillActiveSlideBars(0);

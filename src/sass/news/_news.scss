@@ -48,17 +48,19 @@
 .news__heading {
     font-size: 1.5rem;
     line-height: 36px;
-    max-height: 70px;
-    overflow: hidden;
-
+    //max-height: 70px;
+    letter-spacing: 1.2px;
+    &::after {
+        background-color: #000;
+    }
 }
 .news__bottom-text {
-    bottom: 10%;
+    bottom: 5%;
     z-index: 1;
 }
 .news__arrow_2 {
-    top: 70px;
-    left: 80%;
+    position: static;
+    vertical-align: middle;
 }
 .news__item-gradient {
     position: absolute;
@@ -95,17 +97,11 @@
 }
 .news__item {
     .W-logo_hover {
-        margin-bottom: 105px;
+        margin-bottom: 15px;
     }
     &:hover {
         .news__item-gradient {
             opacity: 0;
-        }
-        .news__bottom-text {
-            bottom: 62%;
-        }
-        .news__arrow_2 {
-            top: 70px;
         }
         .news__info {
             background-color: transparent;
