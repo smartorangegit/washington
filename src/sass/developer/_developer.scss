@@ -1,6 +1,6 @@
 .page-top_developer {
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-image: url('../img/developer/developer_bg.jpg');
     .page-top_heading {
@@ -30,8 +30,11 @@
         align-items: center;
     }
     img {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
+    }
+    img.developers__einstein-logo {
+        width: 45%;
     }
 }
 .gallery-arrow_developer-prev {

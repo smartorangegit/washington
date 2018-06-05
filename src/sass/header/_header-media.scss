@@ -8,6 +8,10 @@
     }
     .callback-btn_mobile {
         display: block;
+        line-height: 48px;
+    }
+    .header__wrapper {
+        padding: 0 10px;
     }
 
 } // end 1024px
@@ -34,3 +38,28 @@
     }
 
 } // end 767px
+@media only screen and (max-width: 500px) {
+    .header__nav-container {
+        max-width: 195px;
+    }
+    .callback-btn_mobile {
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+    }
+    .menu {
+        width: 40px;
+        height: 40px;
+    }
+    .menu-container {
+        width: 30px;
+        font-size: 0.625rem;
+    }
+    .header__nav-item_telephone {
+        font-size: 0.75rem;
+    }
+    .header__wrapper {
+        padding: 0px 5px;
+    }
+
+}

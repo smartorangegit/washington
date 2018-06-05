@@ -29,7 +29,7 @@
                             <span class="page-top__line"></span>
                         </li>
                         <li>
-                            <a href="#">Архітектура</a>
+                            <a href="#">Забудовник</a>
                         </li>
                     </ul>
                 </div>
@@ -73,8 +73,8 @@
                     </li>
                     <li>
                         <a href="https://einstein.house/" target="_blank"> 
-                            <img src="/img/developer/einstein_logo_white.svg" alt="Einstein Logo">
-                        </a>
+                            <img src="/img/developer/einstein_logo_white.svg" class="developers__einstein-logo" alt="Einstein Logo">
+                        </a-
                     </li>
                 </ul>
             </div>
