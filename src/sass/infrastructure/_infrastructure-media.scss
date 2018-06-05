@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1200px) {
+    .page-top_infrastructure {
+        .page-top__wrapper {
+            &::before,
+            &::after {
+                width: 30%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .infrastructure__items {
+        padding: 0 10px;
+    }
+    .infrastructure__item-text {
+        width: 300px;
+    }
+    .infrastructure__item-text_top {
+        padding: 70px 0px 0px 30px;
+    }
+    .infrastructure__item-text_bottom {
+        padding: 60px 0px 0px 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .page-top_infrastructure {
+        .page-top__wrapper {
+            &::before,
+            &::after {
+                width: 22%;
+            }
+        }
+    }
+
+
+    .infrastructure__item-text {
+        width: 100%;
+        height: auto;
+        float: none;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        .W-logo {
+            width: 52px;
+            height: 41px;
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+    .infrastructure__item-text_top {
+        padding: 15px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        h3 {
+            max-width: none;
+            font-size: 1.5rem;
+            line-height: 24px;
+        }
+    }
+    .infrastructure__item-text_bottom {
+        padding: 30px 0px 40px 20px;
+        .infrastructure__paragraph {
+            max-width: none;
+            font-size: 1.125rem;
+            line-height: 24px;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .page-top_infrastructure {
+        .page-top__wrapper {
+            &::before,
+            &::after {
+                width: 11%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .page-top_infrastructure {
+        .page-top__wrapper {
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
+    }
+    .infrastructure__item-text_bottom {
+        .infrastructure__paragraph {
+            font-size: 0.875rem;
+            line-height: 15px;
+        }
+    }
+}

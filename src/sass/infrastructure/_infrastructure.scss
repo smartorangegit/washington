@@ -1,5 +1,12 @@
+
 .page-top_infrastructure {
     margin-bottom: 20px;
+    .page-top__wrapper {
+        &::before,
+        &::after {
+            width: 35%;
+        }
+    }
     h1 {
         color: #000;
     }
@@ -84,7 +91,7 @@
 
     position: relative;
 
-    div {
+    .infrastructure__paragraph {
         max-width: 300px;
         position: absolute;
         top: 50%;

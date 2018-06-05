@@ -66,6 +66,21 @@ a {
     height: 150px;
     position: relative;
     padding-top: 45px;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 44%;
+        width: 35%;
+        height: 1px;
+        background-color: rgba($green2, 0.7);
+    }
+    &::before {
+        left: 0;
+    }
+    &::after {
+        right: 0;
+    }
 }
 
 .page-top_heading {
@@ -76,27 +91,13 @@ a {
         color: $beige1;
         letter-spacing: 1.8px;
         position: relative;
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 35%;
-            height: 1px;
-            background-color: rgba($green2, 0.7);
-        }
-        &::before {
-            left: 0;
-        }
-        &::after {
-            right: 0;
-        }
+        
     }
 }
 
 .page-top__letter-w {
     fill: rgba($green2, 0.35);
+    stroke: rgba($green2, 0.35);
     width: 102px;
     position: absolute;
     top: 30px;
@@ -215,4 +216,37 @@ a {
     .info-block__arrow {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
+}
+
+// animations
+.page-top__wrapper {
+    h1 {
+        transition: all  0.7s 1.7s ease-out;
+    }
+    &::before,
+    &::after {
+        transition: width 1s ease-out;
+    }
+}
+
+.page-top__letter-w {
+    transition: opacity 0.7s 1s ease-out;
+}
+
+
+.animate {
+    .page-top__wrapper {
+        h1 {
+            opacity: 0;
+            transform: translateY(40px) scale(0.7);
+        }
+        &::before,
+        &::after {
+            width: 0 !important;
+        }
+    }
+    .page-top__letter-w {
+        opacity: 0;
+    }
+    
 }
