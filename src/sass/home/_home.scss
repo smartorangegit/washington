@@ -557,6 +557,17 @@
     margin-bottom: 20px;
     color: $green1;
     background-color: $beige1;
+    &::before {
+        background-color: rgba($green1, 0.5)
+    }
+    &::after {
+        background-color: rgba($green1, 0.4)
+    }
+    &:hover {
+        .btn__text {
+            color: $beige1;
+        }
+    }
 }
 // hero gourment end
 

@@ -26,7 +26,11 @@
                 </div>
                 <div class="hero__gourment_center">
                     <h1 class="hero__heading">Будинок для гурманів</h1>
-                    <a href="#" class="hero-btn btn">Обрати квартиру</a>
+                    <a href="#" class="hero-btn btn">
+                        <span class="btn__text">
+                            Обрати квартиру
+                        </span>    
+                    </a>
                 </div>
                 <div class="hero__gourment_right">
                     <div class="hero__gourment-icon hero__gourment-icon_consierge">

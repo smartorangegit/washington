@@ -11,7 +11,7 @@
     <?php include_once('includes/header.php');?>
 
     <section class="advantages">
-            <div class="page-top page-top_advantages">
+            <div class="page-top page-top_advantages animate">
                 <div class="page-top__wrapper">
                     <div class="page-top_heading">
                         <h1>Переваги</h1>

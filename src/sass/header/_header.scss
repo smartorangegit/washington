@@ -9,14 +9,14 @@
     z-index: 5;
     font-size: 0.875rem;
     &.header__fixed {
-        // position: fixed;
-        // animation: headerSlideAimation 0.5s;
-        // & + section {
-        //     margin-top: 75px;
-        // }
-        // & + div {
-        //     margin-top: 75px;
-        // }
+        position: fixed;
+        animation: headerSlideAimation 0.5s;
+        & + section {
+            margin-top: 75px;
+        }
+        & + div {
+            margin-top: 75px;
+        }
     }
 }
 @keyframes headerSlideAimation {
