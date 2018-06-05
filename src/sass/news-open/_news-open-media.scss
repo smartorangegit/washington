@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1024px) {
+    .news-open__image {
+        float: none;
+        margin: 0 auto;
+    }
+    .news-open__content {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+    .news-open__paragraph {
+        margin-top: 30px;
+    }
+
+
+}
+@media only screen and (max-width: 767px) {
+    .page-top_news-open {
+        h1 {
+            font-size: 1.5rem;
+            line-height: 30px;
+        }
+    }
+    .news-open__btn {
+        width: 90%;
+        margin: 0 auto 10px;
+    }
+    .news-open__list {
+        padding: 0 10px;
+    }
+}

@@ -64,6 +64,17 @@
                     dolor sit amet..." походить з одного з рядків розділу 1.10.32.
                 </p>
             </div>
+            <div class="news-open_btns">
+                <a onclick="window.history.go(-1);" class="news-open__btn news-open__btn_back btn" href="#">
+                    <svg class="news-open__btn_back-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="11" viewBox="0 0 44 11"><g transform="translate(-113 -1396)"><path d="M157 1401v1h-42v1h-1v-1h-1v-1h1v-1h1v1zm-42 3v-1h1v1zm1 1v-1h1v1zm1 1v-1h1v1zm-2-6v-1h1v1zm1-1v-1h1v1zm1-1v-1h1v1zm1-1v-1h1v1zm0 10v-1h1v1z"/></g></svg>
+                    <span class="btn__text">Повернутися до новин</span>
+                </a>
+                <a href="/" class="news-open__btn btn news-open__btn_hoose-appartment">
+                    <span class="btn__text">
+                        Обрати квартиру
+                    </span>
+                </a>
+            </div>
         </div>
 
         <div class="news-open__read-more">
@@ -85,6 +96,7 @@
                     <div class="hover-ef__overlay">
                         <div class="hover-ef__border">
                             <div class="W-logo W-logo_white W-logo_hover"><svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg></div>
+                            <h3 class="hover-ef__heading_2 news__heading">Заголовок для нової новини у два рядки тексту на одну новину</h3>
                             <p class="hover-ef__paragraph">
                                 WASHINGTON Concept House розташований у історичному центрі Києва – за адресою вулиця Лабораторна, 12.
                             </p>
@@ -121,6 +133,7 @@
                     <div class="hover-ef__overlay">
                         <div class="hover-ef__border">
                             <div class="W-logo W-logo_white W-logo_hover"><svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg></div>
+                            <h3 class="hover-ef__heading_2 news__heading">Заголовок для нової новини у два рядки тексту на одну новину</h3>
                             <p class="hover-ef__paragraph">
                                 WASHINGTON Concept House розташований у історичному центрі Києва – за адресою вулиця Лабораторна, 12.
                             </p>

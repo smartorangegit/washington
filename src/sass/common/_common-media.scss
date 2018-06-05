@@ -9,14 +9,6 @@
     }
 }
 @media only screen and (max-width: 767px) {
-    .page-top_heading {
-        h1 {
-            &::before,
-            &::after {
-                width: 10%;
-            }
-        }
-    }
     .page-top__links {
         font-size: 0.875rem;;
     }

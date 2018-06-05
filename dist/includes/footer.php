@@ -86,7 +86,11 @@
                             <span class="b-nav__telephone-tel">tel. </span><span class="b-nav__telephone-number">(044) 222-35-47</span>
                         </div>
                         <div class="b-nav__btn-container">
-                            <a href="#" class="b-nav__callback-btn btn">Замовити дзвінок</a>
+                            <a href="#" class="b-nav__callback-btn btn">
+                                <span class="btn__text">
+                                    Замовити дзвінок
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </li>

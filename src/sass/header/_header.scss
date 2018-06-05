@@ -105,9 +105,21 @@
 // Callback button
 .callback-btn {
     width: 200px;
+    height: 48px;
     line-height: 48px;
     background-color: $beige1;
     color: $green1;
+    &::before {
+        background-color: rgba($green1, 0.5)
+    }
+    &::after {
+        background-color: rgba($green1, 0.4)
+    }
+    &:hover {
+        .btn__text {
+            color: $beige1;
+        }
+    }
 }
 .callback-btn_mobile {
     fill: #fff;
