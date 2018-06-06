@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .values__block {
@@ -14,14 +15,50 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+}
+.values__top-gradient {
+    height: 645px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.9+1,0.3+25,0+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 1%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 1%,rgba(0,0,0,0.3) 25%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 1%,rgba(0,0,0,0.3) 25%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.values__bottom-gradient {
+    height: 468px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+1,0.5+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
 }
 .values__block_pleasures {
     background-image: url('../img/values/values_pleasures_bg.jpg')
 }
 .values__block_privacy {
+    .values__top-gradient {
+        display: none;
+    }
     background-image: url('../img/values/values_privacy_bg.jpg')
 }
 .values__block_personality {
+    .values__top-gradient {
+        display: none;
+    }
+    .values__bottom-gradient {
+        display: none;
+    }
     background-image: url('../img/values/values_personality_bg.jpg')
 }
 .values__block-wrapper {
@@ -30,6 +67,7 @@
 }
 .values__text-block {
     position: absolute;
+    z-index: 2;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -57,6 +95,7 @@
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
     a {
         fill: inherit;
     }
@@ -65,5 +104,26 @@
 .values__block_personality {
     .values__text-block {
         top: 70%;
+    }
+}
+
+// animations
+
+.values__text-block-headig {
+    transition: all 1s ease-in-out;
+}
+.values__text-block-paragraph {
+    transition: all 1s 0.2s ease-in-out;
+
+}
+
+.animate {
+    .values__text-block-headig {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    .values__text-block-paragraph {
+        opacity: 0;
+        transform: translateX(200px);
     }
 }

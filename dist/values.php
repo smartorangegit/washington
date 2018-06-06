@@ -11,7 +11,7 @@
     <?php include_once('includes/header.php');?>
 
     <section class="advantages">
-        <div class="page-top page-top_values">
+        <div class="page-top page-top_values animate">
             <div class="page-top__wrapper">
                 <div class="page-top_heading">
                     <h1>Цінності</h1>
@@ -36,7 +36,9 @@
         </div>
         <!-- page-top -->
 
-        <div class="values__block values__block_pleasures">
+        <div class="values__block values__block_pleasures animate">
+            <div class="values__top-gradient"></div>
+            <div class="values__bottom-gradient"></div>
             <div class="wrapper values__block-wrapper">
                 <div class="values__text-block">
                     <div class="values__text-block-headig">
@@ -58,7 +60,9 @@
             </div>
         </div>
 
-        <div class="values__block values__block_privacy js-values__block_privacy">
+        <div class="values__block values__block_privacy animate js-values__block_privacy">
+            <div class="values__top-gradient"></div>
+            <div class="values__bottom-gradient"></div>
             <div class="wrapper values__block-wrapper">
                 <div class="values__text-block">
                     <div class="values__text-block-headig">
@@ -80,7 +84,9 @@
             </div>
         </div>
 
-        <div class="values__block values__block_personality js-values__block_personality">
+        <div class="values__block values__block_personality animate js-values__block_personality">
+            <div class="values__top-gradient"></div>
+            <div class="values__bottom-gradient"></div>
             <div class="wrapper values__block-wrapper">
                 <div class="values__text-block">
                     <div class="values__text-block-headig">

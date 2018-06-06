@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1024px) {
+    .values__text-block {
+        top: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .values__block_personality {
+        .values__text-block {
+            top: auto;
+        }
+    }
+    .values__block_pleasures {
+        background-position: 20% 0;
+    }
+    .values__block_personality {
+        .values__top-gradient {
+            display: block;
+            height: 557px;
+        }
+        background-position: 70% 0;
+    }
+    .values__block_privacy {
+        .values__top-gradient {
+            display: block;
+            height: 557px;
+        }
+        background-image: url('../img/values/values_privacy_tablet_bg.jpg');
+    }
+    .down-arrows_values {
+        display: none;
+    }
+    .values__text-block-paragraph {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .values__block {
+        height: calc(80vh - 75px);
+    }
+    .values__text-block {
+        right: auto;
+        width: 95%;
+    }
+    .values__text-block-headig {
+        padding: 10px 0px 10px 20px;
+    }
+    .values__text-block-paragraph {
+        padding: 10px 0px 10px 20px;
+        font-size: 1.125rem;
+        letter-spacing: 0.9px;
+    }
+    .page-top_values {
+        .page-top__wrapper {
+            &::before,
+            &::after {
+                width: 25%;
+            }
+        }
+    }
+}
