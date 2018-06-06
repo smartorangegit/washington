@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts animate">
     <div class="contacts__wrapper">
         <div class="contacts__tabs">
             <div class="contacts__tab contacts__tab_1" data-tab="our-contacts">Наші контактні дані</div>

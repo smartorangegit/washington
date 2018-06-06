@@ -132,3 +132,29 @@
     text-align: center;
     font-size: 1.5rem;
 }
+
+// animation
+.contacts__tab {
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+.contacts__tab_1 {
+    transition-delay: none;
+}
+.contacts__tab_2 {
+    transition-delay: 0.2s;
+}
+.contacts__tab_3 {
+    transition-delay: 0.4s;
+}
+.contacts__tab-content {
+    transition: 0.6s 1.5s ease-out;
+}
+.animate {
+    .contacts__tab {
+        opacity: 0;
+    }
+    .contacts__tab-content {
+        opacity: 0;
+    }
+}

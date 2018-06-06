@@ -121,9 +121,9 @@
         </div>
     </section>
 
-    <section class="hp-location wrapper animate">
+    <section class="hp-location wrapper">
 
-        <div class="hp-location__map hover-ef hover-ef_1">
+        <div class="hp-location__map hover-ef hover-ef_1 animate">
             <a href="location.php">
                 <div class="hover-ef__overlay">
                     <div class="hover-ef__border">
@@ -161,7 +161,7 @@
             </a>
         </div>
 
-        <div class="hp-location__architecture hover-ef hover-ef_1">
+        <div class="hp-location__architecture hover-ef hover-ef_1 animate">
             <a href="architecture.php">
                 <div class="hover-ef__overlay">
                     <div class="hover-ef__border">
@@ -201,7 +201,7 @@
 
     </section>
 
-    <section class="wrapper">
+    <section class="wrapper animate">
         <div class="hp-advantages">
             <div class="hp-advantages__gallery js-hp-gallery_advantages">
                 <div class="hp-advanages__gallery_item hp-advanages__gallery_item-0"></div>
@@ -245,7 +245,7 @@
         </div>
     </section>
 
-    <section class="wrapper">
+    <section class="wrapper animate">
         <div class="hp-values">
             <div class="hp-values__gallery js-hp-gallery_values">
                 <div class="hp-values__gallery_item hp-values__gallery_item-0"></div>
@@ -289,7 +289,7 @@
 
     <section class="hp-3-items wrapper">
         <div class="hp-3-items__left">
-            <div class="hp-apartments hover-ef hover-ef_2">
+            <div class="hp-apartments hover-ef hover-ef_2 animate">
                 <a href="#">
                     <div class="hover-ef__overlay">
                         <div class="hover-ef__border">
@@ -329,7 +329,7 @@
         </div>
         <div class="hp-3-items__right">
 
-            <div class="hp-infrastructure hover-ef hover-ef_2">
+            <div class="hp-infrastructure hover-ef hover-ef_2 animate">
                 <a href="#">
                     <div class="hover-ef__overlay">
                         <div class="hover-ef__border">
@@ -363,7 +363,7 @@
                 </a>
             </div>
 
-            <div class="hp-commercial hover-ef hover-ef_2">
+            <div class="hp-commercial hover-ef hover-ef_2 animate">
                 <a href="#">
                     <div class="hover-ef__overlay">
                         <div class="hover-ef__border">
@@ -402,7 +402,7 @@
 
     <section class="hp-2-items wrapper">
 
-        <div class="hp-construction hover-ef hover-ef_1">
+        <div class="hp-construction hover-ef hover-ef_1 animate">
             <a href="#">
                 <div class="hover-ef__overlay">
                     <div class="hover-ef__border">
@@ -436,7 +436,7 @@
             </a>
         </div>
 
-        <div class="hp-developer hover-ef hover-ef_1">
+        <div class="hp-developer hover-ef hover-ef_1 animate">
             <a href="#">
                 <div class="hp-developer__saga-logo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 567.595 567.595"><style id="style3">.st1{fill:#405174}</style><g transform="translate(-124.413 -39.975)" id="g5"><circle r="283.8" id="ellipse7" cy="323.8" cx="408.2" transform="rotate(-45.001 408.172 323.773)" fill="#fff"/><g id="g9"><g id="g11"><path id="path13" d="M242.3 411.4h-7.4V435h6.7c4.2 0 7.4-1 9.6-3.1 2.2-2.1 3.3-5 3.3-8.9 0-3.6-1.1-6.5-3.2-8.5-2.2-2.1-5.2-3.1-9-3.1m-.3 19.4h-2.1v-15.3h2.7c4.5 0 6.7 2.5 6.7 7.6s-2.4 7.7-7.3 7.7" class="st1" fill="#405174"/><path id="polygon15" class="st1" fill="#405174" d="M274.2 430.8v-6.1h8v-4.1h-8v-5.1h8.6v-4.1h-13.6v23.5h13.6v-4.1z"/><path id="path17" d="M306.6 425.4c-.7 2.5-1.1 4.2-1.2 5.2-.1-.4-.2-1.2-.5-2.3-.3-1.1-.5-2.1-.8-2.9l-4.4-14h-5l8 23.6h5.4l8-23.6h-5l-4.5 14z" class="st1" fill="#405174"/><path id="polygon19" class="st1" fill="#405174" d="M333.9 430.8v-6.1h8v-4.1h-8v-5.1h8.6v-4.1h-13.6v23.5h13.6v-4.1z"/><path id="polygon21" class="st1" fill="#405174" d="M371.9 434.9v-4.1h-9.6v-19.4h-5v23.5z"/><path id="path23" d="M396.1 411c-3.6 0-6.4 1-8.3 3.1-1.9 2.1-2.9 5.1-2.9 9 0 3.9 1 6.9 2.9 9 1.9 2.1 4.7 3.1 8.3 3.1 3.6 0 6.4-1.1 8.3-3.1 1.9-2.1 2.9-5.1 2.9-9 0-3.9-1-6.9-2.9-9-2-2.1-4.7-3.1-8.3-3.1m-.1 20.1c-2 0-3.5-.7-4.5-2s-1.5-3.3-1.5-5.9c0-2.6.5-4.6 1.5-6 1-1.3 2.5-2 4.5-2 4 0 5.9 2.7 5.9 8 .1 5.2-1.9 7.9-5.9 7.9" class="st1" fill="#405174"/><path id="path25" d="M429.5 411.4H422V435h5v-8.4h2.1c2.9 0 5.2-.7 6.8-2 1.6-1.3 2.4-3.3 2.4-5.8 0-2.4-.7-4.3-2.2-5.5-1.5-1.3-3.7-1.9-6.6-1.9m2.6 10.1c-.8.6-1.9.9-3.4.9H427v-7h2.3c1.4 0 2.4.3 3 .8.6.6 1 1.4 1 2.6-.1 1.3-.4 2.1-1.2 2.7" class="st1" fill="#405174"/><path id="path27" d="M465.1 429.4l-5.7-18h-6.8V435h4.5v-11c0-1.3-.1-3.8-.3-7.5h.1l5.7 18.5h4.6l6.1-18.4h.1c-.1 3-.2 4.8-.2 5.5V435h4.7v-23.6H471l-5.9 18z" class="st1" fill="#405174"/><path id="polygon29" class="st1" fill="#405174" d="M498.6 430.8v-6.1h8v-4.1h-8v-5.1h8.6v-4.1h-13.6v23.5h13.6v-4.1z"/><path id="path31" d="M538.4 422.5c0 1.3.1 3.4.2 6.5h-.1l-10.2-17.6H522V435h4.5v-11.1c0-1.3-.1-3.6-.3-6.7h.1l10.2 17.8h6.3v-23.6h-4.5v11.1z" class="st1" fill="#405174"/><path id="polygon33" class="st1" fill="#405174" d="M567.8 434.9v-19.4h6.4v-4.1h-17.8v4.1h6.4v19.4z"/><path id="path35" d="M650.6 361.5l-35.2-78.4 23.5-51.9-1.3-.6-23 50.7-12.8-28.6H586.4l-48.8 108.7h14.7l14.2-31.5h26.2l-25.1 55.5 1.3.6 39.2-86.7 27.9 62h14.6zm-51.9-45h-26.2l21.6-48.1 13.1 29.3-8.5 18.8z" class="st1" fill="#405174"/><path id="path37" d="M466.3 303.2l32.6-72-1.3-.6-11.6 25.5c-1.2-.6-2.5-1.2-3.8-1.7-7.1-2.8-14.7-4.3-22.7-4.3-15.8 0-29.2 5.5-40.2 16.4-11 11-16.4 24.4-16.4 40.5 0 16 5.5 29.5 16.4 40.5 5.8 5.8 12.3 10 19.5 12.8l-11.4 25.3 1.3.6 11.5-25.4c6 2.1 12.4 3.2 19.3 3.2 16.5 0 29.9-5.4 40-16.1 9-9 13.5-21.1 13.5-36.4 0-2.6-.3-5.4-.8-8.2h-45.9zm-36.8 35c-8.1-8.3-12.2-18.7-12.2-31.2s4.1-22.9 12.2-31.2c8.2-8.2 18.3-12.3 30.1-12.3 6.1 0 11.8 1.1 17.1 3.4 1.3.5 2.5 1.2 3.6 1.8l-35.8 79.1c-5.5-1.9-10.6-5.1-15-9.6m57.2 3.2c-7.2 6.1-16.2 9.1-27.1 9.1-4.9 0-9.5-.7-13.7-2.1l14.5-32.1h38.7c-1.1 10.6-5.2 19-12.4 25.1" class="st1" fill="#405174"/><path id="path39" d="M235.4 312.4c-4-4.6-10.3-8.6-18.9-12l29.8-65.7-1.3-.6-12.3 27.3c-1.6-1.7-3.5-3.4-5.6-4.8-6.1-4.3-13.3-6.4-21.6-6.4-9.4 0-17.4 2.8-23.9 8.5-6.4 5.7-9.6 12.5-9.6 20.5 0 11.5 5.8 20.1 17.3 26 2.1 1.1 7.6 3.2 16.3 6.4 1.3.4 2.5.9 3.7 1.3L194 346.7c-1.1-.7-2.1-1.4-3.1-2.2-2.2-1.9-4.1-4.1-5.7-6.8-1.6-2.6-2.9-5.6-3.8-8.8l-13.4 5.5c2.6 9.1 7.4 16.3 14.3 21.6 1.9 1.4 3.8 2.6 5.8 3.7L174.8 389l1.3.6 13.3-29.3c5.1 2.4 10.7 3.6 16.7 3.6 10.1 0 18.8-2.8 25.9-8.5 7-5.8 10.5-13.4 10.5-23-.1-7.9-2.4-14.6-7.1-20m-23.7-13.8c-10.9-3.7-17.9-7-21.1-9.7-2.9-2.7-4.4-6-4.4-9.7 0-4.6 1.9-8.3 5.6-11.1 3.8-3 8.4-4.6 13.8-4.6 5.2 0 9.6 1.3 13.2 4 3.3 2.5 5.5 5.5 6.8 9.1l-10.5 23.2c-1.1-.3-2.2-.8-3.4-1.2m10.3 47c-4.1 3.3-9.3 4.9-15.7 4.9-2.9 0-5.7-.5-8.4-1.6-1-.4-1.9-.9-2.9-1.4l15.4-34c5.9 2.4 10.1 4.8 12.6 7.2 3.4 3.2 5 7.1 5 11.7.1 5.5-1.9 9.9-6 13.2" class="st1" fill="#405174"/><path id="path41" d="M368.8 231.2l-1.3-.6-22.9 50.7-12.6-28.1 10-22-1.3-.6-10 22.2h-12.9l9.8-21.6-1.3-.6-70.1 154.9 1.3.6 11.2-24.6h12.9l-10.9 24 1.3.6 25.4-56.1h25.3l-25.1 55.5 1.3.6 39.3-86.7 27.9 62.1h14.7L345.3 283l23.5-51.8zm-40.3 85.3h-25.3l21.3-47 12.6 28.1-8.6 18.9z" class="st1" fill="#405174"/></g></g></g></svg>
@@ -474,7 +474,7 @@
         </div>
     </section>
 
-    <section class="wrapper">
+    <section class="wrapper animate">
         <div class="hp-other-projects">
             <h3 class="hp-other-projects__heading">Інші проекти забудовника</h3>
             <div class="hp-other-projects-container">
@@ -519,9 +519,9 @@
         </div>
     </section>
 
-    <section class="wrapper">
+    <section class="wrapper animate">
         <div class="hp-day-in-washington hp-washington-sfera">
-            <div class="hp-day-in-washington__conent hp-washington-sfera__content hover-ef hover-ef_1">
+            <div class="hp-day-in-washington__content hp-day-in-washington__wrapper hp-washington-sfera__content hover-ef hover-ef_1">
                 <a href="day-in-washington.php">
                     <div class="hover-ef__overlay">
                         <div class="hover-ef__border">
@@ -559,9 +559,9 @@
 
     </section>
 
-    <section class="wrapper">
+    <section class="wrapper animate">
         <div class="hp-sfera hp-washington-sfera">
-            <div class="hp-day-in-washington__conent hp-washington-sfera__content hover-ef hover-ef_2">
+            <div class="hp-day-in-washington__content hp-sfera-content hp-washington-sfera__content hover-ef hover-ef_2">
                 <a href="#">
                     <div class="hover-ef__overlay">
                         <div class="hover-ef__border">

@@ -12,27 +12,6 @@
     stroke: #fff;
 }
 
-.letter_W_left {
-    transition: opacity 1s ease-out; 
-}
-
-.letter_W_right {
-    transition: all 1s ease-out 1s;
-}
-
-.animate {
-    .W-logo_green {
-        .letter_W_left {
-            opacity: 0;
-        }
-        .letter_W_right {
-            opacity: 0;
-            transform: translateX(-50px);
-        }
-    }
-
-}
-
 // hover styles start
 // ==================================================================
 // common visual styles for both versions start
@@ -732,7 +711,8 @@
     bottom: 0;
     left: 0;
     text-align: center;
-    line-height: 84px;
+    padding: 10px 20px;
+    min-height: 84px;
     font-size: 1.5rem;
     letter-spacing: 1.2px;
     width: 100%;
@@ -1050,11 +1030,11 @@
     left: 0;
     transition: opacity 0.5s;
 }
-.hp-day-in-washington {
+.hp-day-in-washington__wrapper {
     background-image: url('../img/home/hp_day_in_washingto_bg.jpg');
 }
-.hp-day-in-washington__conent {
-    height: 100%;;
+.hp-washington-sfera__content {
+    height: 100%;
 }
 .hp-washington-sfera__text {
     font-size: 2.375rem;
@@ -1065,7 +1045,363 @@
 .hp-washington-sfera__svg {
     stroke: #fff;
 }
-.hp-sfera {
+.hp-sfera-content {
     background-image: url('../img/home/hp_sfera_bg.jpg');
 }
 // day in washington end
+
+
+//Animation on scroll start
+// about animation start
+// whole block slide from bottom
+.hp-about {
+    overflow: hidden;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+.letter_W_left {
+    transition: opacity 1s 0.2s ease-out; 
+}
+
+.letter_W_right {
+    transition: all 1s ease-out 1s;
+}
+
+// each about items appear
+$delay: 1s;
+$delayBetween: 0.2s;
+.hp-about__info-list-item {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+.hp-about__info-list_left {
+    .hp-about__info-list-item:nth-child(1) {transition-delay: calc(#{$delay});}
+    .hp-about__info-list-item:nth-child(2) {transition-delay: calc(#{$delay} + 0.2s);}
+    .hp-about__info-list-item:nth-child(3) {transition-delay: calc(#{$delay} + 0.4s);}
+    .hp-about__info-list-item:nth-child(4) {transition-delay: calc(#{$delay} + 0.6s);}
+    .hp-about__info-list-item:nth-child(5) {transition-delay: calc(#{$delay} + 0.8s);}
+}
+.hp-about__info-list_right {
+    .hp-about__info-list-item:nth-child(1) {transition-delay: calc(#{$delay} + 1.2s);}
+    .hp-about__info-list-item:nth-child(2) {transition-delay: calc(#{$delay} + 1.4s);}
+    .hp-about__info-list-item:nth-child(3) {transition-delay: calc(#{$delay} + 1.6s);}
+    .hp-about__info-list-item:nth-child(4) {transition-delay: calc(#{$delay} + 1.8s);}
+    .hp-about__info-list-item:nth-child(5) {transition-delay: calc(#{$delay} + 2s);}
+    .hp-about__info-list-item:nth-child(6) {transition-delay: calc(#{$delay} + 2.2s);}
+    .hp-about__info-list-item:nth-child(7) {transition-delay: calc(#{$delay} + 2.4s);}
+    .hp-about__info-list-item:nth-child(8) {transition-delay: calc(#{$delay} + 2.6s);}
+    .hp-about__info-list-item:nth-child(9) {transition-delay: calc(#{$delay} + 2.8s);}
+}
+//  heading
+.hp-about__heading {
+    transition: all 1s 1s ease-out;
+} 
+//  construction end
+.hp-about__construction-end {
+    transition: opacity 1s 4s ease-out;
+}
+.animate {
+    // whole block slide from bottom
+    .hp-about {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    // each about items appear
+    .hp-about__info-list-item {
+        opacity: 0;
+    }
+    .hp-about__info-list-item_left {
+        transform: translateX(-100px);
+    }
+    .hp-about__info-list-item_right {
+        transform: translateX(100px);
+    }
+    // Logo 
+    .W-logo_green {
+        .letter_W_left {
+            opacity: 0;
+        }
+        .letter_W_right {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+    }
+    // heading
+    .hp-about__heading {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    //construction end
+    .hp-about__construction-end {
+        opacity: 0;
+    }
+}
+// common animation for blocks heading and arrows
+// .hover-ef__heading {
+//     transition: opacity 1s 1s ease-out, transform 1s 1s ease-out;
+
+// }
+// .animate {
+//     .hover-ef__heading {
+//         opacity: 0;
+//         transform: translate(-100px);
+//         transition: opacity 0s ease-out;
+
+//     }
+// }
+
+// about animation end
+
+// location animation start
+.hp-location {
+    overflow: hidden;
+}
+.hp-location__map {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animate {
+    &.hp-location__map {
+        opacity: 0;
+        transform: translate(-100px);
+    }
+}
+// location animation end 
+// architecture start
+.hp-location__architecture {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animate {
+    &.hp-location__architecture {
+        opacity: 0;
+        transform: translate(100px);
+    }
+}
+// architecture end
+// advantages slider start
+.hp-advantages {
+    transition: opacity 1s ease-out;
+    overflow: hidden;
+}
+.hp-advantages__gallery-text_top,
+.hp-advantages__gallery-text_bottom {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animate {
+    .hp-advantages {
+        opacity: 0;
+    }
+    .hp-advantages__gallery-text_top {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    .hp-advantages__gallery-text_bottom {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+// advantages slider end
+// values slider start
+.hp-values {
+    transition: opacity 1s ease-out;
+    overflow: hidden;
+}
+.hp-values__gallery-text_top,
+.hp-values__gallery-text_bottom {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animate {
+    .hp-values {
+        opacity: 0;
+    }
+    .hp-values__gallery-text_top {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    .hp-values__gallery-text_bottom {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+// values slider end
+// apartments start
+.hp-3-items {
+    overflow: hidden;
+}
+.hp-apartments {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animate {
+    &.hp-apartments {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+// apartments end
+// infrastructure start
+.hp-infrastructure {
+    transition: opacity 1s 0.2s ease-out, transform 1s 0.2s ease-out;
+}
+.animate {
+    &.hp-infrastructure {
+        opacity: 0;
+        transform: translateX(100px); 
+    }
+}
+// infrastructure end
+// commercial start
+.hp-commercial {
+    transition: opacity 1s .5s ease-out, transform 1s .5s ease-out;
+}
+.animate {
+    &.hp-commercial {
+        opacity: 0;
+        transform: translateX(100px); 
+    }
+}
+// commercial end
+// construction start
+.hp-construction {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animate {
+    &.hp-construction {
+        opacity: 0;
+        transform: scale(0.7); 
+    }
+}
+// construction end
+// developer start
+.hp-developer {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animate {
+    &.hp-developer {
+        opacity: 0;
+        transform: scale(0.7); 
+    }
+}
+// developer end
+// other projects start
+.hp-other-projects {
+    transition: opacity 1s ease-out;
+}
+.animate {
+    .hp-other-projects {
+        opacity: 0;
+    }
+}
+// other projects end
+// day in washington start
+@keyframes dayinwashingtonleftAnim {
+    0% {transform: translateY(-100%);}
+    30% {transform: translateY(0%);}
+    60% {transform: translateY(0%);}
+    100% {transform: translateY(100%);}
+}
+@keyframes dayinwashingtonrightAnim {
+    0% {transform: translateY(100%);}
+    30% {transform: translateY(0%);}
+    60% {transform: translateY(0%);}
+    100% {transform: translateY(-100%);}
+}
+
+.hp-day-in-washington__content {
+    transition: opacity 0.1s 0.6s;
+}
+.hp-day-in-washington{
+    overflow: hidden;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: $green1;
+        z-index: 2;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    &::before {
+        left: 0;
+        transform: translateY(-100%);
+        animation-name: dayinwashingtonleftAnim;
+    }
+    &::after {
+        right: 0;
+        transform: translateY(100%);
+        animation-name: dayinwashingtonrightAnim;
+    }
+}
+.animate {
+    .hp-day-in-washington__content {
+        opacity: 0;
+    }
+    .hp-day-in-washington {
+        &::before {
+            left: 0;
+            animation: none;
+        }
+        &::after {
+            right: 0;
+            animation: none;
+        }
+    }
+}
+// day in washington end
+// sfera start
+@keyframes dayinwashingtontopAnim {
+    0% {transform: translateX(-100%);}
+    30% {transform: translateX(0%);}
+    60% {transform: translateX(0%);}
+    100% {transform: translateX(100%);}
+}
+@keyframes dayinwashingtonbottomAnim {
+    0% {transform: translateX(100%);}
+    30% {transform: translateX(0%);}
+    60% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
+}
+.hp-sfera-content {
+    transition: opacity 0.1s 0.6s;
+}
+.hp-sfera {
+    overflow: hidden;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: $green1;
+        z-index: 2;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    &::before {
+        top: 0;
+        transform: translateX(-100%);
+        animation-name: dayinwashingtontopAnim;
+    }
+    &::after {
+        bottom: 0;
+        transform: translateX(100%);
+        animation-name: dayinwashingtonbottomAnim;
+    }
+}
+.animate {
+    .hp-sfera-content {
+        opacity: 0;
+    }
+    .hp-sfera {
+        &::before {
+            left: 0;
+            animation: none;
+        }
+        &::after {
+            right: 0;
+            animation: none;
+        }
+    }
+}
+// sfera end
+//Animation on scroll end
