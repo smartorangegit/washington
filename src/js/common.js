@@ -132,7 +132,8 @@ var navFixed = (function(){
             header.classList.remove('header__fixed');
         }
     };
-    window.addEventListener('scroll' ,debounce(isScrolled,100));
+    //window.addEventListener('scroll' ,debounce(isScrolled,100));
+    window.addEventListener('scroll' , isScrolled);
 })();
 //  =====================================================================================================================
 

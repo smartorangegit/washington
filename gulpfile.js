@@ -33,6 +33,7 @@ gulp.task('common-js', function() {
 		'src/js/useful_functions.js',
 		'src/js/libs/imask.js',
 		'src/js/libs/intlTelInput.js',
+		'src/js/libs/slick.min.js',
 		'src/js/common.js',
 		])
 	.pipe(concat('common.min.js'))
@@ -43,7 +44,6 @@ gulp.task('common-js', function() {
 // Home start
 gulp.task('home-js', function() {
 	return gulp.src([
-		'src/js/libs/slick.min.js',
 		'src/js/home.js',
 		])
 	.pipe(concat('home.min.js'))
@@ -55,7 +55,6 @@ gulp.task('home-js', function() {
 // architecture start
 gulp.task('architecture-js', function() {
 	return gulp.src([
-		'src/js/libs/slick.min.js',
 		'src/js/architecture.js',
 		])
 	.pipe(concat('architecture.min.js'))
@@ -79,7 +78,6 @@ gulp.task('construction-js', function() {
 // day in washington start
 gulp.task('day-in-washington-js', function() {
 	return gulp.src([
-		'src/js/libs/slick.min.js',
 		'src/js/day-in-washington.js',
 		])
 	.pipe(concat('day-in-washington.min.js'))
@@ -91,7 +89,6 @@ gulp.task('day-in-washington-js', function() {
 // architecture start
 gulp.task('developer-js', function() {
 	return gulp.src([
-		'src/js/libs/slick.min.js',
 		'src/js/developer.js',
 		])
 	.pipe(concat('developer.min.js'))
@@ -103,7 +100,6 @@ gulp.task('developer-js', function() {
 // news open start
 gulp.task('news-open-js', function() {
 	return gulp.src([
-		'src/js/libs/slick.min.js',
 		'src/js/news-open.js',
 		])
 	.pipe(concat('news-open.min.js'))

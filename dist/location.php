@@ -12,7 +12,7 @@
     <!-- architecture -->
         <section class="location">
 
-            <div class="page-top page-top_location">
+            <div class="page-top page-top_location animate">
                 <div class="page-top__wrapper">
                     <div class="page-top_heading">
                         <h1>Розташування</h1>
@@ -43,10 +43,76 @@
                 apikey: AIzaSyCkkNgvCFDLDhP_qSDZhMRyzOG8bZ3hJYs
             */?>
 
+            <div class="map js-map"></div>
+
+            <div class="location__time-container">
+                <div class="gallery-arrow gallery-arrow_location gallery-arrow_location-prev"><i class="arrow arrow-prev"></i></div>
+                <div class="gallery-arrow gallery-arrow_location gallery-arrow_location-next"><i class="arrow arrow-next"></i></div>
+                <div class="location__time js-location__time wrapper">
+                    <div class="location__time-item location__time-item_odd">
+                        <div class="time">
+                            <span class="time__bold time__text">1 хв.</span><span class="time__text">пішки</span>
+                        </div>
+                        <div class="time__destination">
+                            до найближчого ресторану
+                        </div>
+                    </div>
+                    <div class="location__time-item location__time-item_even">
+                        <div class="time">
+                            <span class="time__bold time__text">5 хв.</span><span class="time__text">пішки</span>
+                        </div>
+                        <div class="time__destination">
+                            до станції метро Олімпійська
+                        </div>
+                    </div>
+                    <div class="location__time-item location__time-item_odd">
+                        <div class="time">
+                            <span class="time__bold time__text">5 хв.</span><span class="time__text">пішки</span>
+                        </div>
+                        <div class="time__destination">
+                            до найближчого парку 
+                        </div>
+                    </div>
+                    <div class="location__time-item location__time-item_even">
+                        <div class="time">
+                            <span class="time__bold time__text">5 хв.</span><span class="time__text">пішки</span>
+                        </div>
+                        <div class="time__destination">
+                            до найближчого ТРЦ
+                        </div>
+                    </div>
+                    <div class="location__time-item location__time-item_odd">
+                        <div class="time">
+                            <span class="time__bold time__text">5 хв.</span><span class="time__text">пішки</span>
+                        </div>
+                        <div class="time__destination">
+                            до Костелу Святого Миколая
+                        </div>
+                    </div>
+                    <div class="location__time-item location__time-item_even">
+                        <div class="time">
+                            <span class="time__bold time__text">7 хв.</span><span class="time__text">пішки</span>
+                        </div>
+                        <div class="time__destination">
+                            до Київського театру оперети
+                        </div>
+                    </div>
+                    <div class="location__time-item location__time-item_odd">
+                        <div class="time">
+                            <span class="time__bold time__text">15 хв.</span><span class="time__text">пішки</span>
+                        </div>
+                        <div class="time__destination">
+                            до Хрещатику
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="info-block js-info-block info-block__location">
                 <div class="info-block__main-content">
                     <div class="info-block__heading">
-                        <h3>Унікальний образ</h3>
+                        <h3>Будинок для гурманів</h3>
                     </div>
                     <div class="info-block__text">
                         <p class="info-block__paragraph">
@@ -61,67 +127,6 @@
                 </div>
                 <div class="info-block__close js-info-block__close">
                     <i class="info-block__arrow"></i>
-                </div>
-            </div>
-
-            <div class="map js-map"></div>
-
-            <div class="location__time wrapper">
-                <div class="location__itme-item">
-                    <div class="time">
-                        <span class="time__bold time__text">1 хв.</span><span class="time__text">пішки</span>
-                    </div>
-                    <div>
-                        до найближчого ресторану
-                    </div>
-                </div>
-                <div class="location__itme-item">
-                    <div class="time">
-                        <span class="time__bold time__text">5 хв.</span><span class="time__text">пішки</span>
-                    </div>
-                    <div>
-                        до станції метро Олімпійська
-                    </div>
-                </div>
-                <div class="location__itme-item">
-                    <div class="time">
-                        <span class="time__bold time__text">5 хв.</span><span class="time__text">пішки</span>
-                    </div>
-                    <div>
-                        до найближчого парку 
-                    </div>
-                </div>
-                <div class="location__itme-item">
-                    <div class="time">
-                        <span class="time__bold time__text">5 хв.</span><span class="time__text">пішки</span>
-                    </div>
-                    <div>
-                        до найближчого ТРЦ
-                    </div>
-                </div>
-                <div class="location__itme-item">
-                    <div class="time">
-                        <span class="time__bold time__text">5 хв.</span><span class="time__text">пішки</span>
-                    </div>
-                    <div>
-                        до Костелу Святого Миколая
-                    </div>
-                </div>
-                <div class="location__itme-item">
-                    <div class="time">
-                        <span class="time__bold time__text">7 хв.</span><span class="time__text">пішки</span>
-                    </div>
-                    <div>
-                        до Київського театру оперети
-                    </div>
-                </div>
-                <div class="location__itme-item">
-                    <div class="time">
-                        <span class="time__bold time__text">15 хв.</span><span class="time__text">пішки</span>
-                    </div>
-                    <div>
-                        до Хрещатику
-                    </div>
                 </div>
             </div>
 

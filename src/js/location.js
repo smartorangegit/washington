@@ -160,4 +160,32 @@ var locationMap = (function() {
 
 })();
 
+var locationSlider = (function() {
+
+    var locationSlider = $('.js-location__time');
+
+    locationSlider.slick({
+        prevArrow: $('.gallery-arrow_location-prev'),
+        nextArrow: $('.gallery-arrow_location-next'),
+        slidesToShow: 7,
+        infinite: false,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
+    })
+
+})();
+
 locationMap.init();

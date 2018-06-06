@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1200px) {
+
+    .location__time {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .gallery-arrow_location {
+        display: block;
+    }
+
+} // 1200 end
+
+@media only screen and (max-width: 767px) {
+
+    .map {
+        height: 70vh;
+    }
+
+    .location__time-container {
+        margin: 10px 0px;
+    }
+
+    .location__time {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .info-block__location {
+        position: static;
+        margin: 0 auto;
+        .info-block__close {
+            display: none;
+        }
+
+        .info-block__main-content {
+            width: auto;
+            margin-bottom: 10px;
+        }
+        .info-block__text {
+            max-height: none;
+            position: static;
+            padding: 40px 20px;
+        }
+        &.info-block__closed  {
+            .info-block__main-content {
+                width: inherit;
+            }
+            .info-block__text {
+                max-height: inherit;
+                position: inherit;
+                padding: inherit;
+            }
+        }
+    }
+    
+} // 1200 end
+@media only screen and (max-width: 374px) {
+    .location__time {
+        max-width: 150px;
+    }
+}

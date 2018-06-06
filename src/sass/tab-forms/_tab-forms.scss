@@ -21,6 +21,7 @@
     text-align: center;
     background-color: rgba($green1, 0.8);
     color: $beige1;
+    transition: color 0.5s, background-color 0.5s;
     &.contacts__tab_active {
         background-color: $beige1;
         color: $green1;
@@ -71,24 +72,28 @@
             color: $green1;
             letter-spacing: 0.45px;
             font-size: 1.125rem;
+            opacity: 1;
         }
         &::-moz-placeholder { /* Firefox 19+ */
             font-family: "TTNorms", sans-serif;
             color: $green1;
             letter-spacing: 0.45px;
             font-size: 1.125rem;
+            opacity: 1;
         }
         &:-ms-input-placeholder { /* IE 10+ */
             font-family: "TTNorms", sans-serif;
             color: $green1;
             letter-spacing: 0.45px;
             font-size: 1.125rem;
+            opacity: 1;
         }
         &:-moz-placeholder { /* Firefox 18- */
             font-family: "TTNorms", sans-serif;
             color: $green1;
             letter-spacing: 0.45px;
-            font-size: 1.125rem
+            font-size: 1.125rem;
+            opacity: 1;
         }
     }
     textarea {
