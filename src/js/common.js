@@ -4,6 +4,78 @@ var washingtonState = {
 };
 
 //  =====================================================================================================================
+//  Preloader logic start
+var sagapreloaderAnimation = (function() {
+
+    //document.querySelector('.js-preloader-mask').classList.add('preloader-mask_hidden');
+
+    
+    function init() {
+
+        var preloaderContainer = document.querySelector('.preloader-container');
+        var circle = document.querySelector('.svg-circle');
+        var loadingCircle = document.querySelector('.svg-loading-circle');
+        var loadingCircleText = document.querySelector('.svg-loading-circle__text');
+        //var loadingCircleContainer = document.querySelector('.svg-loading-circle-container');
+        //var currentPercent = 0;
+
+        var currentOffset = 435;
+        var startingOffset = currentOffset;
+        var step = 2.7;
+
+        preloaderContainer.style.display = 'block';
+
+        // var showPercent = window.setInterval(function() {
+        //     if (currentPercent < 100) {
+        //     currentPercent += 1;
+        //     } else {
+        //     currentPercent = 100;
+        //     clearInterval(showPercent);
+        //     preloaderContainer.classList.add('remove-svg');
+        //     }
+        //     // Updates a div that displays the current percent
+        //     loadingCircleText.innerHTML = currentPercent + '%';
+        // }, 40);
+
+        // loadingCircleContainer.addEventListener('animationend', function(e) {
+        //     if(e.target.classList.contains('svg-loading-circle-container')) {
+        //         sessionStorage.setItem('preloaderRan', true);
+        //     }
+        // });
+
+        // js based animation starts here
+        circle.addEventListener('animationstart', animateLoadingCircle);
+        function calculatePercents(current) {
+            return Math.ceil((100 - (current / startingOffset) * 100));
+        };
+        function animateLoadingCircle() {
+            currentOffset -= step;
+            loadingCircle.style.strokeDashoffset = currentOffset;
+            if(currentOffset >= 0) {
+                loadingCircleText.innerHTML = calculatePercents(currentOffset) + '%';
+                requestAnimationFrame(animateLoadingCircle);
+            } else {
+                preloaderContainer.classList.add('remove-svg');
+            }
+        };
+
+    };
+
+    return {
+        init: init
+    };
+
+})();
+
+if(!sessionStorage.getItem('preloaderRan')) {
+    sagapreloaderAnimation.init();
+}
+//sagapreloaderAnimation.init();
+
+//  Preloader logic end
+//  =====================================================================================================================
+
+//  =====================================================================================================================
 //  Open/Close langugae menu start
 
 var langMenu = (function() {

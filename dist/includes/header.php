@@ -1,3 +1,4 @@
+<?php include_once('includes/preloader.php'); ?>
 <?php include_once('includes/menu.php'); ?>
 <?php include_once('includes/callback_form.php');?>
 <header class="header">
