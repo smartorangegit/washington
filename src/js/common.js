@@ -1,3 +1,8 @@
+var washingtonState = {
+    menuOpen: false,
+    callbackOpen: false
+};
+
 //  =====================================================================================================================
 //  Open/Close langugae menu start
 
@@ -91,17 +96,17 @@ animateHTMLCtrl.init();
       cTabContent: document.querySelectorAll('.contacts__tab-content')
   };
 
-  function removeActiveClassFromTabs() {
-      Array.prototype.forEach.call(NODES.cTab, function(node) {
-          node.classList.remove(activeTabClass);
-      });
-  };
+    function removeActiveClassFromTabs() {
+        NODES.cTab.forEach(function(node) {
+            node.classList.remove(activeTabClass);
+        });
+    };
 
-  function hideTabsContent() {
-      Array.prototype.forEach.call(NODES.cTabContent, function(node) {
-          node.classList.add(hiddenTabContentClas);
-      });
-  };
+    function hideTabsContent() {
+        NODES.cTabContent.forEach(function(node) {
+            node.classList.add(hiddenTabContentClas);
+        });
+    };
 
   if(NODES.cTabs) {
       NODES.cTabs.addEventListener('click', function(e) {
@@ -124,7 +129,7 @@ var navFixed = (function(){
     var header = document.querySelector('.header');
     var fixed = header.offsetTop;
     function isScrolled() {
-        if(window.pageYOffset > fixed) {
+        if(window.pageYOffset - 300 > fixed) {
             if(!header.classList.contains('header__fixed')) {
                 header.classList.add('header__fixed');
             }
@@ -356,7 +361,7 @@ function Modal(selector, timed) {
   };
 
   this.hideModal = function() {
-      if(!o2AppState.callbackOpen) {
+      if(!washingtonState.callbackOpen) {
           showScrollBar();
       }
       this.container.classList.remove('modal__visible');
@@ -430,7 +435,7 @@ var contactsForm = (function() {
               });
 
               if(validForm) {
-                  var nOV = "/wp-content/themes/o2/forms/application.php";
+                  var nOV = "/wp-content/themes/washington/forms/application.php";
                   var urObV = "http://"+window.location.hostname+nOV;
 
                   PostFormData(urObV, data, function(res) {
@@ -449,7 +454,7 @@ var contactsForm = (function() {
       };
 
   };
-  // handleSubmit('callback-form');
+  handleSubmit('callback-form');
   handleSubmit('contacts-form__callback-form');
   handleSubmit('contacts-form__email-form');
   // handleSubmit('location-page__contacts-page');
@@ -461,25 +466,6 @@ var contactsForm = (function() {
 
 //  =====================================================================================================================
 // Info block hide/show start
-
-// var infoBlock = (function() {
-//     var infoBlockCon = document.querySelector('.js-info-block');
-//     var infoBlockOpenHeight = null;
-//     var infoBlockOpen = true;
-//     infoBlockCon.addEventListener('click', function(e) {
-//         if(e.target.classList.contains('js-info-block__close') || e.target.classList.contains('info-block__arrow')) {
-//             for(var i = 0; i < this.children.length; i++) {
-//                 if(this.children[i].classList.contains('info-block__text')) {
-//                     if(infoBlockOpen) {
-//                         infoBlockOpenHeight = this.children[i].clientHeight;
-//                     } else {
-
-//                     }
-//                 }
-//             }
-//         }
-//     });
-// })();
 
 var infoBlock = (function() {
     if(document.querySelector('.js-info-block')) {
@@ -501,3 +487,66 @@ var infoBlock = (function() {
 
 // Info block hide/show end
 //  =====================================================================================================================
+
+//  =====================================================================================================================
+// Menu open close logic start
+
+var menuCtrl = (function() {
+
+    var menu = document.querySelector('.js-menu');
+    var openMenuBtn = document.querySelector('.js-menu-btn');
+    var closeMenuBtn = document.querySelector('.js-menu__close-btn');
+    var closedMenuClass = 'menu_closed';
+
+    var openMenu = function() {
+        menu.classList.remove(closedMenuClass);
+        hideScrollBar();
+        washingtonState.menuOpen = true;
+    };
+
+    var closeMenu = function() {
+        menu.classList.add(closedMenuClass);
+        showScrollBar();
+        washingtonState.menuOpen = false;
+    };
+
+    openMenuBtn.addEventListener('click', openMenu);
+    closeMenuBtn.addEventListener('click', closeMenu);
+
+})();
+
+// Menu open close logic end
+//  =====================================================================================================================
+
+//  =====================================================================================================================
+// Callback form start
+var callbackFormCtrl = (function() {
+
+    var form = document.querySelector('.js-callback-form');
+    var closeFormBtn = document.querySelector('.js-callback-form__close-btn');
+    var openFormBtns = document.querySelectorAll('.js-open-callback-form');
+    var closedFormClass = 'callback-form_closed';
+
+    var openForm = function(e) {
+        e.preventDefault();
+        form.classList.remove(closedFormClass);
+        if(!washingtonState.menuOpen) hideScrollBar();
+        washingtonState.callbackOpen = true;
+    };
+
+    var closeForm = function() {
+        form.classList.add(closedFormClass);
+        if(!washingtonState.menuOpen) showScrollBar();
+        washingtonState.callbackOpen = false; 
+    };
+
+    // Multiple buttons can call callback form thats why foreach used here
+    openFormBtns.forEach(function(btn) {
+        btn.addEventListener('click', openForm);
+    });
+    closeFormBtn.addEventListener('click', closeForm);
+
+})();
+// Callbakc form end
+//  =====================================================================================================================
+

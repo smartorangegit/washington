@@ -1,3 +1,5 @@
+<?php include_once('includes/menu.php'); ?>
+<?php include_once('includes/callback_form.php');?>
 <header class="header">
         <div class="wrapper header__wrapper">
             <div class="header__logo">
@@ -30,7 +32,7 @@
                             <span>(044) 222-35-47</span>
                         </a>
                     </li>
-                    <li class="header__nav-item header__calback-btn">
+                    <li class="header__nav-item header__calback-btn js-open-callback-form">
                         <a href="#" class="callback-btn callback-btn_desktop btn">
                             <span class="btn__text">
                                 Замовити дзвінок
@@ -43,13 +45,13 @@
                         </a>
                     </li>
                     <li>
-                        <div class="menu">
-                            <div class="menu-container">
-                                <div class="menu__text_black">Меню</div>
-                                <div class="menu__text_white">Меню</div>
-                                <div class="menu__line menu__line_1"></div>
-                                <div class="menu__line menu__line_2"></div>
-                                <div class="menu__line menu__line_3"></div>
+                        <div class="menu-btn js-menu-btn">
+                            <div class="menu-btn-container">
+                                <div class="menu-btn__text_black">Меню</div>
+                                <div class="menu-btn__text_white">Меню</div>
+                                <div class="menu-btn__line menu-btn__line_1"></div>
+                                <div class="menu-btn__line menu-btn__line_2"></div>
+                                <div class="menu-btn__line menu-btn__line_3"></div>
                             </div>
                         </div>
                     </li>

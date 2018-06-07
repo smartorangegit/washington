@@ -12,7 +12,7 @@
     <!-- architecture -->
         <section class="architecture">
 
-            <div class="page-top page-top_architecture">
+            <div class="page-top page-top_architecture animate">
                 <div class="page-top__wrapper">
                     <div class="page-top_heading">
                         <h1>Архітектура</h1>

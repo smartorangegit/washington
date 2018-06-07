@@ -1,0 +1,16 @@
+.callback-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 7;
+    color: red;
+    background-color: rgba(#000, 0.75);
+    &.callback-form_closed {
+        display: none;
+    }
+}
+.modal-success {
+    display: none;
+}

@@ -8,16 +8,16 @@
     left: 0%;
     z-index: 5;
     font-size: 0.875rem;
-    // &.header__fixed {
-    //     position: fixed;
-    //     animation: headerSlideAimation 0.5s;
-    //     & + section {
-    //         margin-top: 75px;
-    //     }
-    //     & + div {
-    //         margin-top: 75px;
-    //     }
-    // }
+    &.header__fixed {
+        position: fixed;
+        animation: headerSlideAimation 0.5s;
+        & + section {
+            margin-top: 75px;
+        }
+        & + div {
+            margin-top: 75px;
+        }
+    }
 }
 @keyframes headerSlideAimation {
     from {transform: translateY(-100%)}
@@ -77,7 +77,8 @@
         }
     }
     .header__language-item_active {
-        position: static;
+        position: relative;
+        z-index: 1;
     }
 }
 .header__language_closed {
@@ -135,8 +136,8 @@
         vertical-align: middle;
     }
 }
-// Menu button
-.menu {
+// menu-btn button
+.menu-btn {
     width: 74px;
     height: 48px;
     background-color: #d2c5c5;
@@ -144,33 +145,33 @@
     overflow: hidden;
     &:hover {
         cursor: pointer;
-        .menu__text_black {
+        .menu-btn__text_black {
             transform: translateY(10px);
             opacity: 0;
             transition: all .5s ease-out;
         }
-        .menu__text_white {
+        .menu-btn__text_white {
             transform: translateY(0px);
             opacity: 1;
             transition: all .5s ease-out;
         }
-        .menu__line {
+        .menu-btn__line {
             &::before {
                 transform: translateX(0%);
             }
         }
     }
 }
-.menu-container{
+.menu-btn-container{
     width: 42px;
     margin: 5px auto 0;
     overflow: hidden;
     position: relative;
 }
-.menu__text_black {
+.menu-btn__text_black {
     transition: all .5s ease-out;
 }
-.menu__text_white {
+.menu-btn__text_white {
     position: absolute;
     top: 0;
     color: #fff;
@@ -178,7 +179,7 @@
     opacity: 0;
     transition: all .5s ease-out;
 }
-.menu__line {
+.menu-btn__line {
     width: 100%;
     height: 1px;
     background-color: #000;
@@ -195,13 +196,13 @@
         transform: translateX(-100%);
     }
 }
-.menu__line_1 {
+.menu-btn__line_1 {
     &::before {transition: transform .5s;}
 }
-.menu__line_2 {
+.menu-btn__line_2 {
     &::before {transition: transform .5s .2s;}
 }
-.menu__line_3 {
+.menu-btn__line_3 {
     &::before {transition: transform .5s .4s;}
 }
-// Menu button end
+// menu-btn button end

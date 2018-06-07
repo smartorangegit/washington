@@ -1,0 +1,10 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: red;
+    z-index: 6;
+    &.menu_closed {
+        transform: translateX(-100%);
+    }
+}

@@ -41,7 +41,9 @@ a {
     text-align: center;
 }
 
-
+.hidden-overflow {
+    overflow: hidden;
+}
 // International inputs
 .iti-flag {
     background-image: url("../img/common/flags.png");
