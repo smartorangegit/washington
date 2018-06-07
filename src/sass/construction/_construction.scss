@@ -1,4 +1,15 @@
 .page-top_construction {
+    .page-top__wrapper {
+        h1 {
+            color: #fff;
+        }
+        &::before,
+        &::after {
+            background-color: rgba(#9a9a9a, 0.7);
+        }
+    }
+}
+.page-top_construction {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +27,6 @@
 .construction-percent__item {
     width: 47%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 25px;
@@ -24,7 +34,8 @@
 }
 
 .construction-percents__text {
-    width: 160px;
+    width: 150px;
+    font-size: 0.875rem;
     margin-right: 20px;
     line-height: 24px;
 }
@@ -32,7 +43,7 @@
     flex: 1;
     border: 1px solid $beige1;
     text-align: center;
-    line-height: 40px;
+    line-height: 38px;
 }
 .construction-percents__bar {
     background-image: url('../img/construction/con_bar_bg.jpg');

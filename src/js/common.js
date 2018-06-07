@@ -7,11 +7,8 @@ var washingtonState = {
 //  Preloader logic start
 var sagapreloaderAnimation = (function() {
 
-    //document.querySelector('.js-preloader-mask').classList.add('preloader-mask_hidden');
-
-    
     function init() {
-
+        sessionStorage.setItem('preloaderRan', true);
         var preloaderContainer = document.querySelector('.preloader-container');
         var circle = document.querySelector('.svg-circle');
         var loadingCircle = document.querySelector('.svg-loading-circle');

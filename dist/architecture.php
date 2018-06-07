@@ -11,7 +11,7 @@
     <?php include_once('includes/header.php');?>
     <!-- architecture -->
         <section class="architecture">
-
+        <div class="architecture__gradient"></div>
             <div class="page-top page-top_architecture animate">
                 <div class="page-top__wrapper">
                     <div class="page-top_heading">

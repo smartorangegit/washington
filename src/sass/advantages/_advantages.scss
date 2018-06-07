@@ -1,4 +1,10 @@
 .page-top_advantages {
+    .page-top__wrapper {
+        &::before,
+        &::after {
+            background-color: rgba($green2, 0.25);
+        }
+    }
     h1 {
         color: #000;
     }

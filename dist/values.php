@@ -10,7 +10,7 @@
 <body>
     <?php include_once('includes/header.php');?>
 
-    <section class="advantages">
+    <section class="values">
         <div class="page-top page-top_values animate">
             <div class="page-top__wrapper">
                 <div class="page-top_heading">
