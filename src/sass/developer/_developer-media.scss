@@ -28,14 +28,6 @@
     }
 }
 @media only screen and (max-width: 767px) {
-    .page-top_developer {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 30%;
-            }
-        }
-    }
     .developer__msg {
         font-size: 1rem;
         line-height: 24px;
@@ -73,15 +65,5 @@
     }
     .developer__about-item-icon_3 {
         margin-right: 36px;
-    }
-}
-@media only screen and (max-width: 525px) {
-    .page-top_developer {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 17%;
-            }
-        }
     }
 }

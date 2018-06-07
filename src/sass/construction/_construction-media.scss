@@ -1,12 +1,4 @@
 @media only screen and (max-width: 1024px) {
-    .page-top_construction {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 31%;
-            }
-        }
-    }
     .construction-percent__item {
         width: 95%;
         margin: 0 auto 25px auto;
@@ -16,14 +8,6 @@
     }
 }
 @media only screen and (max-width: 767px) {
-    .page-top_construction {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 11%;
-            }
-        }
-    }
     .construction-percents__text {
         width: 95%;
         text-align: center;
@@ -39,16 +23,6 @@
         &:nth-child(odd) {
             &::before,
             &:after {
-                content: none;
-            }
-        }
-    }
-}
-@media only screen and (max-width: 374px) {
-    .page-top_construction {
-        .page-top__wrapper {
-            &::before,
-            &::after {
                 content: none;
             }
         }

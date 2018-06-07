@@ -1,13 +1,3 @@
-@media only screen and (max-width: 1200px) {
-    .page-top_infrastructure {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 30%;
-            }
-        }
-    }
-}
 @media only screen and (max-width: 1024px) {
     .infrastructure__items {
         padding: 0 10px;
@@ -24,16 +14,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .page-top_infrastructure {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 22%;
-            }
-        }
-    }
-
-
     .infrastructure__item-text {
         width: 100%;
         height: auto;
@@ -70,26 +50,7 @@
     }
 }
 
-@media only screen and (max-width: 530px) {
-    .page-top_infrastructure {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 11%;
-            }
-        }
-    }
-}
-
 @media only screen and (max-width: 370px) {
-    .page-top_infrastructure {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                content: none;
-            }
-        }
-    }
     .infrastructure__item-text_bottom {
         .infrastructure__paragraph {
             font-size: 0.875rem;

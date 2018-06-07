@@ -47,12 +47,4 @@
         font-size: 1.125rem;
         letter-spacing: 0.9px;
     }
-    .page-top_values {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 25%;
-            }
-        }
-    }
 }

@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-image: url('../img/news-open/news_top_bg.jpg');
     .page-top__wrapper {
+        position: relative;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -21,7 +22,8 @@
     }
     .page-top__links {
         position: static;
-        margin-bottom: 20px;
+        align-self: flex-start;
+        margin-bottom: 10px;
     }
     h1 {
         color: #fff;

@@ -65,23 +65,23 @@ a {
 .page-top__wrapper {
     max-width: 1160px;
     margin: 0 auto;
-    height: 150px;
+    height: 160px;
+    overflow: hidden;
     position: relative;
-    padding-top: 45px;
+    display: flex;
+    align-items: center;
     &::before,
     &::after {
         content: '';
-        position: absolute;
-        top: 44%;
-        width: 35%;
         height: 1px;
         background-color: rgba($green2, 0.7);
+        flex: 1;
     }
     &::before {
-        left: 0;
+        margin-right: 10px;
     }
     &::after {
-        right: 0;
+        margin-left: 10px;
     }
 }
 
@@ -102,7 +102,7 @@ a {
     stroke: rgba($green2, 0.35);
     width: 102px;
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -110,7 +110,7 @@ a {
 .page-top__links {
     position: absolute;
     left: 0px;
-    bottom: 20px;
+    bottom: 10px;
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -224,7 +224,7 @@ a {
     }
     &::before,
     &::after {
-        transition: width 1s ease-out;
+        transition: transform 1s ease-out;
     }
 }
 
@@ -239,9 +239,11 @@ a {
             opacity: 0;
             transform: translateY(40px) scale(0.7);
         }
-        &::before,
+        &::before {
+            transform: translateX(-100%);
+        }
         &::after {
-            width: 0 !important;
+            transform: translateX(100%);
         }
     }
     .page-top__letter-w {

@@ -41,14 +41,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .page-top_advantages {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 24%;
-            }
-        }
-    }
     .advantage-text {
         height: auto;
         padding: 20px;

@@ -23,13 +23,3 @@
         margin-right: 5px;
     }
 }
-@media only screen and (max-width: 550px) {
-    .page-top_news {
-        .page-top__wrapper {
-            &::before,
-            &::after {
-                width: 20%;
-            }
-        }
-    }
-}
