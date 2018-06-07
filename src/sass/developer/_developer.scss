@@ -52,16 +52,17 @@
 .developer__location {
     width: 60%;
     border: 1px solid #cdcdcd;
-    padding: 50px 45px 25px 25px;
+    padding: 50px 15px 25px 25px;
     display: flex;
     justify-content: space-between;
 }
 .developer__saga-logo {
     width: 183px;
+    align-self: flex-start;
 }
 .developer__location-text {
     flex: 1;
-    max-width: 410px;
+    max-width: 400px;
     color: #000;
     p {
         line-height: 26px;
@@ -139,4 +140,23 @@
     height: 37px;
     background-position: -184px -2px;
     margin-right: 36px;
+}
+
+// animations
+.developer__main-content {
+    overflow: hidden;
+}
+.developer__location,
+.developer__about {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animate {
+    .developer__location {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    .developer__about {
+        opacity: 0;
+        transform: translateX(100px);
+    }
 }

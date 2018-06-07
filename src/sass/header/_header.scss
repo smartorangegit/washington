@@ -19,6 +19,12 @@
         }
     }
 }
+.header__logo {
+    width: 210px;
+    a {
+        fill: #fff;
+    }
+}
 @keyframes headerSlideAimation {
     from {transform: translateY(-100%)}
     to {transform: translateY(0%)}

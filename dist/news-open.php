@@ -23,7 +23,7 @@
                         <li><span class="page-top__line"></span></li>
                         <li><a href="news.php">Новини</a></li>
                         <li><span class="page-top__line"></span></li>
-                        <li><a href="#">Заголовок для нової новини у два рядки тексту на одну новину</a></li>
+                        <li class="page-top__active-link"><a href="#">Заголовок для нової новини у два рядки тексту на одну новину</a></li>
                     </ul>
                 </div>
             </div>

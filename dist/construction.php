@@ -11,7 +11,7 @@
     <?php include_once('includes/header.php');?>
 
     <div class="construction">
-        <div class="page-top page-top_construction">
+        <div class="page-top page-top_construction animate">
             <div class="page-top__wrapper">
                 <div class="page-top_heading">
                     <h1>Хід будівництва</h1>
@@ -27,7 +27,7 @@
                         <li>
                             <span class="page-top__line"></span>
                         </li>
-                        <li>
+                        <li class="page-top__active-link">
                             <a href="#">Хід будівництва</a>
                         </li>
                     </ul>

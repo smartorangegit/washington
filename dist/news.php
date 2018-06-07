@@ -28,7 +28,7 @@
                         <li>
                             <span class="page-top__line"></span>
                         </li>
-                        <li>
+                        <li class="page-top__active-link">
                             <a href="#">Новини</a>
                         </li>
                     </ul>

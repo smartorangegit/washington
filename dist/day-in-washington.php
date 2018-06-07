@@ -12,7 +12,7 @@
     <!-- architecture -->
         <div class="diw">
 
-            <div class="page-top page-top_diw">
+            <div class="page-top page-top_diw animate">
                 <div class="page-top__wrapper">
                     <div class="page-top_heading">
                         <h1>День у Washington</h1>
@@ -28,7 +28,7 @@
                             <li>
                                 <span class="page-top__line"></span>
                             </li>
-                            <li>
+                            <li class="page-top__active-link">
                                 <a href="#">День у Washington</a>
                             </li>
                         </ul>

@@ -5,6 +5,6 @@
     color: red;
     z-index: 6;
     &.menu_closed {
-        transform: translateX(-100%);
+        display: none;
     }
 }

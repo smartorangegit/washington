@@ -125,6 +125,11 @@ a {
         border-bottom: 1px solid #9f9f9f;
     }
 }
+.page-top__active-link {
+    a {
+        color: $beige1;
+    }
+}
 .page-top__line {
     display: inline-block;
     width: 1px;
