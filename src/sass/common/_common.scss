@@ -65,7 +65,7 @@ a {
 .page-top__wrapper {
     max-width: 1160px;
     margin: 0 auto;
-    height: 160px;
+    height: 145px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -102,15 +102,16 @@ a {
     stroke: rgba($green2, 0.35);
     width: 102px;
     position: absolute;
-    top: 40px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .page-top__links {
     position: absolute;
     left: 0px;
     bottom: 10px;
+    font-size:  0.875rem;
     ul {
         display: flex;
         flex-wrap: wrap;

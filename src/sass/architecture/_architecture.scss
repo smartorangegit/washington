@@ -63,7 +63,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', e
 }
 .gallery-arrow_architecture-nav {
     top: auto;
-    bottom: 19px;
+    bottom: 35px;
 }
 .gallery-arrow_architecture-nav-next {
     right: 1%;
@@ -80,6 +80,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', e
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .architecture__gallery-item_0, .architecture__gallery-nav-item_0 {background-image: url('../img/architecture/gallery/1.jpg');}

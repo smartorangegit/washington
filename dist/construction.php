@@ -80,7 +80,7 @@
         <div class="construction__photos-container wrapper">
             <div class="construction__photos">
 
-                <div class="construction__photo">
+                <div class="construction__photo animate">
                     <a href="img/construction/con_1.jpg" class="construction__photo-item construction__photo-item_1">
                         <img src="img/construction/con_1.jpg" alt="Gallery Image">
                         <div class="construction__photo-info">
@@ -95,7 +95,7 @@
                     <a href="img/construction/con_6.jpg" class="construction__photo-item"></a>
                 </div>
 
-                <div class="construction__photo">
+                <div class="construction__photo animate">
                     <a href="img/construction/con_2.jpg" class="construction__photo-item construction__photo-item_1">
                         <img src="img/construction/con_2.jpg" alt="Gallery Image">
                         <div class="construction__photo-info">
@@ -110,7 +110,7 @@
                     <a href="img/construction/con_6.jpg" class="construction__photo-item"></a>
                 </div>
 
-                <div class="construction__photo">
+                <div class="construction__photo animate">
                     <a href="img/construction/con_3.jpg" class="construction__photo-item construction__photo-item_1">
                         <img src="img/construction/con_3.jpg" alt="Gallery Image">
                         <div class="construction__photo-info">
@@ -125,7 +125,7 @@
                     <a href="img/construction/con_6.jpg" class="construction__photo-item"></a>
                 </div>
 
-                <div class="construction__photo">
+                <div class="construction__photo animate">
                     <a href="img/construction/con_4.jpg" class="construction__photo-item construction__photo-item_1">
                         <img src="img/construction/con_4.jpg" alt="Gallery Image">
                         <div class="construction__photo-info">
@@ -140,7 +140,7 @@
                     <a href="img/construction/con_6.jpg" class="construction__photo-item"></a>
                 </div>
 
-                <div class="construction__photo">
+                <div class="construction__photo animate">
                     <a href="img/construction/con_5.jpg" class="construction__photo-item construction__photo-item_1">
                         <img src="img/construction/con_5.jpg" alt="Gallery Image">
                         <div class="construction__photo-info">
@@ -155,7 +155,7 @@
                     <a href="img/construction/con_6.jpg" class="construction__photo-item"></a>
                 </div>
 
-                <div class="construction__photo">
+                <div class="construction__photo animate">
                     <a href="img/construction/con_6.jpg" class="construction__photo-item construction__photo-item_1">
                         <img src="img/construction/con_6.jpg" alt="Gallery Image">
                         <div class="construction__photo-info">
