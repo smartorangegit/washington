@@ -167,6 +167,9 @@
     .hero__gourment_center {
         border: 1px solid rgba($beige1, 0.5);
     }
+    .gallery-status-bar-container_hero {
+        display: none;
+    }
     .hp-down-arrows {
         display: none;
     }
@@ -386,6 +389,10 @@
 } // 520 end
 
 @media only screen and (max-width: 374px) {
+    .hover-ef__heading,
+    .hover-ef__heading_2 {
+        font-size: 1.8rem;
+    }
     // about
     .hp-about {
         padding: 2px;
@@ -397,4 +404,4 @@
         font-size: 1rem;
         line-height: 36px;
     }
-} // 520 end
+} // 374 end
