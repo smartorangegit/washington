@@ -102,7 +102,7 @@ a {
     stroke: rgba($green2, 0.35);
     width: 102px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -124,6 +124,10 @@ a {
         color: #9f9f9f;
         position: relative;
         border-bottom: 1px solid #9f9f9f;
+        transition: padding-bottom 0.2s ease-out;
+        &:hover {
+            padding-bottom: 5px;
+        }
     }
 }
 .page-top__active-link {

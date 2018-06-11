@@ -46,13 +46,13 @@
                         </a>
                     </li>
                     <li>
-                        <div class="menu-btn js-menu-btn">
-                            <div class="menu-btn-container">
-                                <div class="menu-btn__text_black">Меню</div>
-                                <div class="menu-btn__text_white">Меню</div>
-                                <div class="menu-btn__line menu-btn__line_1"></div>
-                                <div class="menu-btn__line menu-btn__line_2"></div>
-                                <div class="menu-btn__line menu-btn__line_3"></div>
+                        <div class="header-menu-btn js-menu-btn">
+                            <div class="header-menu-btn-container">
+                                <div class="header-menu-btn__text_black">Меню</div>
+                                <div class="header-menu-btn__text_white">Меню</div>
+                                <div class="header-menu-btn__line header-menu-btn__line_1"></div>
+                                <div class="header-menu-btn__line header-menu-btn__line_2"></div>
+                                <div class="header-menu-btn__line header-menu-btn__line_3"></div>
                             </div>
                         </div>
                     </li>
