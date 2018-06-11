@@ -1,0 +1,226 @@
+.choose-floor__content {
+    display: flex;
+}
+.choose-floor__center {
+    flex: 1;
+}
+
+.compass {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.compass__direction {
+    position: absolute;
+    font-size: 0.75rem;
+}
+// To rotate compass directions use this value:
+$compassRoateDeg: 0deg;
+
+.compass__direction_north {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate($compassRoateDeg);
+}
+.compass__direction_east {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate($compassRoateDeg);
+}
+.compass__direction_south {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate($compassRoateDeg);
+}
+.compass__direction_west {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate($compassRoateDeg);
+}
+
+.choose-floor_arrow {
+    position: absolute;
+    width: 340px;
+    line-height: 50px;
+    text-align: center;
+    border-top: 1px solid $green1;
+    border-left: 1px solid $green1;
+    border-bottom: 1px solid $green1;
+
+   &::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        right: -18px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        border-right: 1px solid $green1;
+        border-top: 1px solid $green1;
+        transform: rotate(45deg);
+   }
+}
+
+.choose-floor__rooms-btns {
+    margin-top: 150px;
+}
+
+.choose-floor__rooms-btn {
+    display: block;
+    width: 270px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $green1;
+    border: 1px solid $green1;
+    position: relative;
+    transition: all 0.9s;   
+    a {
+        display: block;
+        transition: letter-spacing 0.5s;
+        position: relative;
+        z-index: 2;
+    }
+    &:hover {
+        color: $beige1;
+        border: 1px solid $beige1;
+        a {
+            letter-spacing: 1.5px;
+        }
+        &::before,
+        &::after {
+            transform: scale(1);
+        }
+    }
+    &::before,
+    &::after {
+        content:'';
+        width: 100%;
+        height:100%;
+        z-index: 1;
+        position: absolute;
+        top:0;
+        left:0;
+        box-sizing: border-box;
+        transform: scale(0);
+        transition: 0.5s;
+    }
+    &::after {
+        border-bottom: 1px solid $beige1;
+        border-left: 1px solid $beige1;
+        transform-origin: 100% 0%;
+    }
+    &::before {
+        border-top: 1px solid $beige1;
+        border-right: 1px solid $beige1;
+        transform-origin: 0% 100%;
+    }
+}
+
+.filter-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 50px;
+    background-color: $beige1;
+    &::before {
+        background-color: rgba($green1, 0.5)
+    }
+    &::after {
+        background-color: rgba($green1, 0.4)
+    }
+    &:hover {
+        .btn__text {
+            color: $beige1;
+        }
+        .filter__dot_1 {
+            left: 29px;
+        }
+        .filter__dot_2 {
+            left: 14px;
+        }
+        .filter__dot_3 {
+            left: 10px;
+        }
+    }
+}
+
+.filter__icon {
+    width: 50px;
+    height: 18px;
+    display: flex;
+    margin-right: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.filter-line {
+    width: 40px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: $green1;
+    position: relative;
+}
+.filter__dot {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid $green1;
+    background-color: $beige1;
+    transition: all 0.5s;
+}
+.filter__dot_1 {
+    left: 1px;
+}
+.filter__dot_2 {
+    left: 18px;
+}
+.filter__dot_3 {
+    left: 34px;
+}
+
+.choose-floor__info {
+    text-align: center;
+    margin-top: 40px;
+}
+.choose-floor__info-text {
+    font-size: 0.875rem;
+    margin-bottom: 13px;
+}
+.choose-floor__info-number {
+    width: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    font-size: 2.25rem;
+    text-align: center;
+    font-weight: 300;
+    border: 1px solid rgba($green1, 0.5);
+}
+
+.choose-floor__price-btn {
+    margin-top: 60px;
+    width: 270px;
+    line-height: 50px;
+    background-color: $green1;
+    color: $beige1;
+    &::before {
+        background-color: rgba($beige1, 0.5)
+    }
+    &::after {
+        background-color: rgba($beige1, 0.4)
+    }
+    &:hover {
+        .btn__text {
+            color: $green1;
+        }
+    }
+}
