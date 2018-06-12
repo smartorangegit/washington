@@ -1,0 +1,17 @@
+.filter__hidden-values {
+    display: none;
+}
+.filter__ranges {
+    margin: 20px 0;
+    width: 395px;
+}
+
+.filter__results {
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        border: 5px solid red;
+    }
+}

@@ -131,6 +131,18 @@ gulp.task('values-js', function() {
 });
 // values end
 
+// filter start
+gulp.task('filter-js', function() {
+	return gulp.src([
+		'src/js/libs/ion.rangeSlider.min.js',
+		'src/js/filter.js',
+		])
+	.pipe(concat('filter.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// filter end
+
 gulp.task('js', [
 	'common-js',
 	'home-js',
@@ -140,7 +152,8 @@ gulp.task('js', [
 	'developer-js',
 	'news-open-js',
 	'location-js',
-	'values-js'], function() {
+	'values-js',
+	'filter-js'], function() {
 	return gulp.src([
 		'src/js/common.js',
 		])

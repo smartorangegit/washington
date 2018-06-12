@@ -3,7 +3,8 @@
 @import 'mixins';
 @import 'libs/slick';
 @import 'libs/intlTelInput';
-@import 'libs/_magnific-popup';
+@import 'libs/magnific-popup';
+@import 'libs/ion.rangeSlider';
 @import 'preloader/preloader';
 @import 'common/common';
 @import 'common/common-media';
@@ -43,3 +44,6 @@
 @import '404/404-media';
 @import 'choose-floor/choose-floor';
 @import 'choose-floor/choose-floor-media';
+@import 'filter/filter';
+@import 'filter/filter-media';
+@import 'filter/ion.rangeSlider.washington';
