@@ -1,3 +1,46 @@
+.filter__controls {
+    padding: 30px 70px 40px;
+    border: 1px solid #cdcdcd;
+}
+
+.filter__slider {
+    color: #000;
+}
+
+.filter__range_heading {
+    sup {
+        vertical-align: super;
+        font-size: 0.875em;
+    }   
+}
+
+.filter__text {
+    text-align: center;
+    height: 30px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #b8b8b8;
+}
+
+.filter__btn {
+    width: 270px;
+    line-height: 50px;
+    background-color: $beige1;
+    &::before {
+        background-color: rgba($green1, 0.5)
+    }
+    &::after {
+        background-color: rgba($green1, 0.4)
+    }
+    &:hover {
+        .btn__text {
+            color: $beige1;
+        }
+    }
+}
+
 .filter__hidden-values {
     display: none;
 }
@@ -14,4 +57,10 @@
     li {
         border: 5px solid red;
     }
+}
+.filter__result_hidden {
+    display: none;
+}
+.filter__result_visible {
+    display: block;
 }
