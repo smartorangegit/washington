@@ -37,105 +37,103 @@
         <!-- page-top -->
 
         <div class="filter__controls wrapper">
-            <div>
-                <!-- Filter range price total - pt -->
-                <div class="filter__slider filter__slider_pt js-filter__slider_pt">
-                    <h5 class="filter__range_heading">Вартість грн:</h5>
-                    <div class="filter__texts">
-                        <input class="filter__text js-filter__text_min" type="text"/>
-                        <input class="filter__text js-filter__text_max" type="text"/>
+            <div class="filter__wrapper">
+                <div>
+                    <!-- Filter range price total - pt -->
+                    <div class="filter__slider filter__slider_pt js-filter__slider_pt">
+                        <h5 class="filter__heading">Вартість грн:</h5>
+                        <div class="filter__texts">
+                            <input class="filter__text js-filter__text_min" type="text"/>
+                            <input class="filter__text js-filter__text_max" type="text"/>
+                        </div>
+                        <div class="filter__ranges filter__ranges_pt">
+                            <?php /*Place PHP values here*/?>
+                                <input type="range" min="500" max="5000000" class="filter__hidden-values filter__hidden-values_pt js-filter__hidden-values">
+                            <?php /*Place PHP values here*/?>
+                            <input class="filter__range filter__range_pt js-filter__range" type="text">
+                        </div>
                     </div>
-                    <div class="filter__ranges filter__ranges_pt">
-                        <?php /*Place PHP values here*/?>
-                            <input type="range" min="500" max="5000000" class="filter__hidden-values filter__hidden-values_pt js-filter__hidden-values">
-                        <?php /*Place PHP values here*/?>
-                        <input class="filter__range filter__range_pt js-filter__range" type="text">
+
+                    <!-- Filter range total area - ta -->
+                    <div class="filter__slider filter__slider_ta js-filter__slider_ta">
+                        <h5 class="filter__heading">Загальна площа м<sup>2</sup>:</h5>
+                        <div class="filter__texts">
+                            <input class="filter__text js-filter__text_min" type="text"/>
+                            <input class="filter__text js-filter__text_max" type="text"/>
+                        </div>
+                        <div class="filter__ranges filter__ranges_ta">
+                            <?php /*Place PHP values here*/?>
+                                <input type="range" min="5" max="100" class="filter__hidden-values filter__hidden-values_ta js-filter__hidden-values">
+                            <?php /*Place PHP values here*/?>
+                            <input class="filter__range filter__range_ta js-filter__range" type="text">
+                        </div>
                     </div>
                 </div>
 
-                <!-- Filter range total area - ta -->
-                <div class="filter__slider filter__slider_ta js-filter__slider_ta">
-                    <h5 class="filter__range_heading">Загальна площа м<sup>2</sup>:</h5>
-                    <div class="filter__texts">
-                        <input class="filter__text js-filter__text_min" type="text"/>
-                        <input class="filter__text js-filter__text_max" type="text"/>
+                <!-- Rooms checkboxes -->
+                <div class="filter__rooms js-filter__rooms">
+                    <h5 class="filter__heading">К-сть Кімнат:</h5>
+                    <div class="filter__room filter__room_1">
+                        <input class="filter__room-checkbox" id="filter-room_1" type="checkbox" value="1">
+                        <label class="filter__room-checkbox_label" for="filter-room_1">1</label>
                     </div>
-                    <div class="filter__ranges filter__ranges_ta">
-                        <?php /*Place PHP values here*/?>
-                            <input type="range" min="5" max="100" class="filter__hidden-values filter__hidden-values_ta js-filter__hidden-values">
-                        <?php /*Place PHP values here*/?>
-                        <input class="filter__range filter__range_ta js-filter__range" type="text">
+                    <div class="filter__room filter__room_2">
+                        <input class="filter__room-checkbox" id="filter-room_2" type="checkbox" value="2">
+                        <label class="filter__room-checkbox_label" for="filter-room_2">2</label>
+                    </div>
+                    <div class="filter__room filter__room_3">
+                        <input class="filter__room-checkbox" id="filter-room_3" type="checkbox" value="3">
+                        <label class="filter__room-checkbox_label" for="filter-room_3">3</label>
+                    </div>
+                    <div class="filter__room filter__room_4">
+                        <input class="filter__room-checkbox" id="filter-room_4" type="checkbox" value="4">
+                        <label class="filter__room-checkbox_label" for="filter-room_4">4</label>
                     </div>
                 </div>
+
+                <div>
+                    <!-- Filter range price meter - pm -->
+                    <div class="filter__slider filter__slider_pm js-filter__slider_pm">
+                        <h5 class="filter__heading">Ціна за м<sup>2</sup>:</h5>
+                        <div class="filter__texts">
+                            <input class="filter__text js-filter__text_min" type="text"/>
+                            <input class="filter__text js-filter__text_max" type="text"/>
+                        </div>
+                        <div class="filter__ranges filter__ranges_pt">
+                            <?php /*Place PHP values here*/?>
+                                <input type="range" min="7000" max="50000" class="filter__hidden-values filter__hidden-values_pt js-filter__hidden-values">
+                            <?php /*Place PHP values here*/?>
+                            <input class="filter__range filter__range_pm js-filter__range" type="text">
+                        </div>
+                    </div>
+
+                    <!-- Filter range living aera - la -->
+                    <div class="filter__slider filter__slider_la js-filter__slider_la">
+                        <h5 class="filter__heading">Житлова площа м<sup>2</sup>:</h5>
+                        <div class="filter__texts">
+                            <input class="filter__text js-filter__text_min" type="text"/>
+                            <input class="filter__text js-filter__text_max" type="text"/>
+                        </div>
+                        <div class="filter__ranges filter__ranges_la">
+                            <?php /*Place PHP values here*/?>
+                                <input type="range" min="12" max="154" class="filter__hidden-values filter__hidden-values_la js-filter__hidden-values">
+                            <?php /*Place PHP values here*/?>
+                            <input class="filter__range filter__range_la js-filter__range" type="text">
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Rooms checkboxes -->
-            <div class="filter__rooms js-filter__rooms">
-                <h5 class="filter__rooms_heading">К-сть Кімнат:</h5>
-                <div class="filter__room-checkbox filter__room-checkbox_1">
-                    <input id="filter-room_1" type="checkbox" value="1">
-                    <label for="filter-room_1">1</label>
-                </div>
-                <div class="filter__room-checkbox filter__room-checkbox_2">
-                    <input id="filter-room_2" type="checkbox" value="2">
-                    <label for="filter-room_2">2</label>
-                </div>
-                <div class="filter__room-checkbox filter__room-checkbox_3">
-                    <input id="filter-room_3" type="checkbox" value="3">
-                    <label for="filter-room_3">3</label>
-                </div>
-                <div class="filter__room-checkbox filter__room-checkbox_4">
-                    <input id="filter-room_4" type="checkbox" value="4">
-                    <label for="filter-room_4">4</label>
-                </div>
+            <div class="filter__search-reset">
+                <span class="filter__results-found">За вашими параметрами є <span class="filter__results-found-numb"></span> квартир</span>
+                <a href="#" class="filter__btn btn js-filter__btn">Шукати</a>
+                <a href="#" class="filter__reset js-filter__reset">Зкинути параметри</a>
             </div>
-
-            <div>
-
-                <!-- Filter range price meter - pm -->
-                <div class="filter__slider filter__slider_pm js-filter__slider_pm">
-                    <h5 class="filter__range_heading">Ціна за м<sup>2</sup>:</h5>
-                    <div class="filter__texts">
-                        <input class="filter__text js-filter__text_min" type="text"/>
-                        <input class="filter__text js-filter__text_max" type="text"/>
-                    </div>
-                    <div class="filter__ranges filter__ranges_pt">
-                        <?php /*Place PHP values here*/?>
-                            <input type="range" min="7000" max="50000" class="filter__hidden-values filter__hidden-values_pt js-filter__hidden-values">
-                        <?php /*Place PHP values here*/?>
-                        <input class="filter__range filter__range_pm js-filter__range" type="text">
-                    </div>
-                </div>
-
-                <!-- Filter range living aera - la -->
-                <div class="filter__slider filter__slider_la js-filter__slider_la">
-                    <h5 class="filter__range_heading">Житлова лоща м<sup>2</sup>:</h5>
-                    <div class="filter__texts">
-                        <input class="filter__text js-filter__text_min" type="text"/>
-                        <input class="filter__text js-filter__text_max" type="text"/>
-                    </div>
-                    <div class="filter__ranges filter__ranges_la">
-                        <?php /*Place PHP values here*/?>
-                            <input type="range" min="12" max="154" class="filter__hidden-values filter__hidden-values_la js-filter__hidden-values">
-                        <?php /*Place PHP values here*/?>
-                        <input class="filter__range filter__range_la js-filter__range" type="text">
-                    </div>
-                </div>
-
-            </div>
-
-            <div>
-                За вашими параметрами є <span class="filter__results-found-numb"></span> квартир
-            </div>
-
-            <a href="#" class="filter__btn btn js-filter__btn">Шукати</a>
-
-            <a href="#" class="filter__reset js-filter__reset">Зкинути параметри</a>
-
         </div>
 
-        <div class="filter__results wrapper">
-            <ul>
+        <div class="wrapper">
+            <ul class="filter__results">
                 <li 
                     data-pricetotal="10000"
                     data-totalarea="40"
@@ -143,14 +141,20 @@
                     data-pricemeter="11000"
                     data-livingarea="20"
                     class="filter__result js-filter__result filter__result_hidden">
-                    <a href="#">
-                        <div>
-                            <div>Result 1</div>
-                            <div>Price total 10000</div>
-                            <div>Total area 40</div>
-                            <div>Rooms 1</div>
-                            <div>Price meter 11000</div>
-                            <div>Living area 20</div>
+                    <a class="filter__result-link" href="#">
+                        <div class="result__main-content">
+                            <div class="result__image">
+
+                            </div>
+                            <ul class="result__data">
+                                <li>Секція: <span class="result__number">3</span></li>
+                                <li>К-сть кімнат: <span class="result__number">2</span></li>
+                                <li>Заг. площа: <span class="result__number">36.2</span></li>
+                                <li>Житлова площа: <span class="result__number">20.4</span></li>
+                            </ul>
+                        </div>
+                        <div class="filter__result_btn">
+                            Дивитися квартиру
                         </div>
                     </a>
                 </li>
@@ -162,13 +166,16 @@
                     data-livingarea="30"
                     class="filter__result js-filter__result filter__result_hidden">
                     <a href="#">
-                        <div >
-                            <div>Result 2</div>
-                            <div>Price total 20000</div>
-                            <div>Total area 20</div>
-                            <div>Rooms 2</div>
-                            <div>Price meter 12000</div>
-                            <div>Living area 30</div>
+                        <div>
+                            <div class="result__image">
+
+                            </div>
+                            <ul class="result__data">
+                                <li>Секція: <span class="result__number">3</span></li>
+                                <li>К-сть кімнат: <span class="result__number">2</span></li>
+                                <li>Заг. площа: <span class="result__number">36.2</span></li>
+                                <li>Житлова площа: <span class="result__number">20.4</span></li>
+                            </ul>
                         </div>
                     </a>
                 </li>
@@ -180,13 +187,16 @@
                     data-livingarea="40"
                     class="filter__result js-filter__result filter__result_hidden">
                     <a href="#">
-                        <div >
-                            <div>Result 3</div>
-                            <div>Price total 60000</div>
-                            <div>Total area 80</div>
-                            <div>Rooms 3</div>
-                            <div>Price meter 13000</div>
-                            <div>Living area 40</div>
+                    <div>
+                            <div class="result__image">
+
+                            </div>
+                            <ul class="result__data">
+                                <li>Секція: <span class="result__number">3</span></li>
+                                <li>К-сть кімнат: <span class="result__number">2</span></li>
+                                <li>Заг. площа: <span class="result__number">36.2</span></li>
+                                <li>Житлова площа: <span class="result__number">20.4</span></li>
+                            </ul>
                         </div>
                     </a>
                 </li>
@@ -198,13 +208,16 @@
                     data-livingarea="50"
                     class="filter__result js-filter__result filter__result_hidden">
                     <a href="#">
-                        <div>
-                            <div>Result 4</div>
-                            <div>Price total 5000</div>
-                            <div>Total area 10</div>
-                            <div>Rooms 1</div>
-                            <div>Price meter 14000</div>
-                            <div>Living area 50</div>
+                    <div>
+                            <div class="result__image">
+
+                            </div>
+                            <ul class="result__data">
+                                <li>Секція: <span class="result__number">3</span></li>
+                                <li>К-сть кімнат: <span class="result__number">2</span></li>
+                                <li>Заг. площа: <span class="result__number">36.2</span></li>
+                                <li>Житлова площа: <span class="result__number">20.4</span></li>
+                            </ul>
                         </div>
                     </a>
                 </li>
@@ -216,13 +229,16 @@
                     data-livingarea="60"
                     class="filter__result js-filter__result filter__result_hidden">
                     <a href="#">
-                        <div>
-                            <div>Result 5</div>
-                            <div>Price total 20000</div>
-                            <div>Total area 90</div>
-                            <div>Rooms 4</div>
-                            <div>Price meter 15000</div>
-                            <div>Living area 60</div>
+                    <div>
+                            <div class="result__image">
+
+                            </div>
+                            <ul class="result__data">
+                                <li>Секція: <span class="result__number">3</span></li>
+                                <li>К-сть кімнат: <span class="result__number">2</span></li>
+                                <li>Заг. площа: <span class="result__number">36.2</span></li>
+                                <li>Житлова площа: <span class="result__number">20.4</span></li>
+                            </ul>
                         </div>
                     </a>
                 </li>
@@ -234,13 +250,16 @@
                     data-livingarea="70"
                     class="filter__result js-filter__result filter__result_hidden">
                     <a href="#">
-                        <div>
-                            <div>Result 6</div>
-                            <div>Price total 300000</div>
-                            <div>Total area 50</div>
-                            <div>Rooms 2</div>
-                            <div>Price meter 16000</div>
-                            <div>Living area 70</div>
+                    <div>
+                            <div class="result__image">
+
+                            </div>
+                            <ul class="result__data">
+                                <li>Секція: <span class="result__number">3</span></li>
+                                <li>К-сть кімнат: <span class="result__number">2</span></li>
+                                <li>Заг. площа: <span class="result__number">36.2</span></li>
+                                <li>Житлова площа: <span class="result__number">20.4</span></li>
+                            </ul>
                         </div>
                     </a>
                 </li>

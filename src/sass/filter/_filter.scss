@@ -1,17 +1,31 @@
+.page-top_heading {
+    h1 {
+        color: #000;
+    }
+}
 .filter__controls {
     padding: 30px 70px 40px;
     border: 1px solid #cdcdcd;
+    margin-top: 35px;
 }
 
-.filter__slider {
+.filter__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter__heading {
     color: #000;
-}
-
-.filter__range_heading {
+    text-align: center;
+    margin-bottom: 18px;
     sup {
         vertical-align: super;
         font-size: 0.875em;
     }   
+}
+// text inputs
+.filter__texts {
+    text-align: center;
 }
 
 .filter__text {
@@ -22,10 +36,55 @@
     background-color: transparent;
     outline: none;
     border: 1px solid #b8b8b8;
+    width: 50%;
+    max-width: 180px;
 }
-
+// range
+.filter__ranges {
+    margin: 20px 0;
+    width: 395px;
+}
+//checkboxes
+.filter__room-checkbox {
+    display: none;
+    &:checked + label {
+        background-color: $beige1;
+    }
+}
+.filter__room-checkbox_label {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #b8b8b8;
+    display: block;
+    margin: 0px auto 10px auto;
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
+// main filter button
+.filter__search-reset {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.filter__results-found {
+    color: #7f7f7f;
+    width: 33%;
+}
+.filter__results-found-numb {
+    color: #000;
+}
+.filter__reset {
+    width: 33%;
+    text-align: right;
+    color: #7f7f7f;
+    text-decoration: underline;
+}
 .filter__btn {
-    width: 270px;
+    width: 33%;
+    max-width: 270px;
     line-height: 50px;
     background-color: $beige1;
     &::before {
@@ -41,23 +100,49 @@
     }
 }
 
+// filter results
+.filter__result-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+}
+.filter__results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.filter__result {
+    min-height: 354px;
+    width: 18%;
+    background-color: #fff;
+    font-size: 0.75rem;
+    color: #000;
+    border: 2px solid $green1;
+}
+.result__main-content {
+    padding: 30px 15px 15px;
+}
+.result__data {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    li {
+        margin-bottom: 15px;
+    }
+}
+.result__number {
+    font-weight: 400;
+}
+.filter__result_btn {
+    line-height: 50px;
+    text-align: center;
+    background-color: $beige1;
+}
+
 .filter__hidden-values {
     display: none;
 }
-.filter__ranges {
-    margin: 20px 0;
-    width: 395px;
-}
 
-.filter__results {
-    ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    li {
-        border: 5px solid red;
-    }
-}
 .filter__result_hidden {
     display: none;
 }

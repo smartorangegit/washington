@@ -229,6 +229,6 @@ var filterPage = (function() {
             resetCheckboxes();
             filterResults();
         })
-    })
+    });
 
 })();
