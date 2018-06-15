@@ -8,16 +8,23 @@
     z-index: 999;
 }
 
+.precent-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* Circle start */
 @keyframes svg-circle {
     from { stroke-width: 0; }
-    to { stroke-width: 550; }
+    to { stroke-width: 300; }
 }
 
 .svg-circle {
     stroke: #ffffff;
     stroke-linecap: round;
-    stroke-width: 550;
+    stroke-width: 300;
     animation: svg-circle 2s;
     animation-delay: 1s;
     animation-fill-mode: both;
@@ -75,7 +82,7 @@
 
 /* Loading circle start */
 @keyframes svg-loading-cirlce {
-    from {stroke-dashoffset: 435;}
+    from {stroke-dashoffset: 236;}
     to {stroke-dashoffset: 0;}
 }
 
@@ -83,8 +90,8 @@
     stroke:#b5b5b5;
     stroke-width: 2px;
     fill: none;
-    stroke-dasharray: 435;
-    stroke-dashoffset: 435;
+    stroke-dasharray: 236;
+    stroke-dashoffset: 236;
     // animation-name: svg-loading-cirlce;
     // animation-fill-mode: forwards;
     // animation-duration: 5s;
@@ -92,7 +99,7 @@
 
 .svg-loading-circle__text {
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: bold;
     fill: #b5b5b5;
 }
@@ -190,3 +197,15 @@ path.svg-inner_a_1_2 {animation-delay: 4.1s;}
     }
 }
 /* Responsive svg end */
+
+
+
+
+/*perfect svg*/
+
+.perfect_white {
+    stroke: #fff;
+    fill: #fff;
+} 
+
+/*end__perfect svg*/

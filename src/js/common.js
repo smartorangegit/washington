@@ -16,9 +16,9 @@ var sagapreloaderAnimation = (function() {
         //var loadingCircleContainer = document.querySelector('.svg-loading-circle-container');
         //var currentPercent = 0;
 
-        var currentOffset = 435;
+        var currentOffset = 236;
         var startingOffset = currentOffset;
-        var step = 2.7;
+        var step = 0.7;
 
         preloaderContainer.style.display = 'block';
 
