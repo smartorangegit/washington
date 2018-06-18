@@ -28,10 +28,11 @@
 }
 .menu__close-btn {
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 0;
     color: red;
     font-size: 20px;
+    cursor: pointer;
 }
 .menu__nav {
     display:flex;

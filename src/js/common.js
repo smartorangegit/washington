@@ -18,7 +18,7 @@ var sagapreloaderAnimation = (function() {
 
         var currentOffset = 236;
         var startingOffset = currentOffset;
-        var step = 3;
+        var step = 2.5;
 
         preloaderContainer.style.display = 'block';
 
@@ -67,7 +67,7 @@ var sagapreloaderAnimation = (function() {
 // if(!sessionStorage.getItem('preloaderRan')) {
     sagapreloaderAnimation.init();
 // }
-//sagapreloaderAnimation.init();
+// sagapreloaderAnimation.init();
 
 //  Preloader logic end
 //  =====================================================================================================================
