@@ -4,7 +4,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    /*background-color: #405174;*/
     background-color: #525249;
     z-index: 999;
 }
@@ -17,16 +16,18 @@
 .saga {
     position: absolute;
     width: 30%;
-    right: 2%;
+    right: 50%;
     bottom: 50%;
-    transform: translateY(50%);
+    transform: translate(50%, 50%);
 }
 
 .loading {
     position: absolute;
-    top: 50%;
+    // top: 50%;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);   
+    // transform: translate(-50%, -50%);
+    transform: translateX(-50%);   
     stroke: #fff;
     width: 75px;
     height: 75px;  
@@ -54,24 +55,6 @@
     animation-delay: 0.5s;
     animation-fill-mode: both;
 }
-
-/* @keyframes svg-circle {
-    0% { stroke-dashoffset: 3567;fill: transparent; }
-    80% {fill: transparent; }
-    100%{stroke-dashoffset: 0; fill: #fff;}
-}
-.svg-circle {
-
-    fill: #fff;
-    stroke:#fff;
-    stroke-width: 2px;
-    
-    stroke-dasharray: 3567;
-    stroke-dashoffset: 3567;
-
-    animation: svg-circle 2s forwards;
-} */
-
 /* Circle end */
 
 /* Letters start */
@@ -233,6 +216,7 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
 
 /*perfect svg*/
 .perfect {
+    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -352,10 +336,9 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
     }
 
     .saga {
-        bottom: 5%;
+        top: 5%;
         width: 80%;
         right: 50%;
-        transform: translateX(50%);
     }
 
     .perfect {

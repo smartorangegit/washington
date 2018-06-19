@@ -64,9 +64,9 @@ var sagapreloaderAnimation = (function() {
 
 })();
 
-// if(!sessionStorage.getItem('preloaderRan')) {
+if(!sessionStorage.getItem('preloaderRan')) {
     sagapreloaderAnimation.init();
-// }
+}
 // sagapreloaderAnimation.init();
 
 //  Preloader logic end
