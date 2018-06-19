@@ -568,12 +568,14 @@ var menuCtrl = (function() {
     var closedMenuClass = 'menu_closed';
 
     var openMenu = function() {
+        openMenuBtn = document.querySelector('.menu-none-js').style.display = 'block';
         menu.classList.remove(closedMenuClass);
         hideScrollBar();
         washingtonState.menuOpen = true;
     };
 
     var closeMenu = function() {
+        openMenuBtn = document.querySelector('.menu-none-js').style.display = 'none';
         menu.classList.add(closedMenuClass);
         showScrollBar();
         washingtonState.menuOpen = false;
