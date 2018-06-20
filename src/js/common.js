@@ -479,13 +479,13 @@ var contactsForm = (function() {
               e.preventDefault();
               var inputsArr = createValidatorArray();
               var data='';
-            //   var secretInputs = {
-            //       type: form.querySelector('[name="typ"]'),
-            //       webad: form.querySelector('[name="webad"]'),
-            //       metka: form.querySelector('[name="metka"]'),
-            //       inn: form.querySelector('[name="inn"]'),
-            //       count: form.querySelector('[name="count"]')
-            //   };
+              var secretInputs = {
+                  type: form.querySelector('[name="typ"]'),
+                  webad: form.querySelector('[name="webad"]'),
+                  metka: form.querySelector('[name="metka"]'),
+                  inn: form.querySelector('[name="inn"]'),
+                  count: form.querySelector('[name="count"]')
+              };
               inputsArr.forEach(function(inputInstance, index) {
                   if(index === 0) {
                       data += '' + inputInstance.input.name + '=' + encodeURIComponent(inputInstance.input.value);
@@ -495,9 +495,9 @@ var contactsForm = (function() {
                   inputInstance.validate();
               });
 
-            //   for(var key in secretInputs) {
-            //       data+= '&' + key + '=' + encodeURIComponent(secretInputs[key].value);
-            //   };
+              for(var key in secretInputs) {
+                  data+= '&' + key + '=' + encodeURIComponent(secretInputs[key].value);
+              };
 
               var validForm = inputsArr.every(function(inputInstance) {
                   return inputInstance.state.valid;
