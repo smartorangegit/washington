@@ -1,16 +1,21 @@
-<div id="callback-form" class="callback-form js-callback-form callback-form_closed">
+<div id="callback-form" class="callback-form callback-form_closed js-callback-form ">
     <div class="callback-form__container">
-        <div class="callback-form__close-btn js-callback-form__close-btn">
-            <div class="callback-form__close-image">
-                close
+        <div class="page-top page-top__menu page-top__callback">
+            <div class="page-top__wrapper callback-page-top__wrapper">
+                <div class="page-top_heading">
+                    <h3>Замовити зворотній дзвінок</h3>
+                    <div class="page-top__letter-w menu-page-top__letter-w-wrap">
+                        <svg class="menu-page-top__letter-w-wrap" height="100%" width="100%" viewBox="0 0 171.332 134.318">
+                                <path class="letter_W_left menu_letter_W_left letter_W_left_white" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/>
+                                <path class="letter_W_right menu_letter_W_right letter_W_right_white" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
-            <div>Закрити</div>
         </div>
         <div>
-            <h3 class="callback-form__heading heading">Замовити телефонний дзвінок</h3>
-        </div>
-        <div>
-            <form id="callback-form">
+            <form id="callback-form" class="callback-form__form">
+                <img class="callback-form__close-btn js-callback-form__close-btn" src="img/common/close-menu.png" alt="close">
                 <div class="callback-input callback-input_name js-input-name-container">
                     <input class="input-field input-field_name js-input-name" type="text" name="name" placeholder="Ваше ім’я:" data-required="true">
                     <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>

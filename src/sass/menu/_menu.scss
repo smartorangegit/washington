@@ -1,6 +1,7 @@
 .menu {
     position: fixed;
     overflow-y: scroll;
+    display: none;
     top: 0;
     left: 0;
     right: 0;
@@ -9,25 +10,24 @@
     background-size: cover;
     background-position: center;
     background-image: url('../img/common/menu_bg.jpg');
-    transition: all 0.5s;
-    transform: translateX(0);
-    opacity: 1;
-    &.menu_closed {
-        transform: translateX(110%);
-        opacity: 0.2;
+    transform-origin: 100% 0%;
+    transform: scale(0);
+    &.menu_open {
+        display: block;
+        animation: menu_open 0.9s forwards;
     }
 }
 
 .menu-page-top__letter-w {
     &-wrap {
         opacity: 0;
-        transform: translate(-25%, -25%);
-        animation: menu_slide_top 1s 0.1s forwards;
+        transform: translate(-25%, -75%);
+        animation: menu_slide_top 1s 0.3s forwards;
     }
 }
 .menu_letter_W_right {
     transform: translateX(-30%);
-    animation: menu_slide_W_left 1s 0.8s forwards;
+    animation: menu_slide_W_left 1s 1s forwards;
 }
 
 .page-top__menu {
@@ -62,7 +62,7 @@
     width: 25%;
     margin-top: 80px;
     opacity: 0;
-    animation: menu_slide_left 1s 0.8s forwards;
+    animation: menu_slide_left 1s 1s forwards;
 }
 .menu__nav-item-heading {
     font-size: 1.5rem;
@@ -125,6 +125,18 @@
     }
 }
 
+@keyframes menu_open {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 @keyframes menu_slide_left {
     from {
@@ -165,7 +177,7 @@
     }
 
     to {
-        transform: translate(-25%, -25%);
+        transform: translate(-25%, -37%);
         opacity: 1;
     }
 }

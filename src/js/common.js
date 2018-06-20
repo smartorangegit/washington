@@ -565,18 +565,18 @@ var menuCtrl = (function() {
     var menu = document.querySelector('.js-menu');
     var openMenuBtn = document.querySelector('.js-menu-btn');
     var closeMenuBtn = document.querySelector('.js-menu__close-btn');
-    var closedMenuClass = 'menu_closed';
+    var openMenuClass = 'menu_open';
 
     var openMenu = function() {
         openMenuBtn = document.querySelector('.menu-none-js').style.display = 'block';
-        menu.classList.remove(closedMenuClass);
+        menu.classList.add(openMenuClass);
         hideScrollBar();
         washingtonState.menuOpen = true;
     };
 
     var closeMenu = function() {
         openMenuBtn = document.querySelector('.menu-none-js').style.display = 'none';
-        menu.classList.add(closedMenuClass);
+        menu.classList.remove(openMenuClass);
         showScrollBar();
         washingtonState.menuOpen = false;
     };

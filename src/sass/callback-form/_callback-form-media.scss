@@ -1,0 +1,23 @@
+
+@media screen and(max-width: 1360px) {
+	.callback-form__close-btn {
+		width: 20px;
+	}
+}
+
+@media screen and(max-width: 768px) {
+	.callback-form__form {
+		width: 90%;
+	}
+
+	.callback-form__close-btn {
+		top: 10px;
+		right: 10px;
+	}
+
+	.page-top__callback {
+    	h3 {
+        	font-size: 1.5rem;
+    	}
+	}
+}

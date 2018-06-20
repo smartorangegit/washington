@@ -1,0 +1,32 @@
+
+@media screen and (max-width: 1024px) {
+	.menu__nav-item {
+		margin-right: 10px;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.menu__nav-item {
+		width: 30%;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.menu__nav-item {
+		width: 48%;
+		margin-right: 0px;
+		margin-bottom: 20px;
+		margin-top: 0;
+		margin: 0 0 20px 5px;
+	}
+
+	.menu__nav-links a.menu__nav-links_main {
+		font-size: 1rem;
+	}
+
+	.menu__close-btn {
+		top: 20px;
+	}
+}

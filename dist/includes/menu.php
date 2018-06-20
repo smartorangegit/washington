@@ -1,19 +1,15 @@
-<div class="menu menu_closed js-menu">
+<div class="menu js-menu">
     <div class="wrapper menu-none-js">
         <div class="page-top page-top__menu">
             <div class="page-top__wrapper menu-page-top__wrapper">
                 <div class="page-top_heading">
                     <h3>Меню</h3>
                     <div class="page-top__letter-w menu-page-top__letter-w-wrap">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 170.1 132.4"><path d="M57.1 132.4L0 0h6.4l51.5 119.2L82 62.8 55.2 0h6.2l24.1 57.1L110.4 0h4.9L88.2 62.7l24.6 57.1L165.4 0h4.7l-57.8 132.4-27.6-63.5-27.6 63.5z"/></svg> -->
                         <svg class="menu-page-top__letter-w-wrap" height="100%" width="100%" viewBox="0 0 171.332 134.318">
-                                <path class="letter_W_left menu_letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/>
-                                <path class="letter_W_right menu_letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/>
-                            </svg>
+                            <path class="letter_W_left menu_letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/>
+                            <path class="letter_W_right menu_letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/>
+                        </svg>
                     </div>
-<!--                     <div class="menu__close-btn js-menu__close-btn">
-                        <img src="img/common/close-menu.png" alt="">
-                    </div> -->
                     <img class="menu__close-btn js-menu__close-btn" src="img/common/close-menu.png" alt="close">
                 </div>
             </div>

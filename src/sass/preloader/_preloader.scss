@@ -72,6 +72,7 @@
     animation-fill-mode: forwards;
     animation-duration: 1s;
     z-index: 2;
+    fill:#405174;
 }
 
 .svg-Saga {animation-delay: 1.3s;}
@@ -85,6 +86,7 @@
     animation-fill-mode: forwards;
     animation-duration: 1s;
     animation-delay: 2.5s;
+    fill:#405174;
 }
 /* Letters end */
 
@@ -145,8 +147,8 @@ path.svg-outer_a_1_2 {animation-delay: 2.1s;}
 }
 
 .svg-inner-lines path {
-    /*stroke:#405174;*/
-    stroke:#000;
+    stroke:#405174;
+    // stroke:#000;
     stroke-width: 2;
     stroke-dasharray: 185;
     stroke-dashoffset: 185;
