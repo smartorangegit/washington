@@ -143,6 +143,17 @@ gulp.task('filter-js', function() {
 });
 // filter end
 
+// select-appartmens start
+gulp.task('select-appartmens-js', function() {
+	return gulp.src([
+		'src/js/select-appartmens.js',
+		])
+	.pipe(concat('select-appartmens.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// select-apparmens end
+
 gulp.task('js', [
 	'common-js',
 	'home-js',
@@ -153,6 +164,7 @@ gulp.task('js', [
 	'news-open-js',
 	'location-js',
 	'values-js',
+	'select-appartmens-js',
 	'filter-js'], function() {
 	return gulp.src([
 		'src/js/common.js',
