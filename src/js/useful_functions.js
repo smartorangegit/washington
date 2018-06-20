@@ -24,3 +24,36 @@ function hideScrollBar() {
 function showScrollBar() {
   document.getElementsByTagName('body')[0].classList.remove('hidden-overflow');
 };
+
+
+//AJAX  function start
+function ajax(type, url, data, callback) {
+	var data = data || null;
+	var type = type || 'GET';
+	var callback = callback || function(res) {
+		console.log(res);
+	};
+	var url = url || 'test.php';
+	var xhr = new XMLHttpRequest();
+	xhr.open(type, url, true);
+	if(type === 'POST') {
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		xhr.send(data);
+	} else {
+		xhr.send();
+	}
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState !== 4) {
+			return
+		}
+		if(xhr.status !== 200) {
+			console.log(xhr.status + ': ' + xhr.statusText);
+		} else {
+			callback(xhr.responseText);
+		}
+	};
+};
+function PostFormData(url, data, callback) {
+	ajax('POST', url, data, callback);
+};
+//AJAX function end

@@ -510,7 +510,7 @@ var contactsForm = (function() {
                   PostFormData(urObV, data, function(res) {
                       console.log(res);
                       //Call modal window which was instanciated before
-                      successModal.showModal();
+                      //successModal.showModal();
                       //Clear all filled inputs
                       inputsArr.forEach(function(inputInstance) {
                           inputInstance.input.value = '';
