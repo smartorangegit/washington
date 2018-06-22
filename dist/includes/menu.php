@@ -1,5 +1,5 @@
-<div class="menu js-menu">
-    <div class="wrapper menu-none-js">
+<div class="menu js-menu menu-none-js">
+    <div class="wrapper">
         <div class="page-top page-top__menu">
             <div class="page-top__wrapper menu-page-top__wrapper">
                 <div class="page-top_heading">
@@ -15,7 +15,7 @@
             </div>
         </div>
         <!-- page-top -->
-        <div class="menu__nav">
+        <div class="menu__nav animate">
             <div class="menu__nav-item menu__nav-item_1">
                 <div class="menu__nav-item-heading">
                     Головна

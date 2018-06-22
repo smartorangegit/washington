@@ -41,26 +41,23 @@
             
             <div class="select-apartmens-wrap select-apartmens-wrap_height_auto">
                 <div class="select-apartmens-top">
-                    <a href="#" class="select-button btn">
+                    <a href="#" class="select-button select-button__flat-plan btn">
                         <img src="img/select-appartmets/long-arrow.png" alt="icon" class="select-button__icon select-button__icon_transform">
                         <span class="select-button__text btn__text">Обрати квартиру</span>
                     </a>
                 
-                    <a href="#" class="select-button btn">
+                    <a href="#" class="select-button select-button__flat-plan btn">
                         <img src="img/select-appartmets/filter.png" alt="icon" class="select-button__icon select-button__icon_scale">
                         <span class="select-button__text btn__text">Фільтр</span>
                     </a>
                 </div>
 
-                <div class="select-apartmens-middle select-apartmens-middle_margin-bottom">
+                <div class="select-apartmens-middle">
                     <div class="flat__image-wrap">
                         <img src="img/flat-plan/flat-1.png" alt="" class="flat__image">
                     </div>
 
                     <div class="flat-parameters-wrap">
-                        <!-- <p class="flat-parameters__heading">
-                            Параметри квартири
-                        </p> -->
                         <div class="flat-parameters__heading">
                             <h1> Параметри квартири</h1>
                             <div class="flat-parameters__letter-w">
@@ -113,24 +110,23 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-
-                <div class="select-apartmens-bottom">
-                    <div class="apartmens-plan">
-                        <p class="apartmens-plan__text">План поверху</p>
-                        <div class="apartmens-plan-image-wrap">
-                            <? include_once('includes/houses/2.php'); ?>
-                        </div>   
+                    <div class="select-apartmens-bottom">
+                        <div class="apartmens-plan">
+                            <p class="apartmens-plan__text">План поверху</p>
+                            <div class="apartmens-plan-image-wrap">
+                                <? include_once('includes/houses/2.php'); ?>
+                            </div>   
+                        </div>
+                        <a href="#" class="select-apartmens-bottom__button btn">
+                            <img src="img/flat-plan/pdf-icon.png" alt="icon" class="select-apartmens-bottom__button-icon">
+                            <span class="btn__text">Завантажити PDF</span>
+                        </a>
+                        <a href="#" class="select-apartmens-bottom__button btn">
+                            <span class="btn__text">Дізнатися ціну</span>
+                        </a>
                     </div>
-                    <a href="#" class="select-apartmens-bottom__button btn">
-                        <img src="img/flat-plan/pdf-icon.png" alt="icon" class="select-apartmens-bottom__button-icon">
-                        <span class="btn__text">Завантажити PDF</span>
-                    </a>
-                    <a href="#" class="select-apartmens-bottom__button btn">
-                        <span class="btn__text">Дізнатися ціну</span>
-                    </a>
                 </div>
-                <img src="img/select-appartmets/compas.png" alt="image" class="select-apartmens__image">
+                <img src="img/select-appartmets/compas.png" alt="image" class="select-apartmens__image select-apartmens__image_none">
             </div>
         </section>
  

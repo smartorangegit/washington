@@ -11,23 +11,24 @@
     background-position: center;
     background-image: url('../img/common/menu_bg.jpg');
     transform-origin: 100% 0%;
-    transform: scale(0);
     &.menu_open {
-        display: block;
         animation: menu_open 0.9s forwards;
     }
 }
+.menu_close {
+        animation: menu_close 0.9s forwards;
+    }
 
 .menu-page-top__letter-w {
     &-wrap {
         opacity: 0;
         transform: translate(-25%, -75%);
-        animation: menu_slide_top 1s 0.3s forwards;
+        animation: menu_slide_W_top 1s 0.5s forwards;
     }
 }
 .menu_letter_W_right {
     transform: translateX(-30%);
-    animation: menu_slide_W_left 1s 1s forwards;
+    animation: menu_slide_W_left 1s 1.5s forwards;
 }
 
 .page-top__menu {
@@ -62,7 +63,28 @@
     width: 25%;
     margin-top: 80px;
     opacity: 0;
-    animation: menu_slide_left 1s 1s forwards;
+    transition: all 1s;
+    transform: translateX(-10%);
+    animation: menu_slide_left 1s forwards;
+
+    &_1 {
+        animation-delay: 1.5s;
+    }
+    &_2 {
+        animation-delay: 1.7s;
+    }
+    &_3 {
+        animation-delay: 1.9s;
+    }
+    &_4 {
+        animation-delay: 2.1s;
+    }
+    &_5 {
+        animation-delay: 2.3s;
+    }
+    &_6 {
+        animation-delay: 2.5s;
+    }
 }
 .menu__nav-item-heading {
     font-size: 1.5rem;
@@ -127,13 +149,35 @@
 
 @keyframes menu_open {
     from {
-        transform: scale(0);
+        transform: translateY(-110%);
         opacity: 0;
     }
 
     to {
-        transform: scale(1);
+        transform: translateY(0%);
         opacity: 1;
+    }
+}
+
+@keyframes menu_close {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateY(-10%);
+    }
+
+    95% {
+        opacity: 0;
+        display: block;
+    }
+
+    to {
+        transform: translateY(110%);
+        opacity: 0;
+        display: none;
     }
 }
 
@@ -146,6 +190,18 @@
 
     to {
         transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes menu_slide_W_top {
+    from {
+        transform: translate(-25%, -75%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-25%, -30%);
         opacity: 1;
     }
 }
@@ -170,15 +226,4 @@
     }
 }
 
-@keyframes menu_slide_top {
-    from {
-        transform: translate(-25%, -75%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translate(-25%, -37%);
-        opacity: 1;
-    }
-}
 

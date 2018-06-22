@@ -5,6 +5,16 @@
 
 	.select-button {
 		width: 22%;
+
+		&__flat-plan {
+			width: 24.77%;
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.select-button__flat-plan {
+		width: 30%;
 	}
 }
 
@@ -28,6 +38,10 @@
 	.select-apartmens__image {
 		top: 80%;
 		left: 10px;
+	}
+
+	.select-button__flat-plan {
+		margin-bottom: 0;
 	}
 
 }
