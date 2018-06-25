@@ -100,12 +100,54 @@
     }
 }
 
+//all-flat
+.all-flat {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__text {
+        margin-left: 70/1180*100%;
+        color: #000;
+    }
+
+    &-list {
+        width: 500/1180*100%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70/1180*100%;
+
+        &__link {
+            color: #000;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0%;
+                height: 1px;
+                background-color: #000;
+                content: " ";
+                transition: all 0.3s;
+            }
+
+            &:hover:before {
+                width: 100%;
+            }
+        }
+    }
+}
+
 // filter results
 .filter__result-link {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .filter__results {
     display: flex;
@@ -130,6 +172,12 @@
         margin-bottom: 15px;
     }
 }
+.result__image {
+    margin-bottom: 30px;
+}
+.result__image img{
+    width: 100%;
+}
 .result__number {
     font-weight: 400;
 }
@@ -137,6 +185,13 @@
     line-height: 50px;
     text-align: center;
     background-color: $beige1;
+
+    &::before {
+        background-color: rgba($green1, 0.5)
+    }
+    &::after {
+        background-color: rgba($green1, 0.4)
+    }
 }
 
 .filter__hidden-values {
@@ -148,4 +203,24 @@
 }
 .filter__result_visible {
     display: block;
+}
+
+.filter__more-results-btn {
+    width: 690/1180*100%;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 12/16*1rem;
+    background-color: $beige1;
+    color: #fff;
+    margin: 50px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+        background-color: rgba($green1, 0.5)
+    }
+    &::after {
+        background-color: rgba($green1, 0.4)
+    }
 }

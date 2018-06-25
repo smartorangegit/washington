@@ -3,12 +3,14 @@
 }
 .choose-floor__center {
     flex: 1;
+    text-align: center;
 }
 
 .compass {
     width: 120px;
     height: 120px;
     position: relative;
+    margin: 45px 0 55px;
     img {
         position: absolute;
         top: 50%;
@@ -45,13 +47,20 @@ $compassRoateDeg: 0deg;
 }
 
 .choose-floor_arrow {
-    position: absolute;
     width: 340px;
     line-height: 50px;
+    height: 50px;
     text-align: center;
     border-top: 1px solid $green1;
     border-left: 1px solid $green1;
     border-bottom: 1px solid $green1;
+    // margin-right: 15px;
+
+
+    &-wrap {
+        position: absolute;
+        display: flex;
+    }
 
    &::before {
         content: '';
@@ -64,6 +73,50 @@ $compassRoateDeg: 0deg;
         border-right: 1px solid $green1;
         border-top: 1px solid $green1;
         transform: rotate(45deg);
+        box-sizing: border-box;
+   }
+
+   &_short {
+    position: absolute;
+    right: -7%;
+    width: 15px;
+    height: 50px;
+    text-align: center;
+    border-top: 1px solid $green1;
+    border-bottom: 1px solid $green1;
+    opacity: 0.6; 
+    &_2 {
+        right: -14%;
+        opacity: 0.4;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        right: -18px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        border-right: 1px solid $green1;
+        border-top: 1px solid $green1;
+        transform: rotate(45deg);
+        box-sizing: border-box;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: -18px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        border-right: 1px solid $green1;
+        border-top: 1px solid $green1;
+        transform: rotate(45deg);
+        box-sizing: border-box;
+    }
    }
 }
 

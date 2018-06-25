@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Filter</title>
 </head>
 <body>
@@ -38,7 +38,7 @@
 
         <div class="filter__controls wrapper">
             <div class="filter__wrapper">
-                <div>
+                <div class="range-wrap">
                     <!-- Filter range price total - pt -->
                     <div class="filter__slider filter__slider_pt js-filter__slider_pt">
                         <h5 class="filter__heading">Вартість грн:</h5>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="range-wrap">
                     <!-- Filter range price meter - pm -->
                     <div class="filter__slider filter__slider_pm js-filter__slider_pm">
                         <h5 class="filter__heading">Ціна за м<sup>2</sup>:</h5>
@@ -133,6 +133,26 @@
         </div>
 
         <div class="wrapper">
+            <div class="all-flat">
+                <p class="all-flat__text">Знайдено типів квартир: <span class="all-flat__text-quantity">3768</span> </p>
+                <ul class="all-flat-list">
+                    <li class="all-flat-list__item">
+                        <a href="#" class="all-flat-list__link">1-кімнатні</a>
+                    </li>
+                    <li class="all-flat-list__item">
+                        <a href="#" class="all-flat-list__link">2-кімнатні</a>
+                    </li>
+                    <li class="all-flat-list__item">
+                        <a href="#" class="all-flat-list__link">3-кімнатні</a>
+                    </li>
+                    <li class="all-flat-list__item">
+                        <a href="#" class="all-flat-list__link">4-кімнатні</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper">
             <ul class="filter__results">
                 <li 
                     data-pricetotal="10000"
@@ -144,7 +164,7 @@
                     <a class="filter__result-link" href="#">
                         <div class="result__main-content">
                             <div class="result__image">
-
+                                <img src="img/flat-plan/flat-1.png" alt="flat">
                             </div>
                             <ul class="result__data">
                                 <li>Секція: <span class="result__number">3</span></li>
@@ -153,7 +173,7 @@
                                 <li>Житлова площа: <span class="result__number">20.4</span></li>
                             </ul>
                         </div>
-                        <div class="filter__result_btn">
+                        <div class="filter__result_btn btn">
                             Дивитися квартиру
                         </div>
                     </a>
@@ -165,10 +185,10 @@
                     data-pricemeter="12000"
                     data-livingarea="30"
                     class="filter__result js-filter__result filter__result_hidden">
-                    <a href="#">
-                        <div>
+                    <a class="filter__result-link" href="#">
+                        <div class="result__main-content">
                             <div class="result__image">
-
+                                <img src="img/flat-plan/flat-1.png" alt="flat">
                             </div>
                             <ul class="result__data">
                                 <li>Секція: <span class="result__number">3</span></li>
@@ -176,6 +196,9 @@
                                 <li>Заг. площа: <span class="result__number">36.2</span></li>
                                 <li>Житлова площа: <span class="result__number">20.4</span></li>
                             </ul>
+                        </div>
+                        <div class="filter__result_btn btn">
+                            Дивитися квартиру
                         </div>
                     </a>
                 </li>
@@ -186,10 +209,10 @@
                     data-pricemeter="13000"
                     data-livingarea="40"
                     class="filter__result js-filter__result filter__result_hidden">
-                    <a href="#">
-                    <div>
+                    <a class="filter__result-link" href="#">
+                        <div class="result__main-content">
                             <div class="result__image">
-
+                                <img src="img/flat-plan/flat-1.png" alt="flat">
                             </div>
                             <ul class="result__data">
                                 <li>Секція: <span class="result__number">3</span></li>
@@ -197,6 +220,9 @@
                                 <li>Заг. площа: <span class="result__number">36.2</span></li>
                                 <li>Житлова площа: <span class="result__number">20.4</span></li>
                             </ul>
+                        </div>
+                        <div class="filter__result_btn btn">
+                            Дивитися квартиру
                         </div>
                     </a>
                 </li>
@@ -207,10 +233,10 @@
                     data-pricemeter="14000"
                     data-livingarea="50"
                     class="filter__result js-filter__result filter__result_hidden">
-                    <a href="#">
-                    <div>
+                    <a class="filter__result-link" href="#">
+                        <div class="result__main-content">
                             <div class="result__image">
-
+                                <img src="img/flat-plan/flat-1.png" alt="flat">
                             </div>
                             <ul class="result__data">
                                 <li>Секція: <span class="result__number">3</span></li>
@@ -218,6 +244,9 @@
                                 <li>Заг. площа: <span class="result__number">36.2</span></li>
                                 <li>Житлова площа: <span class="result__number">20.4</span></li>
                             </ul>
+                        </div>
+                        <div class="filter__result_btn btn">
+                            Дивитися квартиру
                         </div>
                     </a>
                 </li>
@@ -228,10 +257,10 @@
                     data-pricemeter="15000"
                     data-livingarea="60"
                     class="filter__result js-filter__result filter__result_hidden">
-                    <a href="#">
-                    <div>
+                    <a class="filter__result-link" href="#">
+                        <div class="result__main-content">
                             <div class="result__image">
-
+                                <img src="img/flat-plan/flat-1.png" alt="flat">
                             </div>
                             <ul class="result__data">
                                 <li>Секція: <span class="result__number">3</span></li>
@@ -239,6 +268,9 @@
                                 <li>Заг. площа: <span class="result__number">36.2</span></li>
                                 <li>Житлова площа: <span class="result__number">20.4</span></li>
                             </ul>
+                        </div>
+                        <div class="filter__result_btn btn">
+                            Дивитися квартиру
                         </div>
                     </a>
                 </li>
@@ -249,10 +281,10 @@
                     data-pricemeter="16000"
                     data-livingarea="70"
                     class="filter__result js-filter__result filter__result_hidden">
-                    <a href="#">
-                    <div>
+                    <a class="filter__result-link" href="#">
+                        <div class="result__main-content">
                             <div class="result__image">
-
+                                <img src="img/flat-plan/flat-1.png" alt="flat">
                             </div>
                             <ul class="result__data">
                                 <li>Секція: <span class="result__number">3</span></li>
@@ -260,6 +292,9 @@
                                 <li>Заг. площа: <span class="result__number">36.2</span></li>
                                 <li>Житлова площа: <span class="result__number">20.4</span></li>
                             </ul>
+                        </div>
+                        <div class="filter__result_btn btn">
+                            Дивитися квартиру
                         </div>
                     </a>
                 </li>

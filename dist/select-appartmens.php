@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>News</title>
+    <title>Select apartmens</title>
 </head>
 <body>
     <?php include_once('includes/header.php');?>
@@ -56,7 +56,12 @@
                     </div>
                 
                     <a href="#" class="select-button btn">
-                        <img src="img/select-appartmets/filter.png" alt="icon" class="select-button__icon select-button__icon_scale">
+                        <!-- <img src="img/select-appartmets/filter.png" alt="icon" class="select-button__icon select-button__icon_scale"> -->
+                        <span class="filter-btn__icon">
+                            <div class="filter-btn__line"><span class="filter-btn__dot filter-btn__dot_1"></span></div>
+                            <div class="filter-btn__line"><span class="filter-btn__dot filter-btn__dot_2"></span></div>
+                            <div class="filter-btn__line"><span class="filter-btn__dot filter-btn__dot_3"></span></div>
+                        </span>
                         <span class="select-button__text btn__text">Фільтр</span>
                     </a>
                 </div>

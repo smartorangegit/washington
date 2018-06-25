@@ -577,7 +577,6 @@ var menuCtrl = (function() {
     };
 
     var closeMenu = function() {
-        // openMenuBtn = document.querySelector('.menu-none-js').style.display = 'none';
         menu.classList.remove(openMenuClass);
         menu.classList.add(closeMenuClass);
         showScrollBar();

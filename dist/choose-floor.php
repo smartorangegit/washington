@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Choose Floor</title>
 </head>
 <body>
@@ -45,11 +45,15 @@
                     <span class="compass__direction compass__direction_south">Пд</span>
                     <span class="compass__direction compass__direction_west">Зх</span>
                 </div>
-                <div class="choose-floor_arrow">
-                    <span>Оберіть потрібний поверх</span>
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="11" viewBox="0 0 44 11"><defs><path id="fk3ga" d="M686 443v1h-1v1h-1v-1h-42v-1h42v-1h1v1zm-3 3v-1h1v1zm-1 1v-1h1v1zm-1 1v-1h1v1zm2-6v-1h1v1zm-1-1v-1h1v1zm-1-1v-1h1v1zm-1-1v-1h1v1zm0 10v-1h1v1z"/></defs><g><g transform="translate(-642 -438)"><use fill="#525249" xlink:href="#fk3ga"/></g></g></svg>
-                    </span>
+                <div class="choose-floor_arrow-wrap">
+                    <div class="choose-floor_arrow">
+                        <span>Оберіть потрібний поверх</span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="11" viewBox="0 0 44 11"><defs><path id="fk3ga" d="M686 443v1h-1v1h-1v-1h-42v-1h42v-1h1v1zm-3 3v-1h1v1zm-1 1v-1h1v1zm-1 1v-1h1v1zm2-6v-1h1v1zm-1-1v-1h1v1zm-1-1v-1h1v1zm-1-1v-1h1v1zm0 10v-1h1v1z"/></defs><g><g transform="translate(-642 -438)"><use fill="#525249" xlink:href="#fk3ga"/></g></g></svg>
+                        </span>
+                    </div>
+                    <div class="choose-floor_arrow_short"></div>
+                    <div class="choose-floor_arrow_short choose-floor_arrow_short_2"></div>
                 </div>
                 <div class="choose-floor__rooms-btns">
                     <ul>

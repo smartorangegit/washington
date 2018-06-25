@@ -57,11 +57,14 @@ $dark-rose: #D2C5C5;
         .btn__text {
             color: $beige1;
         }
-        .select-button__icon_transform {
-            transform: translateX(-30%);
+        .filter-btn__dot_1 {
+            left: 29px;
         }
-        .select-button__icon_scale {
-            transform: scale(1.1);
+        .filter-btn__dot_2 {
+            left: 14px;
+        }
+        .filter-btn__dot_3 {
+            left: 10px;
         }
     }
 
@@ -77,6 +80,42 @@ $dark-rose: #D2C5C5;
         font-size: 12/16*1rem;
         font-weight: 600;
     }
+}
+
+.filter-btn__icon {
+    width: 50px;
+    height: 18px;
+    display: flex;
+    margin-right: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.filter-btn__line {
+    width: 40px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: $green1;
+    position: relative;
+}
+.filter-btn__dot {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid $green1;
+    background-color: $beige1;
+    transition: all 0.5s;
+}
+.filter-btn__dot_1 {
+    left: 1px;
+}
+.filter-btn__dot_2 {
+    left: 18px;
+}
+.filter-btn__dot_3 {
+    left: 34px;
 }
 
 .select-floor {

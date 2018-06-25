@@ -1,0 +1,126 @@
+@media screen and (max-width: 900px) {
+	.filter__wrapper {
+		flex-wrap: wrap; 
+		justify-content: center;
+
+		.range-wrap {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	.filter__ranges {
+		width: 100%;
+		margin: 0;
+	}
+
+	.filter__controls {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.filter__text {
+		margin-bottom: 10px;
+	}
+
+	.filter__search-reset {
+		flex-wrap: wrap;
+	}
+
+	.filter__btn {
+		order: 2;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.filter__results-found {
+		width: 50%;
+		font-size: 0.8rem;
+	}
+
+	.filter__reset {
+		width: 50%;
+		font-size: 0.8rem;
+	}
+
+	.filter__results {
+		padding: 0 10px;
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	.filter__result {
+		width: 30%;
+		margin-bottom: 15px;
+	}
+
+	.filter__rooms {
+		width: 200px;
+		margin: 0 auto;
+	}
+	
+	.filter__room {
+		display: inline-block;
+		margin-right: 22px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.all-flat {
+		flex-wrap: wrap;
+		height: 50px;
+		margin: 20px 0;
+
+		&__text, &-list {
+			width: 95%;
+			padding: 0 10px;
+			margin: 0;
+			box-sizing: border-box;
+		} 
+
+		&__text {
+			text-align: center;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+	.filter__rooms {
+		width: 200px;
+		margin: 0 auto;
+	}
+	
+	.filter__room {
+		display: inline-block;
+		margin-right: 22px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.all-flat {
+
+		&__text {
+			font-size: 0.8rem;
+		}
+
+		&-list {
+			&__link {
+				font-size: 0.8rem;
+			}
+		}
+	}
+	
+	.filter__result {
+		width: 100%;
+	}
+}

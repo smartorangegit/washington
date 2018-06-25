@@ -10,12 +10,12 @@
                             <path class="letter_W_right menu_letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/>
                         </svg>
                     </div>
-                    <img class="menu__close-btn js-menu__close-btn" src="img/common/close-menu.png" alt="close">
+                    <img class="menu__close-btn js-menu__close-btn" src="/wp-content/themes/washington/assets/img/common/close-menu.png" alt="close">
                 </div>
             </div>
         </div>
         <!-- page-top -->
-        <div class="menu__nav animate">
+        <div class="menu__nav">
             <div class="menu__nav-item menu__nav-item_1">
                 <div class="menu__nav-item-heading">
                     Головна
