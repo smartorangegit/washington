@@ -11,7 +11,7 @@ var filterPage = (function() {
     var visibleResultsClass = 'filter__result_visible';
     var filteredResults = [];
     // Show per new search
-    var defaultSearchNumber = 2;
+    var defaultSearchNumber = 8;
     var resultsPerSearch = defaultSearchNumber;
     var moreResults = 2;
     // More results button

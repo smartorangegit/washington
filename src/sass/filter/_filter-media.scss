@@ -47,11 +47,12 @@
 		padding: 0 10px;
 		box-sizing: border-box;
 		margin: 0;
+		justify-content: space-between;
 	}
 
 	.filter__result {
 		width: 30%;
-		margin-bottom: 15px;
+		margin-right: 0;
 	}
 
 	.filter__rooms {

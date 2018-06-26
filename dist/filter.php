@@ -152,7 +152,7 @@
             </div>
         </div>
 
-        <div class="wrapper">
+        <div class="wrapper filter__results-wrap">
             <ul class="filter__results">
                 <li 
                     data-pricetotal="10000"
