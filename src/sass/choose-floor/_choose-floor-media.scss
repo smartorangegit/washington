@@ -1,0 +1,118 @@
+@media screen and (max-width: 1023px) {
+	.choose-floor_arrow {
+		width: 280px;
+		line-height: 40px;
+		height: 40px;
+		font-size: 0.9rem;
+
+		&:before {
+			height: 28px;
+			width: 28px;
+			top: 6px;
+			right: -14px;
+		}
+
+		&_short {
+			height: 40px;
+
+			&:before, &:after {
+				height: 30px;
+				width: 30px;
+			}
+		}
+	}
+
+	.compass {
+		display: none;
+	}
+
+	.choose-floor_arrow-wrap {
+		margin-top: 50px;
+	} 
+
+	/*.choose-floor__rooms-btns {
+		margin-top: 100px;
+	}*/
+
+	.choose-floor__rooms-btn {
+		line-height: 40px;
+	}
+
+	.filter-btn {
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.choose-floor__center svg {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.choose-floor__content {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.choose-floor_arrow-wrap {
+		margin-top: 70px;
+	}
+
+	.choose-floor__left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	.choose-floor__rooms-btns {
+		width: 100%;
+		margin-top: 15px;
+
+		ul {
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+
+	.choose-floor__rooms-btn {
+		width: 30%;
+	}
+
+	.choose-floor__right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between; 
+	}
+
+	.filter-btn__container {
+		width: 48%;
+	}
+
+	.filter-btn {
+		width: 100%;
+	}
+
+	.choose-floor__price-btn {
+		margin-top: 0;
+		width: 100%;
+		line-height: 40px;
+
+		&-wrap {
+			width: 47%;
+		}
+	}
+
+	.choose-floor__center {
+		height: 500px;
+	}
+
+	.choose-floor__info_floor-number, .choose-floor__info_apartments-number {
+		order: 2;
+		width: 50%;
+		margin-bottom: 50px;
+	}
+}

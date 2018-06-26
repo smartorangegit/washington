@@ -52,8 +52,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="11" viewBox="0 0 44 11"><defs><path id="fk3ga" d="M686 443v1h-1v1h-1v-1h-42v-1h42v-1h1v1zm-3 3v-1h1v1zm-1 1v-1h1v1zm-1 1v-1h1v1zm2-6v-1h1v1zm-1-1v-1h1v1zm-1-1v-1h1v1zm-1-1v-1h1v1zm0 10v-1h1v1z"/></defs><g><g transform="translate(-642 -438)"><use fill="#525249" xlink:href="#fk3ga"/></g></g></svg>
                         </span>
                     </div>
-                    <div class="choose-floor_arrow_short"></div>
-                    <div class="choose-floor_arrow_short choose-floor_arrow_short_2"></div>
+                    <!-- <div class="choose-floor_arrow_short"></div> -->
+                    <!-- <div class="choose-floor_arrow_short choose-floor_arrow_short_2"></div> -->
                 </div>
                 <div class="choose-floor__rooms-btns">
                     <ul>
@@ -65,7 +65,68 @@
             </div>
 
             <div class="choose-floor__center">
-                <img src="img/choose-floor/kinda-svg.jpg" alt="SVG">
+                <svg clas="build__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 360 624" style="enable-background:new 0 0 360 624;" xml:space="preserve">
+                    <image style="overflow:visible;" width="537" height="831" xlink:href="img/choose-floor/build.png"  transform="matrix(0.75 0 0 0.75 -25 10)">
+                    </image>
+                    <a href="#" class="build__link">
+                        <rect x="108.5" y="22" class="build__rectangle" width="156.5" height="24"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="108.5" y="46" class="build__rectangle" width="156.5" height="24"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="108.5" y="70" class="build__rectangle" width="156.5" height="24"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="108.5" y="94" class="build__rectangle" width="156.5" height="24"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="108.5" y="118" class="build__rectangle" width="156.5" height="24"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="108.5" y="142" class="build__rectangle" width="156.5" height="24"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="108.5" y="166" class="build__rectangle" width="156.5" height="24"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="108.5" y="190" class="build__rectangle" width="156.5" height="24"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="85.5" y="214" class="build__rectangle" width="179.5" height="24"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="85.5" y="238" class="build__rectangle" width="179.5" height="13.5"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="74" y="253.5" class="build__rectangle" width="204" height="26.5"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="74.375" y="281.125" class="build__rectangle" width="204" height="26.5"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="73.25" y="308.75" class="build__rectangle" width="204" height="26.5"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="73.25" y="335.25" class="build__rectangle" width="204" height="15.75"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="65.687" y="352" class="build__rectangle" width="219.125" height="29.938"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="66.438" y="382.938" class="build__rectangle" width="219.125" height="19.063"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="58.125" y="404" class="build__rectangle" width="232.875" height="29.938"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="58.125" y="435.938" class="build__rectangle" width="232.875" height="29.938"/>
+                    </a>
+                    <a href="#" class="build__link">
+                        <rect x="58.125" y="474.438" class="build__rectangle" width="239.375" height="63.563"/>
+                    </a>
+                </svg>
             </div>
 
             <div class="choose-floor__right">
@@ -87,7 +148,7 @@
                     <div class="choose-floor__info-text">Кількість квартир</div>
                     <div class="choose-floor__info-number">25</div>
                 </div>
-                <div>
+                <div class="choose-floor__price-btn-wrap">
                     <a href="#" class="choose-floor__price-btn btn"><span class="btn__text">Дізнатися ціну</span></a>
                 </div>
             </div>

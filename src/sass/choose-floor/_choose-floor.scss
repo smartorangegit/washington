@@ -1,9 +1,37 @@
+.choose-floor {
+    background: url(../img/choose-floor/choose-floor-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
 .choose-floor__content {
     display: flex;
 }
 .choose-floor__center {
     flex: 1;
     text-align: center;
+    position: relative;
+    height: 100%;
+
+    svg {
+        position: relative;
+        max-height: 100%;
+        width: 75%;
+    }
+}
+
+.build__link {
+    cursor: pointer;
+
+    &:hover {
+        .build__rectangle {
+            opacity: 0.7;
+        }       
+    }
+}
+.build__rectangle {
+    opacity: 0;
+    fill: #D2C5C5;
+    transition: all 0.2s;
 }
 
 .compass {
