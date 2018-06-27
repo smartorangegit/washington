@@ -510,7 +510,9 @@ var contactsForm = (function() {
                   PostFormData(urObV, data, function(res) {
                       console.log(res);
                       //Call modal window which was instanciated before
-                      //successModal.showModal();
+                      // successModal.showModal();
+                      // alert("sd");
+                      document.querySelector(".js-callback-form").classList.add("callback-form_closed");
                       //Clear all filled inputs
                       inputsArr.forEach(function(inputInstance) {
                           inputInstance.input.value = '';
@@ -600,7 +602,7 @@ var menuCtrl = (function() {
 var callbackFormCtrl = (function() {
 
     var form = document.querySelector('.js-callback-form');
-    var closeFormBtn = document.querySelector('.js-callback-form__close-btn');
+    var closeFormBtn = document.querySelectorAll('.js-callback-form__close-btn');
     var openFormBtns = document.querySelectorAll('.js-open-callback-form');
     var closedFormClass = 'callback-form_closed';
 
@@ -621,7 +623,10 @@ var callbackFormCtrl = (function() {
     openFormBtns.forEach(function(btn) {
         btn.addEventListener('click', openForm);
     });
-    closeFormBtn.addEventListener('click', closeForm);
+    closeFormBtn.forEach(function(btn) {
+        btn.addEventListener('click', closeForm);
+    });
+    // closeFormBtn.addEventListener('click', closeForm);
 
 })();
 // Callbakc form end

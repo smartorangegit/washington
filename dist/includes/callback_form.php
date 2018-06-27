@@ -28,8 +28,8 @@
                 <div class="callback-input callback-input_message js-input-message-container">
                     <textarea class="textarea textarea_message js-input-message" name="message" placeholder="Ваше питання:"></textarea>
                 </div>
-                <div class="callback-input callback-input_submit">
-                    <input class="submit_btn" type="submit" value="Відправити">
+                <div class="callback callback-input callback-input_submit">
+                    <input class="submit_btn js-callback-form__close-btn" type="submit" value="Відправити">
                 </div>
             </form>
         </div>
