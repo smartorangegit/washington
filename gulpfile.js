@@ -154,6 +154,18 @@ gulp.task('select-appartmens-js', function() {
 });
 // select-apparmens end
 
+// document start
+gulp.task('document-js', function() {
+	return gulp.src([
+		'src/js/libs/slick.min.js',
+		'src/js/document.js',
+		])
+	.pipe(concat('document.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// document end
+
 gulp.task('js', [
 	'common-js',
 	'home-js',
@@ -165,6 +177,7 @@ gulp.task('js', [
 	'location-js',
 	'values-js',
 	'select-appartmens-js',
+	'document-js',
 	'filter-js'], function() {
 	return gulp.src([
 		'src/js/common.js',
