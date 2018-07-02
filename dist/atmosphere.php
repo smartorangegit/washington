@@ -63,9 +63,9 @@
                         </h1>
                         <svg version="1.1" class="atmosphere-middle__icon"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 76 76.3" style="enable-background:new 0 0 76 76.3;" xml:space="preserve">
-                            <style type="text/css">
+                            <!-- <style type="text/css">
                                 .st0{fill:none;stroke:#525249;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
-                            </style>
+                            </style> -->
                             <polygon class="st0" points="57.5,29.1 12.7,4.4 12.8,49.2 57.5,73.8 "/>
                             <polygon class="st0" points="49,51.4 41.3,47.2 41.3,56.5 49,60.8 "/>
                             <line class="st0" x1="42.1" y1="56.9" x2="42.1" y2="61.6"/>
@@ -162,9 +162,9 @@
                         </h1>
                         <svg version="1.1" class="atmosphere-middle__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 76 77.3" style="enable-background:new 0 0 76 77.3;" xml:space="preserve">
-                            <style type="text/css">
+                           <!--  <style type="text/css">
                                 .st0{fill:none;stroke:#525249;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
-                            </style>
+                            </style> -->
                             <path class="st0" d="M41.8,74.6l-13.3-6.9c-2-1.2-3.2-3.4-3.3-5.7V6.5c0-2.2,1.5-3.2,3.3-2.3l13.3,6.9c2,1.2,3.2,3.4,3.3,5.7v55.5
                                 C45.1,74.6,43.6,75.6,41.8,74.6z"/>
                             <path class="st0" d="M49.6,72L49.6,72c0.9-0.5,1.4-1.5,1.2-2.5V14c0-0.8-0.2-1.6-0.5-2.4c-0.5-1.4-1.5-2.6-2.8-3.4L34.2,1.4
