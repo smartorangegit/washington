@@ -1,4 +1,58 @@
 
+.our-contacts {
+    position: relative;
+    height: 450px;
+
+    &__image {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+    }
+}
+.our-contacts-list {
+    margin-top: 50px;
+    margin-left: 39%;
+    width: 575/1160*100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        position: relative;
+        width: 49%;
+        margin-bottom: 25px;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: -45px;
+            width: 30px;
+            height: 30px;
+            content: " ";
+            background-image: url(../img/tab-forms/tab-sprite.png);
+        }
+
+        &_2:before {
+            background-position: 30px 0px; 
+        }
+        &_3:before {
+            background-position: 0px 156px; 
+        }
+    }
+
+    &__heading {
+        font-size: 24/16*1rem;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    &__info {
+        font-size: 18/16*1rem;
+        line-height: 1.6;
+    }
+}
+
+
+
 .contacts {
     max-width: 1160px;
     margin: 0px auto 20px;

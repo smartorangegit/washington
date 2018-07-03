@@ -53,7 +53,7 @@
                         </p>
                     </div>
                     <div class="atmosphere-top-video">
-                        <iframe class="atmosphere-top__video" src="https://www.youtube.com/embed/47Plg93oJ1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe class="atmosphere-top__video" src="https://www.youtube.com/embed/LYWyG4refiI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="atmosphere-middle">

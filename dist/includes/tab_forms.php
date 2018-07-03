@@ -6,10 +6,26 @@
             <div class="contacts__tab contacts__tab_3" data-tab="contacts-callback-form">Форма зворотного зв′язку</div>
         </div>
     
-        <div id="our-contacts" class="contacts__tab-content contacts__tab-content__hidden">
+        <div id="our-contacts" class="contacts__tab-content contacts__tab-content__hidden our-contacts">
             <h3 class="heading contacts__heading">
                 Наші контактні дані
             </h3>
+            <img src="img/tab-forms/Logo-callback.png" alt="logo" class="our-contacts__image">
+            <ul class="our-contacts-list">
+                <li class="our-contacts-list__item our-contacts-list__item_1">
+                    <p class="our-contacts-list__heading">Наш телефон:</p>
+                    <p class="our-contacts-list__info">(044) 290-73-86</p>
+                </li>
+                <li class="our-contacts-list__item our-contacts-list__item_2">
+                    <p class="our-contacts-list__heading">Години роботи відділу продажу:</p>
+                    <p class="our-contacts-list__info">Пн-пт: 09.00 - 19.00</p>
+                    <p class="our-contacts-list__info">Сб-нд: 10.00 - 18.00</p>
+                </li>
+                <li class="our-contacts-list__item our-contacts-list__item_3">
+                    <p class="our-contacts-list__heading">Наша адреса:</p>
+                    <p class="our-contacts-list__info">м. Київ Набережно-Рибальська дорога, 3, 9</p>
+                </li>
+            </ul>
         </div>
         
         <div id="get-callback" class="contacts__tab-content contacts__tab-content-2">
