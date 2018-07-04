@@ -69,61 +69,61 @@
                      viewBox="0 0 360 624" style="enable-background:new 0 0 360 624;" xml:space="preserve">
                     <image style="overflow:visible;" width="537" height="831" xlink:href="img/choose-floor/build.png"  transform="matrix(0.75 0 0 0.75 -25 10)">
                     </image>
-                    <a href="#" class="build__link">
+                    <a data-floor="19" data-flat="23" href="#" class="build__link build__link_19">
                         <rect x="108.5" y="22" class="build__rectangle" width="156.5" height="24"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="18" data-flat="22" href="#" class="build__link">
                         <rect x="108.5" y="46" class="build__rectangle" width="156.5" height="24"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="17" data-flat="21" href="#" class="build__link">
                         <rect x="108.5" y="70" class="build__rectangle" width="156.5" height="24"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="16" data-flat="20" href="#" class="build__link">
                         <rect x="108.5" y="94" class="build__rectangle" width="156.5" height="24"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="15" data-flat="19" href="#" class="build__link">
                         <rect x="108.5" y="118" class="build__rectangle" width="156.5" height="24"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="14" data-flat="18" href="#" class="build__link">
                         <rect x="108.5" y="142" class="build__rectangle" width="156.5" height="24"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="13" data-flat="17" href="#" class="build__link">
                         <rect x="108.5" y="166" class="build__rectangle" width="156.5" height="24"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="12" data-flat="16" href="#" class="build__link">
                         <rect x="108.5" y="190" class="build__rectangle" width="156.5" height="24"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="11" data-flat="15" href="#" class="build__link">
                         <rect x="85.5" y="214" class="build__rectangle" width="179.5" height="24"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="10" data-flat="14" href="#" class="build__link">
                         <rect x="85.5" y="238" class="build__rectangle" width="179.5" height="13.5"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="9" data-flat="13" href="#" class="build__link">
                         <rect x="74" y="253.5" class="build__rectangle" width="204" height="26.5"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="8" data-flat="12" href="#" class="build__link">
                         <rect x="74.375" y="281.125" class="build__rectangle" width="204" height="26.5"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="7" data-flat="11" href="#" class="build__link">
                         <rect x="73.25" y="308.75" class="build__rectangle" width="204" height="26.5"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="6" data-flat="10" href="#" class="build__link">
                         <rect x="73.25" y="335.25" class="build__rectangle" width="204" height="15.75"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="5" data-flat="9" href="#" class="build__link">
                         <rect x="65.687" y="352" class="build__rectangle" width="219.125" height="29.938"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="4" data-flat="8" href="#" class="build__link">
                         <rect x="66.438" y="382.938" class="build__rectangle" width="219.125" height="19.063"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="3" data-flat="7" href="#" class="build__link">
                         <rect x="58.125" y="404" class="build__rectangle" width="232.875" height="29.938"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="2" data-flat="6" href="#" class="build__link">
                         <rect x="58.125" y="435.938" class="build__rectangle" width="232.875" height="29.938"/>
                     </a>
-                    <a href="#" class="build__link">
+                    <a data-floor="1" data-flat="5" href="#" class="build__link">
                         <rect x="58.125" y="474.438" class="build__rectangle" width="239.375" height="63.563"/>
                     </a>
                 </svg>
@@ -142,11 +142,11 @@
                 </div>
                 <div class="choose-floor__info choose-floor__info_floor-number">
                     <div class="choose-floor__info-text">Поверх</div>
-                    <div class="choose-floor__info-number">17</div>
+                    <div class="choose-floor__info-number choose-floor__info-number-js">0</div>
                 </div>
                 <div class="choose-floor__info choose-floor__info_apartments-number">
                     <div class="choose-floor__info-text">Кількість квартир</div>
-                    <div class="choose-floor__info-number">25</div>
+                    <div class="choose-floor__info-number choose-flat__info-number-js" data-set="12">0</div>
                 </div>
                 <div class="choose-floor__price-btn-wrap">
                     <a href="#" class="choose-floor__price-btn btn"><span class="btn__text">Дізнатися ціну</span></a>
@@ -159,5 +159,6 @@
     <?php include_once('includes/footer.php');?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/common.min.js"></script>
+<script src="js/choose-floor.min.js"></script>
 </body>
 </html>

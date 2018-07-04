@@ -166,6 +166,17 @@ gulp.task('document-js', function() {
 });
 // document end
 
+// choose-floor
+gulp.task('choose-floor-js', function() {
+	return gulp.src([
+		'src/js/choose-floor.js',
+		])
+	.pipe(concat('choose-floor.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// choose-floor end
+
 gulp.task('js', [
 	'common-js',
 	'home-js',
@@ -178,6 +189,7 @@ gulp.task('js', [
 	'values-js',
 	'select-appartmens-js',
 	'document-js',
+	'choose-floor-js',
 	'filter-js'], function() {
 	return gulp.src([
 		'src/js/common.js',
