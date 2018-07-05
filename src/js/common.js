@@ -6,39 +6,20 @@ var washingtonState = {
 //  =====================================================================================================================
 //  Preloader logic start
 var sagapreloaderAnimation = (function() {
+    var preloaderContainer = document.querySelector('.preloader-container');
 
     function init() {
-        sessionStorage.setItem('preloaderRan', true);
-        var preloaderContainer = document.querySelector('.preloader-container');
+        // sessionStorage.setItem('preloaderRan', true);
+        // var preloaderContainer = document.querySelector('.preloader-container');
         var circle = document.querySelector('.svg-circle');
         var loadingCircle = document.querySelector('.svg-loading-circle');
         var loadingCircleText = document.querySelector('.svg-loading-circle__text');
-        //var loadingCircleContainer = document.querySelector('.svg-loading-circle-container');
-        //var currentPercent = 0;
 
         var currentOffset = 236;
         var startingOffset = currentOffset;
         var step = 2.5;
 
         preloaderContainer.style.display = 'block';
-
-        // var showPercent = window.setInterval(function() {
-        //     if (currentPercent < 100) {
-        //     currentPercent += 1;
-        //     } else {
-        //     currentPercent = 100;
-        //     clearInterval(showPercent);
-        //     preloaderContainer.classList.add('remove-svg');
-        //     }
-        //     // Updates a div that displays the current percent
-        //     loadingCircleText.innerHTML = currentPercent + '%';
-        // }, 40);
-
-        // loadingCircleContainer.addEventListener('animationend', function(e) {
-        //     if(e.target.classList.contains('svg-loading-circle-container')) {
-        //         sessionStorage.setItem('preloaderRan', true);
-        //     }
-        // });
 
         // js based animation starts here
         circle.addEventListener('animationstart', animateLoadingCircle);
@@ -58,16 +39,43 @@ var sagapreloaderAnimation = (function() {
 
     };
 
+    function checkDate() {
+      if(localStorage.getItem('preloader')===null) {
+        localStorage.setItem('preloader', Date.now());
+        return true;
+      }
+      var hour = 3600 * 1000;  
+      if(Date.now() - localStorage.getItem('preloader') < hour) {
+        return false;
+      } else {
+        localStorage.setItem('preloader', Date.now());
+        return true;
+      }
+    }
+
     return {
-        init: init
+        init: init,
+        preloaderContainer: preloaderContainer,
+        checkDate: checkDate
     };
+
 
 })();
 
-if(!sessionStorage.getItem('preloaderRan')) {
-    sagapreloaderAnimation.init();
+// for session storage
+    // if(!sessionStorage.getItem('preloaderRan')) {
+    //     sagapreloaderAnimation.init();
+    // }
+
+// without session or local storage(every refresh page playing preloader) 
+    // sagapreloaderAnimation.init();
+
+// for local storage
+if(sagapreloaderAnimation.checkDate()) {
+  sagapreloaderAnimation.init();
+} else {
+  sagapreloaderAnimation.preloaderContainer.style.display = 'none';
 }
-// sagapreloaderAnimation.init();
 
 //  Preloader logic end
 //  =====================================================================================================================
