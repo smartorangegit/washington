@@ -126,7 +126,7 @@
                             <img src="img/flat-plan/pdf-icon.png" alt="icon" class="select-apartmens-bottom__button-icon">
                             <span class="btn__text">Завантажити PDF</span>
                         </a>
-                        <a href="#" class="select-apartmens-bottom__button btn">
+                        <a href="#" class="select-apartmens-bottom__button btn js-open-callback-form">
                             <span class="btn__text">Дізнатися ціну</span>
                         </a>
                     </div>

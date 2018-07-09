@@ -40,7 +40,7 @@
                         <span class="required-field-icon">*</span>
                     </div>
                     <div class="contacts-form__callback-input contacts-form__callback-input_phone js-input-phone-container">
-                        <input class="js-input-phone js-input-phone__international" type="tel" name="phone" placeholder="Ваш телефон:" data-required="true">
+                        <input class="js-input-phone js-input-phone__international tab-form__input-phone" type="tel" name="phone" placeholder="Ваш телефон:" data-required="true">
                         <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
                         <div class="validation-error validation-error_phone-format" style="display: none">Невірний формат телефону</div>
                         <span class="required-field-icon">*</span>
