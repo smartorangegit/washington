@@ -510,7 +510,7 @@
 //hero gallery end
 .hero__wrapper {
     position: relative;
-    margin-top: -325px;
+    margin-top: -270px;
 }
 // hero gourment start
 .hero__gourment {
@@ -781,18 +781,20 @@
     height: 550px;
 }
 .hp-advanages__gallery_item {
+    position: relative;
     width: 100%;
     height: 550px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.hp-advanages__gallery_item-0 {background-image: url('../img/home/advantage_gallery/1.jpg');}
-.hp-advanages__gallery_item-1 {background-image: url('../img/home/advantage_gallery/1.jpg');}
-.hp-advanages__gallery_item-2 {background-image: url('../img/home/advantage_gallery/1.jpg');}
-.hp-advanages__gallery_item-3 {background-image: url('../img/home/advantage_gallery/1.jpg');}
-.hp-advanages__gallery_item-4 {background-image: url('../img/home/advantage_gallery/1.jpg');}
-.hp-advanages__gallery_item-5 {background-image: url('../img/home/advantage_gallery/1.jpg');}
+.hp-advanages__gallery_item-0 {background-image: url('../img/advantages/1.jpg');}
+.hp-advanages__gallery_item-1 {background-image: url('../img/advantages/2.jpg');}
+.hp-advanages__gallery_item-2 {background-image: url('../img/advantages/3.jpg');}
+.hp-advanages__gallery_item-3 {background-image: url('../img/advantages/4.jpg');}
+.hp-advanages__gallery_item-4 {background-image: url('../img/advantages/5.jpg');}
+.hp-advanages__gallery_item-5 {background-image: url('../img/advantages/6.jpg');}
+.hp-advanages__gallery_item-6 {background-image: url('../img/advantages/7.jpg');}
 
 .hp-advantages__gallery-text {
     position: absolute;
@@ -826,6 +828,7 @@
     flex: 1;
 }
 .hp-advantages__gallery-paragraph {
+    display: none;
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 0.6px;
@@ -843,13 +846,12 @@
     width: 100%;
     height: 550px;
     background-size: cover;
-    background-position: center;
+    background-position: 225px center;
     background-repeat: no-repeat;
 }
-.hp-values__gallery_item-0 {background-image: url('../img/home/values_gallery/1.jpg');}
-.hp-values__gallery_item-1 {background-image: url('../img/home/values_gallery/1.jpg');}
-.hp-values__gallery_item-2 {background-image: url('../img/home/values_gallery/1.jpg');}
-.hp-values__gallery_item-3 {background-image: url('../img/home/values_gallery/1.jpg');}
+.hp-values__gallery_item-0 {background-image: url('../img/values/values_pleasures_bg.jpg');}
+.hp-values__gallery_item-1 {background-image: url('../img/values/values_privacy_bg.jpg');}
+.hp-values__gallery_item-2 {background-image: url('../img/values/values_personality_bg.jpg');}
 
 // values start
 .hp-values__gallery-text {
@@ -873,6 +875,7 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-top: 35px;
+    display: none;
     &::after {
         content: '';
         display: block;
@@ -883,6 +886,7 @@
     }
 }
 .hp-values__paragraph {
+    display: none;
     max-width: 205px;
     line-height: 26px;
 }

@@ -1,0 +1,30 @@
+@media screen and (max-width: 1000px) {
+	.gallery-slider-nav-wrap {
+		width: 70%;
+	}
+
+	.gallery-slider-nav__item {
+		height: 100px !important;
+		width: 100px !important;
+	}
+
+	.gallery-slider {
+		// height: 500px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.gallery-slider {
+		// height: 400px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.gallery-slider-nav-wrap {
+		display: none;
+	}
+
+	.gallery-slider {
+		height: 200px;
+	}
+}

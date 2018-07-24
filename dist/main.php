@@ -210,6 +210,7 @@
                 <div class="hp-advanages__gallery_item hp-advanages__gallery_item-3"></div>
                 <div class="hp-advanages__gallery_item hp-advanages__gallery_item-4"></div>
                 <div class="hp-advanages__gallery_item hp-advanages__gallery_item-5"></div>
+                <div class="hp-advanages__gallery_item hp-advanages__gallery_item-6"></div>
             </div>
             <div class="hp-advantages__gallery-text">
                 <a href="advantages.php">
@@ -239,7 +240,13 @@
                     </div>
                 </a>
                 <div class="hp-advantages__gallery-text_bottom">
-                    <p class="hp-advantages__gallery-paragraph">Вдале розташування у історичному центрі міста</p>
+                    <p class="hp-advantages__gallery-paragraph text-element-js">Вдале розташування у історичному центрі міста</p> 
+                    <p class="hp-advantages__gallery-paragraph text-element-js">Унікальна архітектура</p>
+                    <p class="hp-advantages__gallery-paragraph text-element-js">Насичена інфраструктура навколо</p>
+                    <p class="hp-advantages__gallery-paragraph text-element-js">Продумана інфраструктура у будинку – усе для гурманів</p>
+                    <p class="hp-advantages__gallery-paragraph text-element-js">Невелика кількість квартир</p>
+                    <p class="hp-advantages__gallery-paragraph text-element-js">Атмосфера клубного будинку</p>
+                    <p class="hp-advantages__gallery-paragraph text-element-js">Застосування систем «розумний будинок» та «розумна квартира»</p>
                 </div>
             </div>
         </div>
@@ -251,7 +258,7 @@
                 <div class="hp-values__gallery_item hp-values__gallery_item-0"></div>
                 <div class="hp-values__gallery_item hp-values__gallery_item-1"></div>
                 <div class="hp-values__gallery_item hp-values__gallery_item-2"></div>
-                <div class="hp-values__gallery_item hp-values__gallery_item-3"></div>
+                <!-- <div class="hp-values__gallery_item hp-values__gallery_item-3"></div> -->
 
                 </div>
                 <div class="hp-values__gallery-text">
@@ -269,9 +276,13 @@
                             <path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/>
                         </svg>
                     </div>
-                    <h3 class="hp-values__heading">Pleasures</h3>
-                    <p class="hp-values__paragraph">Отримувати задоволення від життя – кожну хвилину</p>
+                    <h3 class="hp-values__heading heading-element-js">Pleasures</h3>
+                    <h3 class="hp-values__heading heading-element-js">PRIVACY</h3>
+                    <h3 class="hp-values__heading heading-element-js">PERSONALITY</h3>
 
+                    <p class="hp-values__paragraph text-element-js">Отримувати задоволення від життя – кожну хвилину</p>
+                    <p class="hp-values__paragraph text-element-js">Жити в центрі міста, але не на виду</p>
+                    <p class="hp-values__paragraph text-element-js">Особисті інтереси кожного мешканця – у центрі уваги</p>
                 </div>
                 <a href="values.php">
                     <div class="hp-values__gallery-text_bottom">
@@ -568,7 +579,7 @@
                             <div class="W-logo W-logo_white W-logo_hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg>
                             </div>
-                            <h3 class="hover-ef__heading_2">Sfera Living System</h3>
+                            <h3 class="hover-ef__heading_2">SFERA Living System</h3>
                             <p class="hover-ef__paragraph">
                             Девелопер WASHINGTON Concept House – компанія SAGA Development, відома такими знаковими для Києва проектами:
                             </p>
@@ -585,7 +596,7 @@
                     <div class="hp-washington-sfera__bottom-line"></div>
                     <div class="hover-ef__bottom-text">
                         <h3 class="hover-ef__heading">
-                            Sfera Living System
+                            SFERA Living System
                             <span class="hover-ef__arrow_2">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="5.6456027mm" width="16.378967mm">
                                     <g transform="translate(-118.21429,-145.23871)"><path class="hp-arrow_main-line" d="m 118.21429,155.04077 58.03571,0" /><path class="hp-arrow__line" d="m 175.89286,154.97381 -6.80865,-6.55879" /><path class="hp-arrow__line" d="m 169.33222,161.88374 6.55879,-6.80865" /></g>

@@ -4,15 +4,18 @@
     z-index: 2;
 }
 .diw {
-    height: calc(100vh - 75px);
+    // height: calc(100vh - 75px);
+    height: 100vh;
 }
 .diw__slider {
-    height: calc(100vh - 75px);
+    // height: calc(100vh - 75px);
+    height: 100vh;
 
 }
 .diw__slider-item {
     width: 100%;
-    height: calc(100vh - 75px);
+    // height: calc(100vh - 75px);
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

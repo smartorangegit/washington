@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Values</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <section class="values">
         <div class="page-top page-top_values animate">
             <div class="page-top__wrapper">
-                <div class="page-top_heading">
+                <div class="page-top_heading_pink">
                     <h1>Цінності</h1>
                     <div class="page-top__letter-w">
                     <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 170.1 132.4"><path d="M57.1 132.4L0 0h6.4l51.5 119.2L82 62.8 55.2 0h6.2l24.1 57.1L110.4 0h4.9L88.2 62.7l24.6 57.1L165.4 0h4.7l-57.8 132.4-27.6-63.5-27.6 63.5z"/></svg>

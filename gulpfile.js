@@ -177,6 +177,17 @@ gulp.task('choose-floor-js', function() {
 });
 // choose-floor end
 
+// gallery
+gulp.task('gallery-js', function() {
+	return gulp.src([
+		'src/js/gallery.js',
+		])
+	.pipe(concat('gallery.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// gallery end
+
 gulp.task('js', [
 	'common-js',
 	'home-js',
@@ -189,6 +200,7 @@ gulp.task('js', [
 	'values-js',
 	'select-appartmens-js',
 	'document-js',
+	'gallery-js',
 	'choose-floor-js',
 	'filter-js'], function() {
 	return gulp.src([

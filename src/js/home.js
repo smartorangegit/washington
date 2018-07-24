@@ -84,4 +84,28 @@ var homePageSliders = (function() {
 })();
 //  =====================================================================================================================
 
+// slider change text
+function changeText(slider, textBlock) {
+    var text = textBlock.find(".text-element-js");
+    var heading = textBlock.find(".heading-element-js");
 
+    text[0].style.display="block";
+    if(heading.length != 0) {
+        heading[0].style.display="block";
+    }
+
+
+    slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        text.css("display", "none");
+        if(heading.length != 0) {
+            heading.css("display", "none");
+            heading[nextSlide].style.display="block";
+        }
+        text[nextSlide].style.display="block";
+    });
+};
+
+changeText($(".js-hp-gallery_advantages"), $(".hp-advantages__gallery-text_bottom"));
+
+changeText($(".js-hp-gallery_values"), $(".hp-values__gallery-text"));
+// end__slider change text
