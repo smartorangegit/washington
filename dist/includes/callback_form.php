@@ -1,4 +1,5 @@
-<div id="callback-form" class="callback-form callback-form_closed js-callback-form ">
+<?$webAd = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>
+<div id="callback-form" class="callback-form js-callback-form callback-form_closed">
     <div class="callback-form__container">
         <div class="page-top page-top__menu page-top__callback">
             <div class="page-top__wrapper callback-page-top__wrapper">
@@ -14,22 +15,34 @@
             </div>
         </div>
         <div>
-            <form id="callback-form" class="callback-form__form">
-                <img class="callback-form__close-btn js-callback-form__close-btn" src="img/common/close-menu.png" alt="close">
+            <form id="callback-form-main" class="callback-form__form">
+                <img class="callback-form__close-btn js-callback-form__close-btn" src="/wp-content/themes/washington/assets/img/common/close-menu.png" alt="close">
                 <div class="callback-input callback-input_name js-input-name-container">
-                    <input class="input-field input-field_name js-input-name" type="text" name="name" placeholder="Ваше ім’я:" data-required="true">
-                    <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+                    <input class="input-field input-field_name js-input-name" type="text" name="name" placeholder="Ваше ім’я:" data-required="true"
+                           onkeyup="javascript:countme('callback-form-main');">
+                    <span class="required-field-icon">(обов’язково)</span>
+                    <div class="validation-error validation-error__callback-form validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
                 </div>
                 <div class="callback-input callback-input_phone js-input-phone-container">
                     <input class="input-field input-field_phone js-input-phone__international js-input-phone" type="tel" name="phone" placeholder="Ваш телефон:" data-required="true">
-                    <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
-                    <div class="validation-error validation-error_phone-format" style="display: none">Невірний формат телефону</div>
+                    <span class="required-field-icon">(обов’язково)</span>
+                    <div class="validation-error validation-error__callback-form validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+                    <div class="validation-error validation-error__callback-form validation-error_phone-format" style="display: none">Невірний формат телефону</div>
                 </div>
                 <div class="callback-input callback-input_message js-input-message-container">
                     <textarea class="textarea textarea_message js-input-message" name="message" placeholder="Ваше питання:"></textarea>
+                    <span class="required-field-icon">(не обов’язково)</span>
                 </div>
-                <div class="callback callback-input callback-input_submit">
-                    <input class="submit_btn js-callback-form__close-btn" type="submit" value="Відправити">
+                <div class="contacts-form__callback-input callback-input contacts-form__callback-input_time js-input-time-container">
+                    <input class="js-input-time tab-form__input-time input-field" type="text" name="time" placeholder="Ми передзвонимо у зручний час:"  autocomplete="something-new" data-required="false">
+                    <span class="required-field-icon">(не обов’язково)</span>
+                </div>
+                <div class="callback-input callback-input_submit">
+				<input  name="typ" class="webad" type="hidden" value="1" >
+				<input  name="webad" class="webad" type="hidden" value="<?=$webAd;?>"/>
+                <input  name="metka" class="metka" type="hidden" value="Замовити телефонний дзвінок - Washington"/>
+                <input  name="inn" class="userInn" type="hidden" value="Washington"/>
+                    <input class="submit_btn" type="submit" value="Відправити">
                 </div>
             </form>
         </div>

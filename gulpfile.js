@@ -34,6 +34,7 @@ gulp.task('common-js', function() {
 		'src/js/libs/imask.js',
 		'src/js/libs/intlTelInput.js',
 		'src/js/libs/slick.min.js',
+		'src/js/libs/jquery.datetimepicker.full.min.js',
 		'src/js/common.js',
 		])
 	.pipe(concat('common.min.js'))

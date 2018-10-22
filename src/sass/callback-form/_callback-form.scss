@@ -5,13 +5,15 @@
     right: 0;
     bottom: 0;
     z-index: 7;
-    color: red;
     background-color: rgba(#000, 0.75);
-    background: url(../img/callback/callback-bg.jpg) center center no-repeat;
     background-size: cover;
     &.callback-form_closed {
         display: none;
     }
+}
+
+.validation-error__callback-form {
+    color: red;
 }
 
 /*.callback-page-top__wrapper {
@@ -62,18 +64,6 @@
 
     &:last-child {
         margin-bottom: 0;
-    }
-
-    &_name:before, &_phone:before {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 20px;
-        height: 20px;
-        background-color: #D2C5C5;
-        text-align: center;
-        content: url(../img/callback/start-form.png);
-        z-index: 1;
     }
 }
 

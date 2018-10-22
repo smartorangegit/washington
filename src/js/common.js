@@ -195,7 +195,12 @@ animateHTMLCtrl.init();
           };
       });
   }
-  
+
+  $.datetimepicker.setLocale('uk');
+ 
+  if($('.js-input-time')) {
+    $('.js-input-time').datetimepicker();
+}
 })();
 //tabs end
 //  =====================================================================================================================
@@ -402,6 +407,20 @@ MessageInput.prototype = Object.create(Input.prototype);
 MessageInput.prototype.constructor = MessageInput;
 // MessageInput constructor start
 
+// MessageInput constructor start
+function TimeInput(form, selector) {
+    this.validateInput = false;
+    this.state = {
+        valid: true
+    };
+    this.type = 'time';
+    this.container = form.querySelector(selector);
+    this.input = this.container.querySelector('.js-input-time');
+  }
+  TimeInput.prototype = Object.create(Input.prototype);
+  TimeInput.prototype.constructor = TimeInput;
+  // MessageInput constructor start
+
 // Modal windows constructor start
 function Modal(selector, timed) {
   this.container = document.querySelector(selector);
@@ -463,6 +482,7 @@ var contactsForm = (function() {
           var phoneInput = form.querySelector('.js-input-phone-container') ? new PhoneInput(form, '.js-input-phone-container') : null;
           var emailInput = form.querySelector('.js-input-email-container') ? new EmailInput(form, '.js-input-email-container') : null;
           var messageInput = form.querySelector('.js-input-message-container') ? new MessageInput(form, '.js-input-message-container'): null;
+          var timeInput = form.querySelector('.js-input-time-container') ? new TimeInput(form, '.js-input-time-container'): null;
 
           function createValidatorArray() {
               var arr = [];
@@ -480,6 +500,11 @@ var contactsForm = (function() {
                       arr.push(messageInput);
                   }
               }
+              if(timeInput) {
+                if(timeInput.input.value.length > 0) {
+                    arr.push(timeInput);
+                }
+            }
               return arr;
           };
 
@@ -514,7 +539,6 @@ var contactsForm = (function() {
               if(validForm) {
                   var nOV = "/wp-content/themes/washington/forms/application.php";
                   var urObV = "http://"+window.location.hostname+nOV;
-
                   PostFormData(urObV, data, function(res) {
                       console.log(res);
                       //Call modal window which was instanciated before

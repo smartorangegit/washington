@@ -1,3 +1,4 @@
+<?$webAd = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>
 <section class="contacts animate">
     <div class="contacts__wrapper">
         <div class="contacts__tabs">
@@ -10,7 +11,7 @@
             <h3 class="heading contacts__heading">
                 Наші контактні дані
             </h3>
-            <img src="img/tab-forms/Logo-callback.png" alt="logo" class="our-contacts__image">
+            <img src="/wp-content/themes/washington/assets/img/tab-forms/Logo-callback.png" alt="logo" class="our-contacts__image">
             <ul class="our-contacts-list">
                 <li class="our-contacts-list__item our-contacts-list__item_1">
                     <p class="our-contacts-list__heading">Наш телефон:</p>
@@ -35,19 +36,29 @@
             <div class="contacts__tab-content-form">
                 <form id="contacts-form__callback-form">
                     <div class="contacts-form__callback-input contacts-form__callback-input_name js-input-name-container">
-                        <input class="js-input-name" type="text" name="name" placeholder="Ваше ім'я:" data-required="true">
+                        <input class="js-input-name" type="text" name="name" placeholder="Ваше ім'я:" data-required="true"
+                               onkeyup="javascript:countme('contacts-form__callback-form');">
                         <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
-                        <span class="required-field-icon">*</span>
+                        <span class="required-field-icon">(обов’язково)</span>
                     </div>
                     <div class="contacts-form__callback-input contacts-form__callback-input_phone js-input-phone-container">
                         <input class="js-input-phone js-input-phone__international tab-form__input-phone" type="tel" name="phone" placeholder="Ваш телефон:" data-required="true">
                         <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
                         <div class="validation-error validation-error_phone-format" style="display: none">Невірний формат телефону</div>
-                        <span class="required-field-icon">*</span>
+                        <span class="required-field-icon">(обов’язково)</span>
                     </div>
                     <div class="contacts-form__callback-input contacts-form__callback-input_message js-input-message-container">
                         <textarea class="js-input-message" name="message" placeholder="Ваше питання:"></textarea>
+                        <span class="required-field-icon">(не обов’язково)</span>
                     </div>
+                    <div class="contacts-form__callback-input contacts-form__callback-input_time js-input-time-container">
+                        <input class="js-input-time tab-form__input-time" type="text" name="time" placeholder="Ми передзвонимо у зручний час:"  autocomplete="something-new" data-required="false">
+                        <span class="required-field-icon">(не обов’язково)</span>
+                    </div>
+				<input  name="typ" class="webad" type="hidden" value="1" >
+                <input  name="webad" class="webad" type="hidden" value="<?=$webAd;?>"/>
+                <input  name="metka" class="metka" type="hidden" value="Замовити телефонний дзвінок - Washington"/>
+                <input  name="inn" class="userInn" type="hidden" value="Washington"/>
                     <input type="submit" value="Відправити" class="contacts__tab-submit-btn">
                 </form>
             </div>
@@ -60,19 +71,29 @@
             <div class="contacts__tab-content-form">
                 <form id="contacts-form__email-form">
                     <div class="contacts-form__callback-input contacts-form__callback-input_name js-input-name-container">
-                        <input class="js-input-name" type="text" name="name" placeholder="Ваше ім'я:" data-required="true">
+                        <input class="js-input-name" type="text" name="name" placeholder="Ваше ім'я:" data-required="true"
+                               onkeyup="javascript:countme('contacts-form__email-form');">
                         <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
-                        <span class="required-field-icon">*</span>
+                        <span class="required-field-icon">(обов’язково)</span>
                     </div>
                     <div class="contacts-form__callback-input contacts-form__callback-input_phone js-input-email-container">
                         <input class="js-input-email" type="text" name="email" placeholder="Ваш e-mail:" data-required="true">
                         <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
                         <div class="validation-error validation-error_email-format" style="display: none">Невірний формат email</div>
-                        <span class="required-field-icon">*</span>
+                        <span class="required-field-icon">(обов’язково)</span>
                     </div>
                     <div class="contacts-form__callback-input contacts-form__callback-input_message js-input-message-container">
                         <textarea class="js-input-message" name="message" placeholder="Ваше питання:"></textarea>
+                        <span class="required-field-icon">(не обов’язково)</span>
                     </div>
+                    <div class="contacts-form__callback-input contacts-form__callback-input_time js-input-time-container">
+                        <input class="js-input-time tab-form__input-time" type="text" name="time" placeholder="Ми передзвонимо у зручний час:"  autocomplete="something-new" data-required="false">
+                        <span class="required-field-icon">(не обов’язково)</span>
+                    </div>
+				<input  name="typ" class="webad" type="hidden" value="0" >
+                <input  name="webad" class="webad" type="hidden" value="<?=$webAd;?>"/>
+                <input  name="metka" class="metka" type="hidden" value="Форма зворотного зв′язку - Washington"/>
+                <input  name="inn" class="userInn" type="hidden" value="Washington"/>
                     <input type="submit" value="Відправити" class="contacts__tab-submit-btn">
                 </form>
             </div>
