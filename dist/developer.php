@@ -35,7 +35,7 @@
                 </div>
             </div>
                 <p class="developer__msg">
-                    Девелопер Washington Concept House – компанія SAGA Development, відома такими знаковими для Києва проектами:
+                    Девелопер Washington Concept House – компанія SAGA Development, відома такими знаковими проектами:
                 </p>
             <div class="developer__slider-container wrapper">
                 <div class="gallery-arrow gallery-arrow_developer gallery-arrow_developer-prev"><i class="arrow arrow-prev"></i></div>
