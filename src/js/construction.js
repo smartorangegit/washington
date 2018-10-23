@@ -21,7 +21,7 @@ var constructionFillPercents = (function() {
         Array.prototype.forEach.call(percNumbersActual, function(number, index) {
             var numbActual = parseInt(number.innerHTML);
             var numbVisible = parseInt(percNumbersVisible[index].innerHTML);
-            number.parentNode.style.backgroundSize = parseInt(numbActual) + '%';
+            number.parentNode.style.backgroundSize = parseInt(numbActual) + '% 100%';
         
             function animateNumbers() {
                 if(numbVisible < numbActual) {

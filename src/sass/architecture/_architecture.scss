@@ -4,6 +4,14 @@
     min-height: 900px;
     overflow: hidden;
 }
+.page-top_heading h1.page-top_heading__architecture {
+    color: #fff;
+}
+.info-block__main-content {
+    &.info-block__main-content_architecture {
+        width: 560px;
+    }
+}
 .architecture__gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0+100 */
 background: -moz-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */

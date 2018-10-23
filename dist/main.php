@@ -79,7 +79,7 @@
                     <div class="hp-about__info-list hp-about__info-list_left">
                         <ul>
                             <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>Концептуальний клубний будинок</li>
-                            <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>22 поверхи</li>
+                            <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>21 поверх</li>
                             <li class="hp-about__info-list-item_main hp-about__desktop-item">
                                 <div class="hp-about__logo-text">
                                     <div class="W-logo W-logo_green W-logo_hp-about">
@@ -94,7 +94,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>114 квартир</li>
+                            <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>107 квартир</li>
                             <li class="hp-about__info-list-item hp-about__info-list-item_left"><i class="hp-arrow hp-arrow_right"></i>1 під'їзд</li>
 
                             <li class="hp-about__info-list-item hp-about__info-list-item_left hp-about__mobile-item"><i class="hp-arrow hp-arrow_right"></i>Супер-сучасна архітектура</li>
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="hp-about__construction-end">
-                Завершення будівництва: …
+                Завершення будівництва: III квартал 2020 р
             </div>
         </div>
     </section>
@@ -208,7 +208,7 @@
                 <div class="hp-advanages__gallery_item hp-advanages__gallery_item-1"></div>
                 <div class="hp-advanages__gallery_item hp-advanages__gallery_item-2"></div>
                 <div class="hp-advanages__gallery_item hp-advanages__gallery_item-3"></div>
-                <div class="hp-advanages__gallery_item hp-advanages__gallery_item-4"></div>
+                <!-- <div class="hp-advanages__gallery_item hp-advanages__gallery_item-4"></div> -->
                 <div class="hp-advanages__gallery_item hp-advanages__gallery_item-5"></div>
                 <div class="hp-advanages__gallery_item hp-advanages__gallery_item-6"></div>
             </div>
@@ -244,7 +244,7 @@
                     <p class="hp-advantages__gallery-paragraph text-element-js">Унікальна архітектура</p>
                     <p class="hp-advantages__gallery-paragraph text-element-js">Насичена інфраструктура навколо</p>
                     <p class="hp-advantages__gallery-paragraph text-element-js">Продумана інфраструктура у будинку – усе для гурманів</p>
-                    <p class="hp-advantages__gallery-paragraph text-element-js">Невелика кількість квартир</p>
+                    <!-- <p class="hp-advantages__gallery-paragraph text-element-js">Невелика кількість квартир</p> -->
                     <p class="hp-advantages__gallery-paragraph text-element-js">Атмосфера клубного будинку</p>
                     <p class="hp-advantages__gallery-paragraph text-element-js">Застосування систем «розумний будинок» та «розумна квартира»</p>
                 </div>
