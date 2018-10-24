@@ -38,7 +38,7 @@
         <div class="wrapper">
             <div class="camera__content">
                 <iframe class="camera__video" src="https://www.youtube.com/embed/LYWyG4refiI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <p class="camera__text">Запланированное время завершения строительства: IV квартал 2018 года</p>
+                <p class="camera__text">Запланированное время завершения строительства: III квартал 2020 года</p>
                 <a href="#" class="camera__button btn">
                     <span class="btn__text">Хід будівництва</span>
                 </a>

@@ -128,7 +128,7 @@
             <div class="filter__search-reset">
                 <span class="filter__results-found">За вашими параметрами є <span class="filter__results-found-numb"></span> квартир</span>
                 <a href="#" class="filter__btn btn js-filter__btn">Шукати</a>
-                <a href="#" class="filter__reset js-filter__reset">Зкинути параметри</a>
+                <a href="#" class="filter__reset js-filter__reset">Скинути параметри</a>
             </div>
         </div>
 
