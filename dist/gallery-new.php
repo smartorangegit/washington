@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Gallery</title>
-</head>
-<body>
-    <?php include_once('includes/header.php');?>
-
+<?php
+/*
+Template Name: Галерея
+*/
+?>
+<!--94-->
+<?
+//берем данные из админки, для этог опоста
+$args = array('post_type' =>'page', 'include' => array(57));
+$wp_posts= get_posts($args);
+//текксты
+$links = explode ("\n",$wp_posts[0]->post_content);
+$links = str_replace('<pre>','', $links);
+//изображение (одиночное)
+$img = (get_the_post_thumbnail_url($post->ID, 'full'));
+?>
+<?php get_header();?>
     <section class="document">
         <div class="wrapper">
             <div class="page-top  animate">
@@ -41,62 +46,62 @@
     <section class="gallery-slider-wrap">
             <ul class="gallery-slider">
                 <li class="gallery-slider__item">
-                    <img src="img/gallery/1.jpg" alt="image" class="gallery-slider__image">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/1.jpg" alt="image" class="gallery-slider__image">
                 </li>
                 <li class="gallery-slider__item">
-                    <img src="img/gallery/2.jpg" alt="image" class="gallery-slider__image">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/2.jpg" alt="image" class="gallery-slider__image">
                 </li>
                 <li class="gallery-slider__item">
-                    <img src="img/gallery/3.jpg" alt="image" class="gallery-slider__image">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/3.jpg" alt="image" class="gallery-slider__image">
                 </li>
                 <li class="gallery-slider__item">
-                    <img src="img/gallery/4.jpg" alt="image" class="gallery-slider__image">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/4.jpg" alt="image" class="gallery-slider__image">
                 </li>
                 <li class="gallery-slider__item">
-                    <img src="img/gallery/1.jpg" alt="image" class="gallery-slider__image">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/1.jpg" alt="image" class="gallery-slider__image">
                 </li>
                 <li class="gallery-slider__item">
-                    <img src="img/gallery/2.jpg" alt="image" class="gallery-slider__image">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/2.jpg" alt="image" class="gallery-slider__image">
                 </li>
                 <li class="gallery-slider__item">
-                    <img src="img/gallery/3.jpg" alt="image" class="gallery-slider__image">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/3.jpg" alt="image" class="gallery-slider__image">
                 </li>
                 <li class="gallery-slider__item">
-                    <img src="img/gallery/4.jpg" alt="image" class="gallery-slider__image">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/4.jpg" alt="image" class="gallery-slider__image">
                 </li>
             </ul>
             <button class="gallery-slider__button gallery-slider__button_prev">
-                <img src="img/gallery/slider__arrow.png" class="gallery-slider__icon" alt="prev">
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/slider__arrow.png" class="gallery-slider__icon" alt="prev">
             </button>
             <button class="gallery-slider__button gallery-slider__button_next">
-                <img src="img/gallery/slider__arrow.png" class="gallery-slider__icon" alt="next">
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/slider__arrow.png" class="gallery-slider__icon" alt="next">
             </button>
 
             <div class="gallery-slider-nav-wrap">
                 <ul class="gallery-slider-nav">
                     <li class="gallery-slider-nav__item">
-                        <img src="img/gallery/1.jpg" alt="image" class="gallery-slider-nav__image">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/1.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
                     <li class="gallery-slider-nav__item">
-                        <img src="img/gallery/2.jpg" alt="image" class="gallery-slider-nav__image">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/2.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
                     <li class="gallery-slider-nav__item">
-                        <img src="img/gallery/3.jpg" alt="image" class="gallery-slider-nav__image">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/3.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
                     <li class="gallery-slider-nav__item">
-                        <img src="img/gallery/4.jpg" alt="image" class="gallery-slider-nav__image">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/4.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
                     <li class="gallery-slider-nav__item">
-                        <img src="img/gallery/1.jpg" alt="image" class="gallery-slider-nav__image">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/1.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
                     <li class="gallery-slider-nav__item">
-                        <img src="img/gallery/2.jpg" alt="image" class="gallery-slider-nav__image">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/2.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
                     <li class="gallery-slider-nav__item">
-                        <img src="img/gallery/3.jpg" alt="image" class="gallery-slider-nav__image">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/3.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
                     <li class="gallery-slider-nav__item">
-                        <img src="img/gallery/4.jpg" alt="image" class="gallery-slider-nav__image">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/4.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
                 </ul>
                 <button class="gallery-slider-nav__button gallery-slider-nav__button_prev">
@@ -119,9 +124,4 @@
             </div>
         </section>
 
-    <?php include_once('includes/footer.php');?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/common.min.js"></script>
-<script src="js/gallery.min.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>

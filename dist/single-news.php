@@ -1,50 +1,97 @@
-<?php
-/*
-Template Name: Новини
-*/
-?>
-<?php get_header(); ?>
-    <section class="news">
+<?php /**Сторінка новин*/?>
 
-        <div class="page-top page-top_news animate">
+<?php get_header(); ?>
+
+<?
+$gallery3   	= get_post_meta($post->ID, 'gallery_block3', true);
+
+$links = explode ("\n",$post->post_content);
+$links = str_replace('<pre>','', $links);
+
+$args = array('post_type' =>'page', 'include' => array(51));
+$wp_posts= get_posts($args);
+$pageContent = explode ("\n",$wp_posts[0]->post_content);
+
+//print_r($post);
+
+
+$img=get_the_post_thumbnail_url( $post->ID);
+?>
+    <section class="news-open">
+
+        <div class="page-top page-top_news-open">
             <div class="page-top__wrapper">
                 <div class="page-top_heading">
-                    <h1 class="news_h1"><?_e('t-news','washington');?></h1>
-                    <div class="page-top__letter-w">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 170.1 132.4"><path d="M57.1 132.4L0 0h6.4l51.5 119.2L82 62.8 55.2 0h6.2l24.1 57.1L110.4 0h4.9L88.2 62.7l24.6 57.1L165.4 0h4.7l-57.8 132.4-27.6-63.5-27.6 63.5z"/></svg>
-                    </div>
+                    <h1><?=$post->post_title;?></h1>
                 </div>
-                <div class="page-top__links">
+                <div class="page-top__links page-top__links_news-open">
                     <ul>
-                        <li>
-						<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                            <a itemprop="url" href="/"><span itemprop="title"><?_e('news-Головна','washington');?></span></a>
-						</span>
-                        </li>
-                        <li>
-                            <span class="page-top__line"></span>
-                        </li>
-                        <li class="page-top__active-link">
-						<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                            <a itemprop="url" href="/news/"><span itemprop="title"><?_e('t-news','washington');?></span></a>
-						</span>
-                        </li>
+                        <li><a href="/"><?_e('news-Головна','washington');?></a></li>
+                        <li><span class="page-top__line"></span></li>
+                        <li><a href="/news/"><?_e('t-news','washington');?></a></li>
+                        <li><span class="page-top__line"></span></li>
+                        <li class="page-top__active-link"><a href="#"><?=$post->post_title;?></a></li>
                     </ul>
-				<style>
-				.page-top__active-link > span:last-of-type a {
-					pointer-events: none;
-				}
-				</style>
                 </div>
             </div>
         </div>
         <!-- page-top -->
 
-        <div class="news__list">
+        <div class="news-open__content wrapper">
+            <div class="news-open__image js-news-open__image">
+                <?
+                $img = (get_the_post_thumbnail_url($post->ID, 'full'));
 
+                $metasz2 = get_post_meta( $post->ID);
+//                print_r($metasz2);
+if(!empty($img)){
+    ?>
+    <img src="<?=$img?>" alt="News Image">
+    <?
+}
+else {
+    for ($i = 0; $i <= $metasz2['gallery_news'][0]; $i++) {
+        if (!empty($metasz2['gallery_news_' . $i . '_img'][0])) {
+            $image_attributesz2 = wp_get_attachment_image_src($metasz2['gallery_news_' . $i . '_img'][0]);
+            $bigz2 = str_replace('-150x150', '', $image_attributesz2[0]);
+            ?>
+            <img src="<?= $bigz2 ?>" alt="News Image">
+        <? } else {
+        }
+    }
+}
+                ?>
+            </div>
+            <div class="news-open__text">
+                <?=$post->post_content;?>
+            </div>
+            <div class="news-open_btns">
+                <a onclick="window.history.go(-1);" class="news-open__btn news-open__btn_back btn" href="#">
+                    <svg class="news-open__btn_back-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="11" viewBox="0 0 44 11"><g transform="translate(-113 -1396)"><path d="M157 1401v1h-42v1h-1v-1h-1v-1h1v-1h1v1zm-42 3v-1h1v1zm1 1v-1h1v1zm1 1v-1h1v1zm-2-6v-1h1v1zm1-1v-1h1v1zm1-1v-1h1v1zm1-1v-1h1v1zm0 10v-1h1v1z"/></g></svg>
+                    <span class="btn__text"><?_e('single-news-back','washington');?></span>
+                </a>
+                <a href="/obrati-budinok/" class="news-open__btn btn news-open__btn_hoose-appartment">
+                    <span class="btn__text">
+                        <?_e('home-Обрати квартиру','washington');?>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="news-open__read-more">
+            <div class="page-top__wrapper">
+                <div class="page-top_heading news-open__read-more-heading">
+                    <h4><?_e('single-news-Читайте також','washington');?></h4>
+                    <div class="page-top__letter-w">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 170.1 132.4"><path d="M57.1 132.4L0 0h6.4l51.5 119.2L82 62.8 55.2 0h6.2l24.1 57.1L110.4 0h4.9L88.2 62.7l24.6 57.1L165.4 0h4.7l-57.8 132.4-27.6-63.5-27.6 63.5z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-open__list wrapper">
             <?php
             $post = get_post(60);
-
             $ReaNews =LoadingNews(NewsOnPage, 0);
 
             if (count($ReaNews['ReaNews'])) {
@@ -67,7 +114,7 @@ Template Name: Новини
                             <div class="hover-ef__overlay">
                                 <div class="hover-ef__border">
                                     <div class="W-logo W-logo_white W-logo_hover"><svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 171.332 134.318"><path class="letter_W_left" d="M.76.677l57.1 132.39L116.065.668l-4.903.004-52.49 119.207L7.155.673z"/><path class="letter_W_right" d="M55.26.508l57.1 132.39L170.565.5l-4.902.004-52.49 119.206L61.655.505z"/></svg></div>
-                                    <h3 class="hover-ef__heading_2 news__heading"><?php echo $post->post_title; ?></h3>
+                                    <h3 class="hover-ef__heading_2 news__heading"><?php echo $post->post_name; ?></h3>
                                     <p class="hover-ef__paragraph">
                                         <?php echo $post->post_excerpt; ?>
                                     </p>
@@ -81,7 +128,7 @@ Template Name: Новини
                             </div>
                             <div class="hover-ef__bottom-text news__bottom-text">
                                 <h3 class="hover-ef__heading news__heading">
-                                    <?php echo $post->post_title; ?>
+                                    <?php echo $post->post_name; ?>
                                     <span class="hover-ef__arrow_2 news__arrow_2"><svg xmlns="http://www.w3.org/2000/svg" height="5.6456027mm" width="16.378967mm"><g transform="translate(-118.21429,-145.23871)"><path class="hp-arrow_main-line" d="m 118.21429,155.04077 58.03571,0" /><path class="hp-arrow__line" d="m 175.89286,154.97381 -6.80865,-6.55879" /><path class="hp-arrow__line" d="m 169.33222,161.88374 6.55879,-6.80865" /></g></svg></span>
                                 </h3>
                             </div>
@@ -100,36 +147,16 @@ Template Name: Новини
                     </div>
                     <?php
                     $i++;
+                    if($i>=2){
+                        break;
+                    }
                 }
             }
             ?>
-
-
-
-        </div><!--news__list end-->
-<!--        <div class="news__pagination">-->
-<!--            <div class="news__pagination-arrow news__pagination-arrow_prev">-->
-<!--                <a href="#">-->
-<!--                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 220.682 220.682"><path class="arrow-part-1" d="M99.702 210.043l28.284-28.285-71.417-71.417 71.417-71.417-28.284-28.285L0 110.341z"/><path  class="arrow-part-1" d="M192.398 10.639l-99.703 99.702 99.703 99.702 28.284-28.285-71.418-71.417 71.418-71.417z"/></svg>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="news__pagination-numbers">-->
-<!--                <ul>-->
-<!--                    <li class="news__pagination-link news__pagination-link_active"><a href="#">1</a></li>-->
-<!--                    <li class="news__pagination-link"><a href="#">2</a></li>-->
-<!--                    <li class="news__pagination-link"><a href="#">3</a></li>-->
-<!--                    <li class="news__pagination-link"><a href="#">...</a></li>-->
-<!--                    <li class="news__pagination-link"><a href="#">8</a></li>-->
-<!---->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="news__pagination-arrow news__pagination-arrow_next">-->
-<!--                <a href="#">-->
-<!--                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 220.682 220.682"><path class="arrow-part-1" d="M92.695 38.924l71.418 71.417-71.418 71.417 28.284 28.285 99.703-99.702-99.703-99.702z"/><path class="arrow-part-2" d="M28.284 210.043l99.702-99.702-99.702-99.702L0 38.924l71.417 71.417L0 181.758z"/></svg>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
+        </div>
 
     </section>
+
+
 
 <?php get_footer(); ?>

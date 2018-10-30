@@ -8,8 +8,51 @@
     <title>flat</title>
 </head>
 <body>
-    <?php include_once('includes/header.php');?>
+    <?php
+    $floor = $_GET['floor'];
 
+    function app($floor){
+        $apps[1] =  get_field('apartment', 194); /*только этот этаж правильный*/
+        /*$apps[4] =  get_field('apartment', 59);
+        $apps[5] =  get_field('apartment', 89);
+        $apps[6] =  get_field('apartment', 93);
+        $apps[7] =  get_field('apartment', 97);
+        $apps[8] =  get_field('apartment', 240);
+        $apps[9] =  get_field('apartment', 244);
+        $apps[10] =  get_field('apartment', 248);
+
+        $apps[11] =  get_field('apartment', 252);
+        $apps[12] =  get_field('apartment', 256);
+        $apps[13] =  get_field('apartment', 260);
+        $apps[14] =  get_field('apartment', 264);
+        $apps[15] =  get_field('apartment', 268);
+        $apps[16] =  get_field('apartment', 272);
+        $apps[17] =  get_field('apartment', 276);
+        $apps[18] =  get_field('apartment', 280);
+        $apps[19] =  get_field('apartment', 284);
+        $apps[20] =  get_field('apartment', 288);
+
+        $apps[21] =  get_field('apartment', 292);
+        $apps[22] =  get_field('apartment', 296);
+        $apps[23] =  get_field('apartment', 300);
+        $apps[24] =  get_field('apartment', 304);*/
+
+
+        $result = $apps[$floor];
+        return $result;
+    }
+    $apartments = app($floor);
+
+    $floors = get_field('floor',188);
+    //print_r($floors);
+    foreach ($floors as $itemFloor){
+        if($itemFloor['num'] == $floor){
+            $currentFloor = $itemFloor;
+            $img_full = $itemFloor['img'];
+        }
+    }
+
+    ?>
         <section class="select-apartmens">
             <div class="wrapper">
                 <div class="page-top select-apartmens__page-top animate">
@@ -119,7 +162,27 @@
                         <div class="apartmens-plan">
                             <p class="apartmens-plan__text">План поверху</p>
                             <div class="apartmens-plan-image-wrap">
-                                <? include_once('includes/houses/2.php'); ?>
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                     width="100%" height="100%" viewBox="0 0 2487.000000 1370.000000"
+                                     preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,1370.000000) scale(0.100000,-0.100000)"
+                                       fill="#000000" stroke="none">
+                                        <path d="<?=$img_full?>" />
+                                    </g>
+
+                                    <g transform="matrix(2.828525,-0.01893281,0,2.8903451,2796.9039,79.628362)" id="g15">
+                                        <g id="layer1">
+                                            <?foreach ($apartments as $itemFloor){?>
+                                                <a href="/projects/?floor=<?=$_GET['floor']?>&flat=<?=$itemFloor['ap_id']?>" class="apartment__link">
+                                                    <path class="apartment <?if($itemFloor['ap_id']==$_GET['flat']){ echo 'this';}?>"
+                                                          d="<?=$itemFloor['mouseover']?>"
+                                                           />
+                                                </a>
+                                            <?}?>
+                                        </g>
+                                    </g>
+
+                                </svg>
                             </div>   
                         </div>
                         <a href="#" class="select-apartmens-bottom__button btn">
@@ -134,7 +197,11 @@
                 <img src="img/select-appartmets/compas.png" alt="image" class="select-apartmens__image select-apartmens__image_none">
             </div>
         </section>
- 
+ <style>
+     .this:hover {
+         fill: rgba(210,197,197,.9);
+     }
+ </style>
 
         
     <?php include_once('includes/footer.php');?>

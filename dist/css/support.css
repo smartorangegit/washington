@@ -1,0 +1,311 @@
+.page-top_news .news_h1 {
+	color: #fff;
+}
+.header-menu-btn__line{
+	background-color: #525249;
+}
+.news-open__text p {
+	margin-bottom: 0.5em;
+	line-height: 26px;
+}
+
+.document-slider__name {
+	padding-top: 6px;
+    font-size: .875rem;
+    text-align: center;
+}
+.hero__gallery-item{
+	background-image: none;
+}
+.hero__gallery-item_1{
+	background-image: url(/wp-content/themes/washington/assets/img/gallery/4.jpg);
+}
+.hero__gallery-item_2{
+	background-image: url(/wp-content/themes/washington/assets/img/gallery/1.jpg);
+}
+.hero__gallery-item_3{
+	background-image: url(/wp-content/themes/washington/assets/img/gallery/2.jpg);
+}
+.hero__gallery-item_4{
+	background-image: url(/wp-content/themes/washington/assets/img/gallery/3.jpg);
+}
+.choose-floor__content{
+	position: relative;
+}
+.choose-floor_arrow:before{
+	background-color: #525249;
+	border: none;
+}
+.choose-floor_arrow{
+	background-color: #525249;
+	color:#d2c5c5;
+	border: none;
+	animation: 3s infinite arrow_dance;
+	-webkit-animation: 3s infinite arrow_dance;
+}
+@-webkit-keyframes arrow_dance {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  60% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
+@-moz-keyframes arrow_dance {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(30px);
+  }
+  60% {
+    transform: translateX(15px);
+  }
+}
+@keyframes arrow_dance {
+  0%, 20%, 50%, 80%, 100% {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  60% {
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
+.filter__controls {
+    padding: 30px 100px 40px;
+	}
+	.choose-floor__link{
+		display: none;
+	}
+
+@media only screen and (max-width: 1024px) {
+	.filter__controls {
+	    padding: 30px 50px 40px;
+		}
+		.values__block-wrapper {
+			position: static;
+		}
+}
+@media only screen and (max-width: 768px){
+	.filter__controls {
+		padding: 30px 20px 40px;
+	}
+	.filter__text{
+		width: 48%;
+	}
+	.hp-about{
+		height: auto;
+		padding: 10px 10px 90px;
+	}
+	.hp-about__info-lists {
+    padding: 0px 10px;
+}
+.hp-about__construction-end{
+	padding: 20px;
+}
+.hp-values,
+.hp-advantages{
+	height: auto;
+}
+.hp-apartments,
+.hp-location__architecture,
+.hp-location__map,
+.hp-infrastructure,
+.hp-commercial,
+.hp-construction,
+.hp-developer{
+	height: 480px;
+}
+.hp-values__gallery_item,
+.hp-advanages__gallery_item{
+	height: 320px;
+}
+.hp-values__gallery-text,
+.hp-advantages__gallery-text{
+	position: static;
+	margin-top: -3px;
+}
+.advantage{
+	height: 300px;
+}
+.advantage-text__paragraph{
+	line-height: 1.6;
+}
+.infrastructure__item{
+	height: 500px;
+}
+.infrastructure__item_4 {
+    background-image: url('../img/infrastructure/4_mob.jpg');
+}
+.developer__slider-container {
+	margin-top: -20px;
+}
+.gallery-arrow.gallery-arrow_developer,
+.gallery-arrow_projects{
+	top: 49.5%;
+}
+.hp-day-in-washington,
+ .hp-washington-sfera{
+	 height: auto;
+ }
+ .hp-washington-sfera__bottom-line {
+    height: 108px;
+}
+.hp-day-in-washington__wrapper{
+	background-size: cover;
+}
+.hp-sfera-content {
+  background-size: cover;
+  background-position: 25% 50%;
+}
+.diw {
+  margin-top: 75px;
+}
+.page-top_diw {
+	padding-top: 0px;
+	margin-top: -35px;
+}
+.diw__slider-item{
+	height: calc(100vh - 75px);
+}
+.diw__slider-item-2 {
+  background-position: left;
+}
+.diw__slider-item-6 {
+  background-position-x: 28%;
+}
+.diw__slider-item-7 {
+  background-position-x: 28%;
+}
+.progress-bar__wrapper{
+	bottom: 40px;
+}
+.diw__slider-msg-wrapper{
+	bottom: 100px;
+}
+.diw__slider-msg_text {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+.choose-floor__left{
+	order: 3;
+}
+.choose-floor__center {
+  margin-top: 120px;
+	height: 460px;
+}
+.choose-floor_arrow-wrap {
+  margin-top: 30px;
+  top: 0;
+}
+.choose-floor_arrow:before {
+    height: 28px;
+    width: 28px;
+    top: 100%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -14px;
+    z-index: -1;
+}
+@-webkit-keyframes arrow_dance {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  60% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+}
+@-moz-keyframes arrow_dance {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(30px);
+  }
+  60% {
+    transform: translateY(15px);
+  }
+}
+@keyframes arrow_dance {
+  0%, 20%, 50%, 80%, 100% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  60% {
+    -ms-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+}
+.choose-floor{
+	padding: 0 10px;
+}
+.choose-floor__info_apartments-number, .choose-floor__info_floor-number {
+  width: 98%;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.choose-floor__inner{
+	order: 1;
+	position: absolute;
+	top: 140px;
+	left: 65%;
+}
+.choose-floor__link{
+	display: block;
+	width: 100px;
+	text-align: center;
+	border: 1px solid rgba(82,82,73,.5);
+	background-color: #525249;
+  color: #d2c5c5;
+	padding: 14px 2px;
+	font-size: 14px;
+	margin: 18px auto 0
+}
+.choose-floor__info-number{
+	line-height: inherit;
+	padding: 30px 0 10px;
+
+}
+.choose-floor__info-text{
+	margin-bottom: -26px;
+}
+.choose-floor__info_apartments-number .choose-floor__info-text{
+	margin-bottom: -30px;
+}
+.choose-floor__link svg{
+	stroke: #ffffff;
+
+}
+.choose-floor__center svg {
+    margin-left: -100px;
+}
+.choose-floor__price-btn-wrap {
+  height: 40px;
+}
+.choose-floor__rooms-btns ul{
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+}

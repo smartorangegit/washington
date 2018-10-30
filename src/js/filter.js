@@ -17,9 +17,9 @@ var filterPage = (function() {
     // More results button
     var moreResultsBtn = document.querySelector('.js-filter__more-results');
     // Container with checkboxes for change event
-    var filterRoomsCheckboxes = document.querySelector('.js-filter__rooms');
+            // var filterRoomsCheckboxes = document.querySelector('.js-filter__rooms');
     // Checkboxxes themselfes
-    var checkBoxes = filterRoomsCheckboxes.querySelectorAll('input[type="checkbox"]');
+            // var checkBoxes = filterRoomsCheckboxes.querySelectorAll('input[type="checkbox"]');
     // filter btn
     var filterBtn = document.querySelector('.js-filter__btn');
     // found
@@ -27,7 +27,7 @@ var filterPage = (function() {
     // filter reset btn
     var filterResetBtn = document.querySelector('.js-filter__reset');
 
-    // range constructor responsible for updating ranges, updating text inputs, updating global filter state 
+    // range constructor responsible for updating ranges, updating text inputs, updating global filter state
     function Range(parentSelector, type) {
         var self = this;
         this.type = type;
@@ -92,10 +92,10 @@ var filterPage = (function() {
         var slider = this.ionRange.data("ionRangeSlider");
 
         // This event handlers prevent text input in number inputs but keydown fires before it places value inside input and you need that values to update ranges
-        // thats why keyup event added 
+        // thats why keyup event added
         this.minText.keydown(self.handleTextInput);
         this.maxText.keydown(self.handleTextInput);
-        
+
         this.minText.keyup(function() {
             slider.update({from: this.value});
             self.updateFiler();
@@ -173,7 +173,7 @@ var filterPage = (function() {
         });
     };
 
-    // Show more results function creation 
+    // Show more results function creation
     function showFiltered() {
         filteredResults.forEach(function(result, index) {
             if(index  < resultsPerSearch) {
@@ -184,25 +184,25 @@ var filterPage = (function() {
     };
 
     // Checkboxes change event
-    filterRoomsCheckboxes.addEventListener('change', function(){
-        filter.rooms = [];
-        checkBoxes.forEach(function(checkbox) {
-            if(checkbox.checked) {
-                filter.rooms.push(parseInt(checkbox.value));
-            }
-        });
-        // If no checkboxes selected show all rooms
-        if(filter.rooms.length === 0) {
-            resetCheckboxes();
-        }
-    });
+    // filterRoomsCheckboxes.addEventListener('change', function(){
+    //     filter.rooms = [];
+    //     checkBoxes.forEach(function(checkbox) {
+    //         if(checkbox.checked) {
+    //             filter.rooms.push(parseInt(checkbox.value));
+    //         }
+    //     });
+    //     // If no checkboxes selected show all rooms
+    //     if(filter.rooms.length === 0) {
+    //         resetCheckboxes();
+    //     }
+    // });
 
-    function resetCheckboxes() {
-        checkBoxes.forEach(function(checkbox) {
-            checkbox.checked = false;
-            filter.rooms.push(parseInt(checkbox.value));
-        });
-    };
+    // function resetCheckboxes() {
+    //     checkBoxes.forEach(function(checkbox) {
+    //         checkbox.checked = false;
+    //         filter.rooms.push(parseInt(checkbox.value));
+    //     });
+    // };
 
     moreResultsBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -226,10 +226,9 @@ var filterPage = (function() {
             range.updateFiler();
             $(range.minText).val(range.min);
             $(range.maxText).val(range.max);
-            resetCheckboxes();
+            // resetCheckboxes();
             filterResults();
         })
     });
 
 })();
-
