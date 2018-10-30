@@ -22,8 +22,8 @@ var locationMap = (function() {
         var icons = {
             sales_dep: '',
             main: {
-                sprite_locaion: {x: 96, y: 2},
-                size: {x: 74, y: 90}
+                sprite_locaion: {x: 0, y: 58},
+                size: {x: 100, y: 92}
             },
             bank: {
                 sprite_locaion: {x: 174, y: 2},
@@ -78,7 +78,7 @@ var locationMap = (function() {
         var xmlhttp = new XMLHttpRequest();
         var url = addr + "js/map.style.json";
         var globalStyles;
-    
+
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var styles = JSON.parse(this.responseText);
@@ -92,8 +92,8 @@ var locationMap = (function() {
 
         function getIcon(marker) {
             if(icons[marker.type].size !== undefined) {
-                return new google.maps.MarkerImage(iconsSpritesheet, 
-                    new google.maps.Size(icons[marker.type].size.x, icons[marker.type].size.y), 
+                return new google.maps.MarkerImage(iconsSpritesheet,
+                    new google.maps.Size(icons[marker.type].size.x, icons[marker.type].size.y),
                     new google.maps.Point(icons[marker.type].sprite_locaion.x, icons[marker.type].sprite_locaion.y));
             } else {
                 return icons[marker.type].icon_location;
@@ -119,7 +119,7 @@ var locationMap = (function() {
             ];
 
             markers.forEach(function(marker) {
-    
+
                 var marker = new google.maps.Marker({
                     position: {lat: marker.lat, lng: marker.lng},
                     map: map,
@@ -128,13 +128,13 @@ var locationMap = (function() {
                     message: marker.message,
                     animation: google.maps.Animation.DROP,
                 });
-    
+
                 initMarkers.push(marker);
-        
+
                 infowindow = new google.maps.InfoWindow({
                     content: marker.message
                 });
-                
+
                 marker.addListener('click', function() {
                     if(infowindow) {
                         infowindow.close();
@@ -149,7 +149,7 @@ var locationMap = (function() {
             });
 
         } //end initMapWithStyles
-        
+
     }// end init
 
 

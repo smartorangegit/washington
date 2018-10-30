@@ -8,7 +8,7 @@ var diw = (function() {
 
     $(sliderSelector).slick({
         arrows: false,
-        infinite: false,
+        infinite: true,
         autoplay: true
     });
 
@@ -40,7 +40,7 @@ var diw = (function() {
         // }
       });
 
-      
+
       $(slideSquare).on('click', function() {
         $(sliderSelector).slick('slickGoTo', $(this).parent().data('slide'));
       });
@@ -55,4 +55,3 @@ var diw = (function() {
         }
       }
 })();
-
