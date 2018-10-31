@@ -28,7 +28,7 @@ $img = (get_the_post_thumbnail_url($post->ID, 'full'));
                         <ul>
                             <li>
 							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                                <a itemprop="url" href="/"><span itemprop="title">Головна</span></a>
+                                <a itemprop="url" href="/"><span itemprop="title"><?_e('news-Головна','washington');?></span></a>
 							</span>
                             </li>
                             <li>
@@ -130,7 +130,10 @@ $img = (get_the_post_thumbnail_url($post->ID, 'full'));
     </div>
 
 </section>
-
-<?php get_template_part('forms/callback_form');?>
+<?php
+/*
+get_template_part('forms/callback_form');
+*/
+?>
 
 <?php get_footer(); ?>
