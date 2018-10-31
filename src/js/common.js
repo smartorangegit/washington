@@ -44,7 +44,7 @@ var sagapreloaderAnimation = (function() {
         localStorage.setItem('preloader', Date.now());
         return true;
       }
-      var hour = 3600 * 1000;  
+      var hour = 3600 * 1000;
       if(Date.now() - localStorage.getItem('preloader') < hour) {
         return false;
       } else {
@@ -67,7 +67,7 @@ var sagapreloaderAnimation = (function() {
     //     sagapreloaderAnimation.init();
     // }
 
-// without session or local storage(every refresh page playing preloader) 
+// without session or local storage(every refresh page playing preloader)
     // sagapreloaderAnimation.init();
 
 // for local storage
@@ -133,8 +133,8 @@ var animateHTMLCtrl = (function() {
       window.addEventListener('scroll', _debouncedScroll);
       window.addEventListener('resize', _debouncedInit);
     };
-  
-    function _checkPosition() {        
+
+    function _checkPosition() {
       for (var i = 0; i < elems.length; i++) {
         var posFromTop = elems[i].getBoundingClientRect().top;
         if (posFromTop - windowHeight <= -200) {
@@ -143,18 +143,18 @@ var animateHTMLCtrl = (function() {
       }
       _checkForAnimatedElements();
     };
-    
+
     function init() {
         _addEventHandlers();
         _checkPosition();
     };
 
-    setTimeout(_checkPosition, 500)
+    setTimeout(_checkPosition, 300)
 
     return {
       init: init
     };
-  
+
   })();
 
 animateHTMLCtrl.init();
@@ -168,7 +168,7 @@ animateHTMLCtrl.init();
   var hiddenTabContentClas = 'contacts__tab-content__hidden';
 
   var NODES = {
-      cTabs:document.querySelector('.contacts__tabs'),  
+      cTabs:document.querySelector('.contacts__tabs'),
       cTab: document.querySelectorAll('.contacts__tab'),
       cTabContent: document.querySelectorAll('.contacts__tab-content')
   };
@@ -197,7 +197,7 @@ animateHTMLCtrl.init();
   }
 
   $.datetimepicker.setLocale('uk');
- 
+
   if($('.js-input-time')) {
     $('.js-input-time').datetimepicker();
 }
@@ -311,7 +311,7 @@ function PhoneInput(form, selector) {
         self.mask.updateOptions({
             mask: countryData.dialCode + '(000)000-00-00'
         })
-        
+
     });
   }
 
@@ -648,7 +648,7 @@ var callbackFormCtrl = (function() {
     var closeForm = function() {
         form.classList.add(closedFormClass);
         if(!washingtonState.menuOpen) showScrollBar();
-        washingtonState.callbackOpen = false; 
+        washingtonState.callbackOpen = false;
     };
 
     // Multiple buttons can call callback form thats why foreach used here
@@ -663,4 +663,3 @@ var callbackFormCtrl = (function() {
 })();
 // Callbakc form end
 //  =====================================================================================================================
-
