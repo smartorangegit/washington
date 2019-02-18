@@ -15,7 +15,7 @@ var gulp           = require('gulp'),
 
 // Скрипты проекта
 
-// All start 
+// All start
 gulp.task('all-js', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
@@ -25,7 +25,7 @@ gulp.task('all-js', function() {
 	.pipe(uglify())
 	.pipe(gulp.dest('dist/js'));
 });
-// All end 
+// All end
 
 // Common
 gulp.task('common-js', function() {
@@ -216,7 +216,7 @@ gulp.task('js', [
 gulp.task('browser-sync', function() {
 	browserSync({
 		//proxy: "http://localhost:80/washington/dist",
-		proxy: "washington/dist",
+		proxy: "Wash_git/washington/dist",
     	notify: false // Отключаем уведомления
 	});
 });
@@ -241,7 +241,7 @@ gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 gulp.task('imagemin', function() {
 	return gulp.src('src/img/**/*')
 	.pipe(cache(imagemin()))
-	.pipe(gulp.dest('dist/img')); 
+	.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {

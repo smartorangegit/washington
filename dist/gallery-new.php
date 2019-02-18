@@ -57,7 +57,7 @@ $img = (get_the_post_thumbnail_url($post->ID, 'full'));
                 <li class="gallery-slider__item">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/4.jpg" alt="image" class="gallery-slider__image">
                 </li>
-                <li class="gallery-slider__item">
+                <!-- <li class="gallery-slider__item">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/1.jpg" alt="image" class="gallery-slider__image">
                 </li>
                 <li class="gallery-slider__item">
@@ -68,7 +68,7 @@ $img = (get_the_post_thumbnail_url($post->ID, 'full'));
                 </li>
                 <li class="gallery-slider__item">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/4.jpg" alt="image" class="gallery-slider__image">
-                </li>
+                </li> -->
             </ul>
             <button class="gallery-slider__button gallery-slider__button_prev">
                 <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/slider__arrow.png" class="gallery-slider__icon" alt="prev">
@@ -91,7 +91,7 @@ $img = (get_the_post_thumbnail_url($post->ID, 'full'));
                     <li class="gallery-slider-nav__item">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/4.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
-                    <li class="gallery-slider-nav__item">
+                    <!-- <li class="gallery-slider-nav__item">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/1.jpg" alt="image" class="gallery-slider-nav__image">
                     </li>
                     <li class="gallery-slider-nav__item">
@@ -102,7 +102,7 @@ $img = (get_the_post_thumbnail_url($post->ID, 'full'));
                     </li>
                     <li class="gallery-slider-nav__item">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/4.jpg" alt="image" class="gallery-slider-nav__image">
-                    </li>
+                    </li> -->
                 </ul>
                 <button class="gallery-slider-nav__button gallery-slider-nav__button_prev">
                     <svg xmlns="http://www.w3.org/2000/svg" class="gallery-slider-nav__icon"  height="5.6456027mm" width="16.378967mm">
